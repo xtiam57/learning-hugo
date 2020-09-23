@@ -1,13 +1,21 @@
 // Main Colors
 $primary-color: #BE0A75 !default;
 $secondary-color: #01FFFF !default;
-$darkGray-color: #222222 !default;
-$lightGray-color: #FAFAFA !default;
+$darkGray-color: #1f2125 !default;
+$lightGray-color: #E2E8F0 !default;
 $black-color: #000000 !default;
 $white-color: #FFFFFF !default;
 
+// Fonts
+$body-font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+$code-font-family: "Fira Code", Consolas, Menlo, Monaco, source-code-pro, monospace;
+
+// Margins
+$margin-size: 1.25em;
+
 // Highlight (code)
-$highlight-background: #282c34 !default;
+$highlight-background: #2D3748 !default; // #282c34 !default;
 $highlight-blue: #61afef !default;
 $highlight-pink: #e06c75 !default;
 $highlight-orange: #eea112 !default;

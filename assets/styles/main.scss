@@ -10,4 +10,39 @@
   --lightGray-color: #{$lightGray-color};
   --black-color: #{$black-color};
   --white-color: #{$white-color};
+  --body-font-family: #{$body-font-family};
+  --code-font-family: #{$code-font-family};
+  --margin-size: #{$margin-size};
 }
+
+body {
+  font-family: $body-font-family;
+}
+
+.article,
+article {
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100vw;
+  max-width: 65ch;
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  p {
+    margin-top: $margin-size;
+    margin-bottom: $margin-size;
+    color: #4a5568;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: solid 1px $lightGray-color;
+    padding-top: $margin-size;
+  }
+}
+
