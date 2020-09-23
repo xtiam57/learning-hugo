@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://learning-hugo.vercel.app/"
 languageCode = "es-ES"
 title = "My New Hugo Site!"
 
@@ -7,3 +7,6 @@ title = "My New Hugo Site!"
     guessSyntax = true
     noClasses = false
     tabWidth = 2
+
+[markup.goldmark.renderer]
+unsafe= true
