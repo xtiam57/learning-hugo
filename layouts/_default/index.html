@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{ partial "head" . }}
+
+<style>
+  body {
+    align-items: center;
+    background-color: #222;
+    background-position: bottom left;
+    background-size: cover;
+    background: url(images/bg.jpg) no-repeat;
+    color: #fff;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 50px;
+    grid-template-areas:
+      'main'
+      'footer';
+    min-height: 100vh;
+    text-align: center;
+  }
+
+  main {
+    grid-area: 'main';
+  }
+
+  footer {
+    background-color: #000;
+    grid-area: 'footer';
+    height: 50px;
+  }
+
+  .profile-pic {
+    border-radius: 999px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    height: 10em;
+    width: 10em;
+  }
+
+  .logo-pic {
+    width: 15em;
+  }
+
+  .lead {
+    color: var(--secondary-color);
+    font-family: 'Fira Code', source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+    font-size: calc(1rem + 0.5vmin);
+    line-height: 1.7;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  }
+</style>
+
+<body>
+  <main>
+    <img class="profile-pic" src="images/profile.jpg" alt="Profile Image" />
+    <img class="logo-pic" src="images/logo.svg" alt="Profile Image" />
+    <p class="lead">
+      /* Experto en karate bajo el agua, apasionado lector de cajas de
+      cereal y superheroe asintomático. */
+    </p>
+  </main>
+  <footer>
+    <a href="{{ "/blog" | relURL }}">Blog</a>
+  </footer>
+</body>
+
+</html>

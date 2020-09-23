@@ -1,3 +1,9 @@
 baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+languageCode = "es-ES"
+title = "My New Hugo Site!"
+
+[markup]
+  [markup.highlight]
+    guessSyntax = true
+    noClasses = false
+    tabWidth = 2

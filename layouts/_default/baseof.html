@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{ partial "head" . }}
+
+<body>
+  <h1>{{ .Page.Title }}</h1>
+  <p>{{ .Page.Description }}</p>
+
+  <section>
+    {{ block "content" . }}{{ end }}
+  </section>
+
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+@import "variables";
+@import "reset";
+@import "fonts";
+@import "highlight";
+
+:root {
+  --primary-color: #{$primary-color};
+  --secondary-color: #{$secondary-color};
+  --darkGray-color: #{$darkGray-color};
+  --lightGray-color: #{$lightGray-color};
+  --black-color: #{$black-color};
+  --white-color: #{$white-color};
+}

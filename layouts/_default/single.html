@@ -1,0 +1,25 @@
+{{ define "content" }}
+
+
+<h3>This a single page:</h3>
+<hr>
+{{ .Content }}
+
+{{ with .NextInSection }}
+<div>
+  <a href="{{ .Permalink }}">
+    next: {{ .Title }}
+  </a>
+</div>
+{{ end }}
+
+{{ with .PrevInSection }}
+<div>
+  <a href="{{ .Permalink }}">
+    prev: {{ .Title }}
+  </a>
+</div>
+{{ end }}
+
+
+{{ end }}
