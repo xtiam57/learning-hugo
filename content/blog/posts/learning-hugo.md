@@ -5,9 +5,19 @@ date: 2020-09-17T16:59:56-05:00
 draft: true
 ---
 
-# This is a title
+## This is a title
 
-This is my first post with HUGO!
+Using MDX you can overwrite the default components that are provided by markdown. In this blog I will use this to add captions to images.
+
+- [x] One task
+
+{{< instagram BWNjjyYFxVx hidecaption  >}}
+
+Using MDX you can overwrite the default components that are provided by markdown. In this blog I will use this to add captions to images.
+
+- uno
+- dos
+- tres
 
 ```json
 {
@@ -18,6 +28,8 @@ This is my first post with HUGO!
   second: 1 // un segundo tiene... un segundo :D
 }
 ```
+
+The first thing to do is to look at the table of components for MDX, and here we can see that images are represented by img. By following the link we can see the markdown
 
 ```javascript
 function foo() {
@@ -40,15 +52,23 @@ const getSecondsDiff = (timestamp) => {
 }
 ```
 
+Then we create a React component, where each of the keys are passed inside props
+
 ```html
 <h1 class="foo">Hola</h1>
 ```
+
+A conditional statement is used here so that no excess formatting is introduced if no title is present. The standard figure layout is used as a tag is there specifically for captions
+
+You can then pass this component to MDX in the method detailed here and the captions should not display themselves. You can then apply CSS or classes to the HTML tags in order to style it as you want.
 
 ```css
 .foo {
   background-color: red;
 }
 ```
+
+You can then pass this component to MDX in the method detailed here and the captions should not display themselves. You can then apply CSS or classes to the HTML tags in order to style it as you want.
 
 ```jsx
 export default function Foo() {
@@ -58,3 +78,7 @@ export default function Foo() {
   )
 }
 ```
+
+You can then pass this component to MDX in the method detailed here and the captions should not display themselves. You can then apply CSS or classes to the HTML tags in order to style it as you want.
+
+o adapt this component, we are going to use ``title`` as the caption.
