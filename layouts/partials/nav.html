@@ -1,0 +1,8 @@
+{{ $styles := resources.Get "styles/nav.scss" }}
+{{ $styles = $styles | toCSS | minify | fingerprint }}
+<style>{{ $styles.Content | safeCSS }}</style>
+
+<nav class="navbar">
+  <a href="{{ "/" | relURL }}">Home</a>
+  <a href="{{ "/blog" | relURL }}">Blog</a>
+</nav>
