@@ -2,7 +2,7 @@
 title: Learning Hugo
 description: We are learning HUGO
 date: 2020-09-17T16:59:56-05:00
-draft: true
+draft: false
 ---
 
 ## This is a title
