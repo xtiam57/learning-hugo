@@ -2,6 +2,8 @@ baseURL = "https://xtiam57.vercel.app/"
 languageCode = "es-ES"
 title = "My New Hugo Site!"
 
+enableEmoji = true
+
 [markup]
   [markup.highlight]
     guessSyntax = true

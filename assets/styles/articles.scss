@@ -1,0 +1,129 @@
+@import "variables";
+@import "highlight";
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto 50px;
+  grid-template-areas:
+    "main"
+    "footer";
+}
+
+main {
+  grid-area: "main";
+
+  .summary {
+    background-color: $lighterGray-color;
+    text-align: center;
+  }
+
+  .article,
+  article {
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    width: 100vw;
+    max-width: $body-max-width;
+    margin: $margin-base auto;
+    padding-left: $margin-base;
+    padding-right: $margin-base;
+
+    .pagination {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: $border-base;
+      padding-top: $margin-base;
+
+      .prev-post,
+      .next-post {
+        min-width: 48%;
+      }
+
+      .next-post {
+        text-align: right;
+      }
+    }
+
+    img {
+      vertical-align: middle;
+      width: 100%;
+      height: auto;
+    }
+
+    // Table styles
+    table {
+      width: 100%;
+      margin-bottom: $table-margin-bottom;
+      color: $table-text-color;
+      vertical-align: top;
+      border-color: $table-border-color;
+
+      > :not(caption) > * > * {
+        padding: $table-cell-padding-y $table-cell-padding-x;
+        border-bottom-width: $table-border-width;
+      }
+
+      > tbody {
+        vertical-align: inherit;
+      }
+
+      > thead {
+        vertical-align: bottom;
+        background-color: $lighterGray-color;
+      }
+
+      // Highlight border color between thead, tbody and tfoot.
+      > :not(:last-child) > :last-child > * {
+        border-bottom-color: $table-border-color;
+      }
+
+      > :not(caption) > * {
+        border-width: $table-border-width 0;
+
+        // stylelint-disable-next-line selector-max-universal
+        > * {
+          border-width: 0 $table-border-width;
+        }
+      }
+    }
+
+    // Blockquotes
+    // Blockquote CSS
+    blockquote {
+      border-top-right-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
+      border-left: 5px solid $lightGray-color;
+      background-color: $lighterGray-color;
+      color: #1a1a1a;
+      font-family: $font-family-quotes;
+      font-size: $font-size-lg;
+      font-style: italic;
+      line-height: 1.8em;
+      padding: 1em 2em;
+      position: relative;
+      transition: 0.2s border ease-in-out;
+      z-index: 0;
+
+      p {
+        margin-bottom: 0 !important;
+      }
+
+      cite {
+        display: block;
+        font-size: $font-size-sm;
+        line-height: 1.8em;
+        margin-top: $margin-base;
+      }
+    }
+
+    .footnotes {
+      font-size: $font-size-sm;
+      font-family: $font-family-footnotes;
+      p {
+        margin: 0;
+      }
+    }
+  }
+}

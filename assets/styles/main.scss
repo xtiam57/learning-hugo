@@ -1,48 +1,20 @@
-@import "variables";
 @import "reset";
-@import "fonts";
-@import "highlight";
 
-:root {
-  --primary-color: #{$primary-color};
-  --secondary-color: #{$secondary-color};
-  --darkGray-color: #{$darkGray-color};
-  --lightGray-color: #{$lightGray-color};
-  --black-color: #{$black-color};
-  --white-color: #{$white-color};
-  --body-font-family: #{$body-font-family};
-  --code-font-family: #{$code-font-family};
-  --margin-size: #{$margin-size};
-}
 
-body {
-  font-family: $body-font-family;
-}
+// :root {
+//   // Custom variable values only support SassScript inside `#{}`.
+//   @each $color, $value in $colors {
+//     --bs-#{$color}: #{$value};
+//   }
 
-.article,
-article {
-  font-size: 1rem;
-  line-height: 1.75;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100vw;
-  max-width: 65ch;
-  padding-bottom: 1.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+//   @each $color, $value in $theme-colors {
+//     --bs-#{$color}: #{$value};
+//   }
 
-  p {
-    margin-top: $margin-size;
-    margin-bottom: $margin-size;
-    color: #4a5568;
-  }
-
-  .pagination {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: solid 1px $lightGray-color;
-    padding-top: $margin-size;
-  }
-}
+//   // Use `inspect` for lists so that quoted items keep the quotes.
+//   // See https://github.com/sass/sass/issues/2383#issuecomment-336349172
+//   --bs-font-sans-serif: #{inspect($font-family-sans-serif)};
+//   --bs-font-monospace: #{inspect($font-family-monospace)};
+//   --bs-gradient: #{$gradient};
+// }
 

@@ -1,33 +1,78 @@
 // Main Colors
-$primary-color: #BE0A75 !default;
-$secondary-color: #01FFFF !default;
-$darkGray-color: #1f2125 !default;
-$lightGray-color: #E2E8F0 !default;
-$black-color: #000000 !default;
-$white-color: #FFFFFF !default;
+$primary-color:               #e21791 !default;
+$secondary-color:             #01FFFF !default;
+$darkGray-color:              #1f2125 !default;
+$lightGray-color:             #E2E8F0 !default;
+$lighterGray-color:             lighten($lightGray-color, 6%) !default;
+$black-color:                 #000000 !default;
+$white-color:                 #FFFFFF !default;
+
+// Body
+$body-text-color:             #4a5568 !default;
+$body-text-align:               left !default;
+$body-bg:                     #fff !default;
+$body-max-width:                70ch;
 
 // Fonts
-$body-font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-$code-font-family: "Fira Code", Consolas, Menlo, Monaco, source-code-pro, monospace;
+$font-family-base:            'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !default;
+$font-family-code:            "Fira Code", Consolas, Menlo, Monaco, source-code-pro, monospace !default;
+$font-family-quotes:          Georgia, Times, "Times New Roman", serif;
+$font-family-footnotes:       'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif !default;
+
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-sm:                $font-size-base * .875 !default;
+$font-size-lg:                $font-size-base * 1.25 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            700 !default;
+$line-height-base:            1.75 !default;
+$h1-font-size:                $font-size-base * 2.5 !default;
+$h2-font-size:                $font-size-base * 2 !default;
+$h3-font-size:                $font-size-base * 1.75 !default;
+$h4-font-size:                $font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-base !default;
 
 // Margins
-$margin-size: 1.25em;
+$margin-base:                 1rem !default;
+$paragraph-margin-bottom:     $margin-base * 1.25 !default;
+$highlight-margin-bottom:     $margin-base * 1.25 !default;
+$table-margin-bottom:         $margin-base * 1.25 !default;
+$hr-margin-y:                 $margin-base !default;
+
+// Borders
+$border-radius:               .25rem !default;
+$border-base:                 1px solid $lightGray-color;
 
 // Highlight (code)
-$highlight-background: #2D3748 !default; // #282c34 !default;
-$highlight-blue: #61afef !default;
-$highlight-pink: #e06c75 !default;
-$highlight-orange: #eea112 !default;
-$highlight-yellow: #e5c07b !default;
-$highlight-green: #98c379 !default;
+$highlight-background:        #2D3748 !default; // #282c34 !default;
+$highlight-blue:              #61afef !default;
+$highlight-pink:              #e06c75 !default;
+$highlight-orange:            #eea112 !default;
+$highlight-yellow:            #e5c07b !default;
+$highlight-green:             #98c379 !default;
 
-$highlight-lang-css: #2caddd !default;
-$highlight-lang-html: #ff4800 !default;
-$highlight-lang-javascript: #f7df1e !default;
-$highlight-lang-react: #61dbfb !default;
-$highlight-lang-angular: #dd1b16 !default;
+$highlight-lang-css:          #2caddd !default;
+$highlight-lang-html:         #ff4800 !default;
+$highlight-lang-javascript:   #f7df1e !default;
+$highlight-lang-react:        #61dbfb !default;
+$highlight-lang-angular:      #dd1b16 !default;
 
-$highlight-font-size: 14px !default;
-$highlight-radius: 4px !default;
-$highlight-padding: 20px !default;
+$highlight-font-size:         $font-size-sm !default;
+$highlight-radius:            $border-radius !default;
+$highlight-padding:           20px !default;
+
+// Links
+$link-color:                  $primary-color !default;
+$link-decoration:             none !default;
+$link-hover-color:            darken($link-color, 5%) !default;
+$link-hover-decoration:       underline !default;
+
+// Tables
+$table-cell-padding-y:        .5rem !default;
+$table-cell-padding-x:        .5rem !default;
+$table-text-color:            $body-text-color !default;
+$table-border-color:          $lightGray-color !default;
+$table-border-width:          1px !default;
+
+
+

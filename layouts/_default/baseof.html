@@ -4,13 +4,7 @@
 {{ partial "head" . }}
 
 <body>
-  <h1>{{ .Page.Title }}</h1>
-  <p>{{ .Page.Description }}</p>
-
-  <section>
-    {{ block "content" . }}{{ end }}
-  </section>
-
+  {{ block "content" . }}{{ end }}
 </body>
 
 </html>

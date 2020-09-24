@@ -2,7 +2,7 @@
 
 code,
 pre {
-  font-family: $code-font-family;
+  font-family: $font-family-code;
   hyphens: none;
   line-height: 1.5;
   overflow: auto;
@@ -12,6 +12,7 @@ pre {
   word-break: normal;
   word-spacing: normal;
   word-wrap: normal;
+
 }
 
 pre {
@@ -21,6 +22,7 @@ pre {
   margin: 0;
   overflow: auto;
   padding: $highlight-padding;
+  margin-bottom: $highlight-margin-bottom;
 }
 
 code {
@@ -38,10 +40,12 @@ code {
 .highlight,
 pre.highlight {
   border-radius: $highlight-radius;
+  margin-bottom: $highlight-margin-bottom;
 }
 
 .highlight {
   position: relative;
+
   // box-shadow: 0 20px 60px rgba(0,0,0,.3);
 
   .ge {
@@ -173,30 +177,10 @@ pre.highlight {
     color: #56b6c2;
   }
 
-  .language-css::before {
-    background: $highlight-lang-css;
-    color: #fff;
-  }
-
-  .language-html::before {
-    background: $highlight-lang-html;
-    color: #fff;
-  }
-
-  .language-javascript::before {
+  .language-javascript::before,
+  .language-js::before {
     background: $highlight-lang-javascript;
     color: #000;
-  }
-
-  .language-jsx::before,
-  .language-react::before {
-    background: $highlight-lang-react;
-    color: #000;
-  }
-
-  .language-angular::before {
-    background: $highlight-lang-angular;
-    color: #fff;
   }
 
   .language-fallback::before {
@@ -204,9 +188,9 @@ pre.highlight {
   }
 
   code::before {
-    background: #fff;
+    background: $primary-color;
     border-radius: 4px;
-    color: #000;
+    color: #fff;
     content: attr(data-lang);
     font-size: 12px;
     padding: 2px 8px;
