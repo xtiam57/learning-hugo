@@ -2,17 +2,20 @@
 @import "highlight";
 
 body {
+  box-sizing: border-box;
   min-height: 100vh;
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto 50px;
+  grid-template-columns: 100%;
+  grid-template-rows: 50px auto 50px;
   grid-template-areas:
+    "nav"
     "main"
     "footer";
 }
 
 main {
-  grid-area: "main";
+  grid-area: main;
+  overflow: hidden;
 
   .summary {
     background-color: $lighterGray-color;
@@ -23,7 +26,6 @@ main {
   article {
     font-size: $font-size-base;
     line-height: $line-height-base;
-    width: 100vw;
     max-width: $body-max-width;
     margin: $margin-base auto;
     padding-left: $margin-base;
@@ -46,10 +48,41 @@ main {
       }
     }
 
+    // Thanks to https://css-tricks.com/full-width-containers-limited-width-parents/
+    .full-width {
+      width: 100vw;
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      margin-top: $margin-base * 4;
+      margin-bottom: $margin-base * 4;
+    }
+
     img {
       vertical-align: middle;
       width: 100%;
       height: auto;
+    }
+
+    figure {
+      img {
+        margin-bottom: $margin-base * 0.5;
+      }
+
+      figcaption {
+        text-align: center;
+        font-style: italic;
+        font-size: $font-size-sm;
+        padding: 0 $margin-base;
+        max-width: $body-max-width;
+        margin: 0 auto $margin-base;
+
+        p {
+          margin: 0;
+        }
+      }
     }
 
     // Table styles
@@ -105,6 +138,7 @@ main {
       position: relative;
       transition: 0.2s border ease-in-out;
       z-index: 0;
+      box-shadow: 0 11px 21px -5px rgba(0, 0, 0, 0.44);
 
       p {
         margin-bottom: 0 !important;
