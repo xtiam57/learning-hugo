@@ -17,11 +17,6 @@ main {
   grid-area: main;
   overflow: hidden;
 
-  .summary {
-    background-color: $lighterGray-color;
-    text-align: center;
-  }
-
   .article,
   article {
     font-size: $font-size-base;

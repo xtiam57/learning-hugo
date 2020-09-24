@@ -1,6 +1,24 @@
-<section role="summary" class="summary">
-  <h1>{{ .Page.Title }}</h1>
-  <p>{{ .Page.Summary }}</p>
-  {{ partial "readingtime" . }}
-  <p>Words: {{ .WordCount }}</p>
+{{ $styles := resources.Get "styles/summary.scss" }}
+{{ $styles = $styles | toCSS | minify | fingerprint }}
+<style>{{ $styles.Content | safeCSS }}</style>
+
+{{ with .Params.Cover }}
+<style>
+  .summary.with-cover {
+    background-image: url({{ . }});
+  }
+</style>
+{{ end }}
+
+<section role="summary" class="summary {{ with .Params.Cover }}{{ "with-cover" }}{{ end }}">
+  <div class="summary-wrapper">
+    <h1>{{ .Page.Title }}</h1>
+    {{ with .Page.Summary }}
+    <p class="lead">{{ . }}</p>
+    {{ end }}
+    <p class="summary-info">
+      <strong>Christiam Mena</strong> · {{ .PublishDate.Format "January 2, 2006" }} · {{.ReadingTime}}m · {{ .WordCount }}
+      words
+    </p>
+    </div>
 </section>

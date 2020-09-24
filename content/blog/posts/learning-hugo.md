@@ -1,26 +1,15 @@
 ---
 title: Learning Hugo
 description: We are learning HUGO
-summary: We are learning HUGO!
+summary: Using MDX you can overwrite the default components that are provided by markdown. In this blog I will use this to add captions to images.
+cover: /images/cover.png
 date: 2020-09-17T16:59:56-05:00
 draft: false
 ---
 
-
-
-## This is a title
-
 Using MDX you can overwrite the default components that are provided by markdown. In this blog I will use this to add captions to images.
 
-- [x] One task
-
-
-
 Using MDX you can overwrite the default components that are provided by markdown. In this blog I will use this to add captions to images.
-
-- uno
-- dos
-- tres
 
 ```json
 {
@@ -55,7 +44,7 @@ const getSecondsDiff = (timestamp) => {
 }
 ```
 
-{{< figure src="/images/cover.png" caption="Using MDX you can overwrite the default components." class="full-width" >}}
+{{< figure src="/images/cover2.png" caption="Using MDX you can overwrite the default components." class="full-width" >}}
 
 Then we create a React component, where each of the keys are passed inside props
 
