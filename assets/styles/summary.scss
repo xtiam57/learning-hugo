@@ -3,12 +3,12 @@
 .summary {
   background-color: $lighterGray-color;
   margin-bottom: $margin-base;
-  text-align: center;
+  // text-align: center;
 
   .summary-wrapper {
     max-width: $body-max-width;
     margin: 0 auto;
-    padding: ($margin-base * 4) $margin-base;
+    padding: ($margin-base * 4) ($margin-base * 2);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -33,7 +33,7 @@
     background-color: rgba(0, 0, 0, 0.5) !important;
     background-blend-mode: multiply;
     color: white;
-    margin-bottom: $margin-base * 4;
+    margin-bottom: $margin-base * 2.5;
 
     h1,
     .lead,
