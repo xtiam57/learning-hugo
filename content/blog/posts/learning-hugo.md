@@ -6,6 +6,8 @@ date: 2020-09-17T16:59:56-05:00
 draft: false
 ---
 
+
+
 ## This is a title
 
 Using MDX you can overwrite the default components that are provided by markdown. In this blog I will use this to add captions to images.
@@ -52,6 +54,8 @@ const getSecondsDiff = (timestamp) => {
   return (Date.now() - timestamp) / 1000
 }
 ```
+
+{{< figure src="/images/cover.png" caption="Using MDX you can overwrite the default components." class="full-width" >}}
 
 Then we create a React component, where each of the keys are passed inside props
 

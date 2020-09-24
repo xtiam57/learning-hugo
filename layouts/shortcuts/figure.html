@@ -1,0 +1,25 @@
+<style>
+  @keyframes lazyload {
+    from {
+      filter: blur(5px);
+      opacity: 0;
+    }
+
+    to {
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+  .lazyload {
+    animation-duration: .3s;
+    animation-name: lazyload;
+  }
+</style>
+
+<figure {{ with .Get "class" }} class="{{ . }}" {{ end }}>
+  <img {{ with .Get "caption" }}alt="{{ . }}" {{ end }} class="lazyload" loading="lazy" src="{{ .Get "src" }}" />
+  {{ with .Get "caption" }}
+  <figcaption>{{ . }}</figcaption>
+  {{ end }}
+</figure>
