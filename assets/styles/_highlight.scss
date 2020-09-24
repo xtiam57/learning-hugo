@@ -23,6 +23,7 @@ pre {
   overflow: auto;
   padding: $highlight-padding;
   margin-bottom: $highlight-margin-bottom;
+  box-shadow: 0 11px 21px -5px rgba(0,0,0,.44);
 }
 
 code {
@@ -45,8 +46,7 @@ pre.highlight {
 
 .highlight {
   position: relative;
-
-  // box-shadow: 0 20px 60px rgba(0,0,0,.3);
+  box-shadow: 0 11px 21px -5px rgba(0,0,0,.44);
 
   .ge {
     font-style: italic;
