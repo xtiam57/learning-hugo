@@ -10,15 +10,26 @@
 </style>
 {{ end }}
 
-<section role="summary" class="summary {{ with .Params.Cover }}{{ "with-cover" }}{{ end }}">
-  <div class="summary-wrapper">
+<section class="summary {{ with .Params.Cover }}{{ "with-cover" }}{{ end }}">
+  <summary class="summary-wrapper">
     <h1>{{ .Page.Title }}</h1>
-    {{ with .Page.Summary }}
+    {{ if .Page.Summary }}
+      {{ with .Page.Summary }}
+      <p class="lead">{{ . }}</p>
+      {{ end }}
+    {{ else }}
+    {{ with .Page.Description }}
     <p class="lead">{{ . }}</p>
     {{ end }}
+    {{ end }}
     <p class="summary-info">
-      <strong>Christiam Mena</strong> · {{ .PublishDate.Format "January 2, 2006" }} · {{.ReadingTime}}m · {{ .WordCount }}
+      By <strong>Christiam Mena</strong> ·
+      <time datetime="{{ .PublishDate.Format "January 2, 2006" }}">
+        {{ .PublishDate.Format "January 2, 2006" }}
+      </time> ·
+      {{.ReadingTime}}m ·
+      {{ .WordCount }}
       words
     </p>
-    </div>
+    </summary>
 </section>
