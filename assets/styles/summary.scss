@@ -28,7 +28,7 @@
 
     .summary-info {
       font-size: $font-size-sm;
-      opacity: 0.65;
+      color: lighten($body-text-color, 25%);
     }
   }
 
@@ -59,6 +59,10 @@
     .lead,
     .summary-info {
       text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .summary-info {
+      color: rgba(255, 255, 255, 0.7);
     }
   }
 }
