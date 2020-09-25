@@ -4,7 +4,6 @@ description: First post description here
 summary: Using MDX you can overwrite the default components that are provided by markdown. In this blog I will use this to add captions to images.
 date: 2020-09-23T11:02:54-05:00
 draft: false
-thumbnail: /images/cover4.jpg
 author: Pepito Perez
 ---
 
