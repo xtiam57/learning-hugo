@@ -8,4 +8,6 @@
   {{ $style := resources.Get "styles/main.scss" }}
   {{ $style = $style | toCSS | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $style.Permalink }}">
+
+  {{ partial "site-favicons" . }}
 </head>

@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 
-{{ partial "head" . }}
+{{ partial "site-head" . }}
+
+{{ $styles := resources.Get "styles/blog.scss" }}
+{{ $styles = $styles | toCSS | minify | fingerprint }}
+<style>{{ $styles.Content | safeCSS }}</style>
 
 <body>
-  {{ partial "nav" .}}
+  {{ partial "site-navbar" . }}
 
   <main>
-    <h1>Blog</h1>
-    <h4>{{ .Page.Title }}</h4>
-    <p>{{ .Description }}</p>
-    <ul>
-      {{ range .Pages }}
-      <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-      {{ end }}
-    </ul>
+    <section class="content-wrapper">
+      <h1>Blog</h1>
+      <h4>{{ .Page.Title }}</h4>
+      <p>{{ .Description }}</p>
+      <ul>
+        {{ range (.Paginate .RegularPagesRecursive).Pages }}
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        {{ end }}
+      </ul>
+      {{ partial "blog-pagination" . }}
+      </section>
   </main>
 
-  {{ partial "footer" .}}
+  {{ partial "site-footer" . }}
 </body>
 
 </html>

@@ -5,28 +5,12 @@
 <style>{{ $styles.Content | safeCSS }}</style>
 
 <main>
-  {{ partial "summary" . }}
+  {{ partial "articles-summary" . }}
 
   <article role="article" class="container">
     {{ .Content }}
 
-    <section role="pagination" class="pagination">
-      <div class="prev-post">
-        {{ with .PrevInSection }}
-        <a href="{{ .Permalink }}">
-          &larr; {{ .Title }}
-        </a>
-        {{ end }}
-      </div>
-
-      <div class="next-post">
-        {{ with .NextInSection }}
-        <a href="{{ .Permalink }}">
-          {{ .Title }} &rarr;
-        </a>
-        {{ end }}
-      </div>
-    </section>
+    {{ partial "articles-pagination" . }}
 
   </article>
 </main>

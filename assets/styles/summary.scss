@@ -1,4 +1,4 @@
-@import "variables";
+@import 'variables';
 
 .summary {
   // background-color: $lighterGray-color;
@@ -10,7 +10,7 @@
   .summary-wrapper {
     max-width: $body-max-width;
     margin: 0 auto;
-    padding: 0 ($margin-base * 2);
+    padding: 0 $margin-base;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -28,7 +28,7 @@
 
     .summary-info {
       font-size: $font-size-sm;
-      opacity: 0.8;
+      opacity: 0.65;
     }
   }
 
@@ -41,7 +41,7 @@
     background-blend-mode: multiply;
     color: white;
     margin-bottom: $margin-base * 2.5;
-    padding: ($margin-base * 4) 0;
+    padding: ($margin-base * 2.5) 0;
 
     h1 {
       color: white;
@@ -49,6 +49,10 @@
 
     .lead {
       color: $lightGray-color;
+    }
+
+    .summary-wrapper {
+      padding: 0 ($margin-base * 2);
     }
 
     h1,

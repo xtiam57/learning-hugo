@@ -1,0 +1,11 @@
+{{ if (.Params.toc) }}
+{{ $styles := resources.Get "styles/toc.scss" }}
+{{ $styles = $styles | toCSS | minify | fingerprint }}
+<style>{{ $styles.Content | safeCSS }}</style>
+
+<details class="toc" open>
+  <div>
+    {{.TableOfContents}}
+  </div>
+</details>
+{{ end }}

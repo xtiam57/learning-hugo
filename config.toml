@@ -3,6 +3,7 @@ languageCode = "es-ES"
 title = "My New Hugo Site!"
 
 enableEmoji = true
+paginate = 2
 
 [markup]
   [markup.highlight]
@@ -11,4 +12,4 @@ enableEmoji = true
     tabWidth = 2
 
 [markup.goldmark.renderer]
-unsafe= true
+  unsafe = true

@@ -5,6 +5,7 @@ summary: Using MDX you can overwrite the default components that are provided by
 cover: /images/cover.png
 date: 2020-09-17T16:59:56-05:00
 draft: false
+toc: true
 ---
 
 Using MDX you can overwrite the default components that are provided by markdown. In this blog I will use this to add captions to images.
@@ -113,14 +114,9 @@ Hello Moto.
 
 Enable typographer option to see result.
 
-(c) (C) (r) (R) (tm) (TM) (p) (P) +-
-
-test.. test... test..... test?..... test!....
-
-!!!!!! ???? ,,  -- ---
-
-"Smartypants, double quotes" and 'single quotes'
-
+{{< hero >}}
+A conditional *statement is used here* so that no excess **formatting is introduced** if no title is present. The standard figure layout is used as a tag is there specifically for captions.
+{{< /hero >}}
 
 ## Emphasis
 
@@ -169,6 +165,7 @@ Start numbering with offset:
 
 57. foo
 1. bar
+
 
 
 ## Code

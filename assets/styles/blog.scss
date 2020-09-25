@@ -1,0 +1,30 @@
+@import 'variables';
+@import 'highlight';
+
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 50px auto 50px;
+  grid-template-areas:
+    'navbar'
+    'main'
+    'footer';
+}
+
+main {
+  grid-area: main;
+  overflow: hidden;
+
+  .content-wrapper {
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    max-width: $body-max-width;
+    margin: $margin-base auto;
+    padding-left: $margin-base;
+    padding-right: $margin-base;
+
+
+  }
+}

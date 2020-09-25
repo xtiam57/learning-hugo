@@ -1,5 +1,5 @@
-@import "variables";
-@import "highlight";
+@import 'variables';
+@import 'highlight';
 
 body {
   box-sizing: border-box;
@@ -8,9 +8,9 @@ body {
   grid-template-columns: 100%;
   grid-template-rows: 50px auto 50px;
   grid-template-areas:
-    "nav"
-    "main"
-    "footer";
+    'navbar'
+    'main'
+    'footer';
 }
 
 main {
@@ -32,6 +32,7 @@ main {
       align-items: center;
       border-top: $border-base;
       padding-top: $margin-base;
+      font-weight: $font-weight-bold;
 
       .prev-post,
       .next-post {
@@ -53,6 +54,25 @@ main {
       margin-right: -50vw;
       margin-top: $margin-base * 4;
       margin-bottom: $margin-base * 3;
+    }
+
+    .hero {
+      background-color: $lighterGray-color;
+      color: #1a1a1a;
+      font-family: $font-family-quotes;
+      font-size: $font-size-lg;
+      line-height: 1.8em;
+      padding: 1em 2em;
+      position: relative;
+      margin-top: $margin-base * 2;
+      margin-bottom: $margin-base * 1.5;
+
+      .hero-content {
+        max-width: $body-max-width;
+          margin: $margin-base auto;
+          padding-left: $margin-base;
+          padding-right: $margin-base;
+      }
     }
 
     img {
@@ -131,8 +151,6 @@ main {
       line-height: 1.8em;
       padding: 1em 2em;
       position: relative;
-      transition: 0.2s border ease-in-out;
-      z-index: 0;
       // box-shadow: 0 11px 21px -5px rgba(0, 0, 0, 0.44);
 
       p {

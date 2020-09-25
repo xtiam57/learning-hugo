@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-{{ partial "head" . }}
+{{ partial "site-head" . }}
 
 {{ $styles := resources.Get "styles/home.scss" }}
 {{ $styles = $styles | toCSS | minify | fingerprint }}

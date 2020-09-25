@@ -1,17 +1,25 @@
 @import "variables";
 
 footer {
-  align-items: center;
   background-color: $primary-color;
-  display: flex;
   grid-area: footer;
-  height: 100%;
-  justify-content: center;
   min-height: 50px;
+  color: $white-color;
+  font-size: $font-size-sm * 0.95;
 
-  nav {
+  > nav {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
     max-width: $body-max-width;
     margin: 0 auto;
+    padding-left: $margin-base;
+    padding-right: $margin-base;
+  }
+
+  p {
+    margin: 0;
   }
 
   a,
