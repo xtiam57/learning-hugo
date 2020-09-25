@@ -1,5 +1,5 @@
 ---
-title: Blog _index.md title
-description: The posts list description
+title: Christiam Mena Blog
+description: Artículos, vídeos, recursos y tutoriales sobre Desarrollo Web, libros y más...
 type: page
 ---
