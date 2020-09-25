@@ -1,4 +1,4 @@
 ---
-title: _index.md title
+title: Christiam Mena Website
 description: Some text for the main description
 ---

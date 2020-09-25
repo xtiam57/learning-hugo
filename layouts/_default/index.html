@@ -8,20 +8,22 @@
 <style>{{ $styles.Content | safeCSS }}</style>
 
 <body>
-  <main id="main">
-    <img class="profile-pic" src="images/profile.jpg" alt="Profile Image" />
-    <img class="logo-pic" src="images/logo-negative.svg" alt="Profile Image" />
-    <p class="lead">
-      Experto en karate bajo el agua, apasionado lector de cajas de
-      cereal y superheroe asintomático.
+  <div class="content-wrapper">
+    <main id="main">
+      <img class="profile-pic" src="images/profile.jpg" alt="Profile Image" />
+      <img class="logo-pic" src="images/logo-negative.svg" alt="Profile Image" />
+      <p class="lead">
+        Experto en karate bajo el agua, apasionado lector de cajas de
+        cereal y superheroe asintomático.
       </p>
-    <p class="links">
-      <a href="{{ "/blog" | relURL }}">Blog</a> ·
-      <a href="https://github.com/xtiam57" target="_blank">Github</a> ·
-      <a href="https://twitter.com/xtiam57" target="_blank">Twitter</a> ·
-      <a href="https://www.instagram.com/xtiam57/" target="_blank">Instagram</a>
-    </p>
-  </main>
+      <p class="links">
+        <a href="{{ "/blog" | relURL }}">Blog</a> ·
+        <a href="https://github.com/xtiam57" target="_blank">Github</a> ·
+        <a href="https://twitter.com/xtiam57" target="_blank">Twitter</a> ·
+        <a href="https://www.instagram.com/xtiam57/" target="_blank">Instagram</a>
+      </p>
+    </main>
+  </div>
 </body>
 
 </html>

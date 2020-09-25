@@ -1,8 +1,9 @@
 @import "variables";
 
 body {
-
   background-color: $darkGray-color;
+  overflow: hidden;
+  height: 100vh;
   // background-position: bottom left;
   // background-size: cover;
   // background-image: url(/images/bg.jpg);
@@ -13,11 +14,13 @@ body {
   // grid-template-rows: auto 50px;
   // grid-template-rows: auto;
 
-  display: flex;
-  align-items: center;
-  min-height: 100vh;
-  min-width: 100vw;
-  text-align: center;
+  .content-wrapper {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
 
   // &:after {
   //   content: "";
@@ -35,19 +38,20 @@ body {
   // }
 
   main {
+    width: 100%;
+    max-width: $body-max-width;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     grid-area: main;
     line-height: 1.75;
     margin-left: auto;
     margin-right: auto;
-    width: 100vw;
-    max-width: $body-max-width;
+
     padding-bottom: $margin-base;
     padding-top: $margin-base;
     padding-left: 1rem;
     padding-right: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
     .profile-pic {
       border-radius: 999px;
