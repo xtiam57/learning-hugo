@@ -1,37 +1,38 @@
 @import "variables";
 
 body {
-  align-items: center;
+
   background-color: $darkGray-color;
-  background-position: bottom left;
-  background-size: cover;
+  // background-position: bottom left;
+  // background-size: cover;
   // background-image: url(/images/bg.jpg);
-  background-repeat: no-repeat;
-  color: #fff;
-  display: grid;
-  grid-template-columns: 100%;
+  // background-repeat: no-repeat;
+  // color: #fff;
+  // display: grid;
+  // grid-template-columns: 100%;
   // grid-template-rows: auto 50px;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "main";
-    // "footer";
+  // grid-template-rows: auto;
+
+  display: flex;
+  align-items: center;
   min-height: 100vh;
+  min-width: 100vw;
   text-align: center;
 
-  &:after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-image: radial-gradient($secondary-color 1px, transparent 0);
-    opacity: 0.25;
-    background-size: 30px 30px;
-    background-position: -19px -19px;
-    z-index: -1;
-  }
+  // &:after {
+  //   content: "";
+  //   display: block;
+  //   position: absolute;
+  //   left: 0;
+  //   right: 0;
+  //   top: 0;
+  //   bottom: 0;
+  //   background-image: radial-gradient($secondary-color 1px, transparent 0);
+  //   opacity: 0.25;
+  //   background-size: 30px 30px;
+  //   background-position: -19px -19px;
+  //   z-index: -1;
+  // }
 
   main {
     grid-area: main;
@@ -39,7 +40,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 100vw;
-    max-width: 65ch;
+    max-width: $body-max-width;
     padding-bottom: $margin-base;
     padding-top: $margin-base;
     padding-left: 1rem;
@@ -51,13 +52,13 @@ body {
     .profile-pic {
       border-radius: 999px;
       // box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
-      height: 10em;
-      width: 10em;
+      height: 8em;
+      width: 8em;
       margin-bottom: $margin-base * 1.5;
     }
 
     .logo-pic {
-      width: 75%;
+      width: 80%;
       max-width: 35ch;
       margin-bottom: $margin-base * 2;
     }
@@ -65,9 +66,17 @@ body {
     .lead {
       color: $secondary-color;
       // font-family: $font-family-code;
-      font-size: calc(1rem + 0.25vmin);
+      font-size: calc(1rem + 0.3vmin);
       line-height: 1.7;
       // text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .links {
+      color: $primary-color;
+      a {
+        display: inline-block;
+        margin: 0 ($margin-base * 0.3);
+      }
     }
   }
 }
