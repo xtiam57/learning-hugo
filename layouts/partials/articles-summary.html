@@ -23,7 +23,11 @@
     {{ end }}
     {{ end }}
     <p class="summary-info">
-      By <strong>Christiam Mena</strong> ·
+      {{ if .Params.Author }}
+      By <strong>{{ .Params.Author }}</strong> ·
+      {{ else }}
+        By <strong>Christiam Mena</strong> ·
+      {{ end }}
       <time datetime="{{ .PublishDate.Format "January 2, 2006" }}">
         {{ .PublishDate.Format "January 2, 2006" }}
       </time> ·
