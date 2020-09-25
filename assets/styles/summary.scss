@@ -1,9 +1,10 @@
 @import "variables";
 
 .summary {
-  background-color: $lighterGray-color;
+  // background-color: $lighterGray-color;
+  border-bottom: $border-base;
   margin-bottom: $margin-base;
-  padding: ($margin-base * 1.5) 0;
+  padding: ($margin-base * 1.3) 0;
   // text-align: center;
 
   .summary-wrapper {
@@ -14,6 +15,11 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    cursor: inherit;
+
+    h1 {
+      color: $darkGray-color;
+    }
 
     .lead {
       font-size: calc(1rem + 0.3vmin);

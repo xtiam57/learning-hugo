@@ -122,7 +122,7 @@ main {
     blockquote {
       border-top-right-radius: $border-radius;
       border-bottom-right-radius: $border-radius;
-      border-left: 5px solid $lightGray-color;
+      border-left: 5px solid $primary-color;
       background-color: $lighterGray-color;
       color: #1a1a1a;
       font-family: $font-family-quotes;
@@ -133,7 +133,7 @@ main {
       position: relative;
       transition: 0.2s border ease-in-out;
       z-index: 0;
-      box-shadow: 0 11px 21px -5px rgba(0, 0, 0, 0.44);
+      // box-shadow: 0 11px 21px -5px rgba(0, 0, 0, 0.44);
 
       p {
         margin-bottom: 0 !important;
