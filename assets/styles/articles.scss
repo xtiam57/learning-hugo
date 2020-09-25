@@ -56,6 +56,22 @@ main {
       margin-bottom: $margin-base * 3;
     }
 
+    .almost-width {
+      width: 100vw;
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      margin-top: $margin-base * 4;
+      margin-bottom: $margin-base * 3;
+      padding: 0 14vw;
+
+      @media (max-width: 960px) {
+        padding: 0;
+      }
+    }
+
     .hero {
       background-color: $lighterGray-color;
       color: #1a1a1a;
@@ -69,9 +85,9 @@ main {
 
       .hero-content {
         max-width: $body-max-width;
-          margin: $margin-base auto;
-          padding-left: $margin-base;
-          padding-right: $margin-base;
+        margin: $margin-base auto;
+        padding-left: $margin-base;
+        padding-right: $margin-base;
       }
     }
 
