@@ -1,5 +1,5 @@
 ---
-title: Learning Hugo
+title: "Learning Hugo: A full example of the article power"
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus sapien ipsum, eget egestas urna pulvinar sit amet.
 cover: /images/cover3.jpg
