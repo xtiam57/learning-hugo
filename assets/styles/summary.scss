@@ -1,11 +1,9 @@
 @import 'variables';
 
 .summary {
-  // background-color: $lighterGray-color;
   border-bottom: $border-base;
   margin-bottom: $margin-base;
   padding: ($margin-base * 1.3) 0;
-  // text-align: center;
 
   .summary-wrapper {
     max-width: $body-max-width;
@@ -23,12 +21,13 @@
 
     .lead {
       font-size: calc(1rem + 0.3vmin);
-      margin-bottom: $margin-base * 0.65;
+      margin: 0;
     }
 
     .summary-info {
       font-size: $font-size-sm;
       color: lighten($body-text-color, 25%);
+      margin-top: $margin-base * 0.65;
     }
   }
 

@@ -12,16 +12,40 @@
 
   <main>
     <section class="content-wrapper">
-      <h1>Blog</h1>
-      <h4>{{ .Page.Title }}</h4>
-      <p>{{ .Description }}</p>
       <ul>
         {{ range (.Paginate .RegularPagesRecursive).Pages }}
-        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        <li>
+          {{ if .Params.Thumbnail }}
+          <img {{ with .Params.Thumbnail }} src="{{ . }}" {{ end}} lass="lazyload" loading="lazy" alt="{{ .Title }}">
+          {{ end }}
+          <div class="post">
+            <h4>
+              <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </h4>
+            <p class="description">
+              {{- .Params.Summary | default .Description -}}
+            </p>
+          </div>
+          <p class="info">
+            {{ if .Params.Author }}
+            By <strong>{{ .Params.Author }}</strong> ·
+            {{ else }}
+            By <strong>Christiam Mena</strong> ·
+            {{ end }}
+            <time datetime="{{ .PublishDate.Format "January 2, 2006" }}">
+              {{ .PublishDate.Format "January 2, 2006" }}
+            </time> ·
+            {{.ReadingTime}} minutos de lectura ·
+            {{ .WordCount }}
+            palabras
+          </p>
+        </li>
         {{ end }}
       </ul>
+      <hr />
+
       {{ partial "blog-pagination" . }}
-      </section>
+    </section>
   </main>
 
   {{ partial "site-footer" . }}

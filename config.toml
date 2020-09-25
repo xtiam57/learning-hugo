@@ -3,7 +3,7 @@ languageCode = "es-ES"
 title = "My New Hugo Site!"
 
 enableEmoji = true
-paginate = 2
+paginate = 10
 
 [markup]
   [markup.highlight]

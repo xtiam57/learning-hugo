@@ -13,6 +13,23 @@ body {
     'footer';
 }
 
+@keyframes lazyload {
+  from {
+    filter: blur(5px);
+    opacity: 0;
+  }
+
+  to {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.lazyload {
+  animation-duration: 0.3s;
+  animation-name: lazyload;
+}
+
 main {
   grid-area: main;
   overflow: hidden;
@@ -20,11 +37,60 @@ main {
   .content-wrapper {
     font-size: $font-size-base;
     line-height: $line-height-base;
-    max-width: $body-max-width;
     margin: $margin-base auto;
+    max-width: $body-max-width;
     padding-left: $margin-base;
     padding-right: $margin-base;
 
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      list-style: none;
+      margin: 0;
+      padding: 0;
 
+      li {
+        border: $border-base;
+        border-top-color: $secondary-color;
+        border-top-width: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 0 $margin-base;
+        width: 100%;
+        border-bottom-left-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+
+        .post {
+          padding: ($margin-base * 1.5) ($margin-base * 2) 0;
+
+          h4 {
+            margin-bottom: $margin-base * 0.5;
+          }
+
+          .description {
+            font-size: $font-size-sm;
+            margin: 0;
+          }
+        }
+
+        .info {
+          color: lighten($body-text-color, 30%);
+          font-size: $font-size-sm * 0.875;
+          margin-top: $margin-base * 1.5;
+          padding: 0 ($margin-base * 2);
+        }
+
+        @media screen and (min-width: $body-max-width) {
+          width: 49%;
+        }
+      }
+    }
   }
 }

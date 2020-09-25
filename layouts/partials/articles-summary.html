@@ -13,15 +13,9 @@
 <section class="summary {{ with .Params.Cover }}{{ "with-cover" }}{{ end }}">
   <summary class="summary-wrapper">
     <h1>{{ .Page.Title }}</h1>
-    {{ if .Page.Summary }}
-      {{ with .Page.Summary }}
-      <p class="lead">{{ . }}</p>
-      {{ end }}
-    {{ else }}
-    {{ with .Page.Description }}
-    <p class="lead">{{ . }}</p>
-    {{ end }}
-    {{ end }}
+    <p class="lead">
+      {{- .Params.Summary | default .Description -}}
+    </p>
     <p class="summary-info">
       {{ if .Params.Author }}
       By <strong>{{ .Params.Author }}</strong> ·
