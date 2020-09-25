@@ -18,5 +18,14 @@
     margin: 0 auto;
     padding-left: $margin-base;
     padding-right: $margin-base;
+
+    .navbar-links {
+      color: $primary-color;
+
+      a {
+        display: inline-block;
+        padding: 0 $margin-base * 0.5;
+      }
+    }
   }
 }

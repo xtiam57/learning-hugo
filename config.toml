@@ -1,6 +1,6 @@
 baseURL = "https://xtiam57.vercel.app/"
 languageCode = "es-ES"
-title = "My New Hugo Site!"
+title = "Christiam Mena Website"
 
 enableEmoji = true
 paginate = 10
