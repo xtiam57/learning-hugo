@@ -26,6 +26,22 @@ main {
     padding-left: $margin-base;
     padding-right: $margin-base;
 
+    @keyframes lazyload {
+      from {
+        min-height: 200px;
+        opacity: 0;
+      }
+
+      to {
+        min-height: auto;
+        opacity: 1;
+      }
+    }
+
+    .lazyloaded {
+      animation: lazyload 0.7s ease;
+    }
+
     .pagination {
       display: flex;
       justify-content: space-between;
