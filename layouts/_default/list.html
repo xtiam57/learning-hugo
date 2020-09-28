@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-{{ partial "site-head" . }}
+<head>
+  {{ partial "site-head" . }}
 
-{{ $styles := resources.Get "styles/blog.scss" }}
-{{ $styles = $styles | toCSS | minify | fingerprint }}
-<style>{{ $styles.Content | safeCSS }}</style>
+  {{ $styles := resources.Get "styles/blog.scss" }}
+  {{ $styles = $styles | toCSS | minify | fingerprint }}
+  <style>{{ $styles.Content | safeCSS }}</style>
+</head>
 
 <body>
   {{ partial "site-navbar" . }}
@@ -15,9 +17,7 @@
       <ul>
         {{ range (.Paginate .RegularPagesRecursive).Pages }}
         <li>
-          {{ if .Params.Thumbnail }}
-          <img {{ with .Params.Thumbnail }} src="{{ . }}" {{ end}} lass="lazyload" loading="lazy" alt="{{ .Title }}">
-          {{ end }}
+
           <div class="post">
             <h4>
               <a href="{{ .Permalink }}">{{ .Title }}</a>

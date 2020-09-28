@@ -1,7 +1,3 @@
-<style>
-
-</style>
-
 <figure {{ with .Get "class" }} class="{{ . }}" {{ end }}>
   <img {{ with .Get "caption" }}alt="{{ . }}" {{ end }} data-lazy="{{ .Get "src" }}" class="img-lazy" />
   {{ with .Get "caption" }}

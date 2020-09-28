@@ -1,7 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 
-{{ partial "site-head" . }}
+<head>
+  {{ partial "site-head" . }}
+
+  <style>
+    body {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 50px auto 50px;
+      grid-template-areas:
+        'navbar'
+        'main'
+        'footer';
+    }
+
+    main {
+      grid-area: main;
+      overflow: hidden;
+    }
+  </style>
+  </head>
 
 <body>
   {{ partial "site-navbar" . }}

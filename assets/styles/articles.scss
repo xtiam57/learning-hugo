@@ -1,22 +1,7 @@
 @import 'variables';
 @import 'highlight';
 
-body {
-  box-sizing: border-box;
-  min-height: 100vh;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 50px auto 50px;
-  grid-template-areas:
-    'navbar'
-    'main'
-    'footer';
-}
-
 main {
-  grid-area: main;
-  overflow: hidden;
-
   .article,
   article {
     font-size: $font-size-base;
@@ -25,22 +10,6 @@ main {
     margin: $margin-base auto;
     padding-left: $margin-base;
     padding-right: $margin-base;
-
-    @keyframes lazyload {
-      from {
-        min-height: 200px;
-        opacity: 0;
-      }
-
-      to {
-        min-height: auto;
-        opacity: 1;
-      }
-    }
-
-    .lazyloaded {
-      animation: lazyload 0.7s ease;
-    }
 
     .pagination {
       display: flex;
@@ -183,7 +152,6 @@ main {
       line-height: 1.8em;
       padding: 1em 2em;
       position: relative;
-      // box-shadow: 0 11px 21px -5px rgba(0, 0, 0, 0.44);
 
       p {
         margin-bottom: 0 !important;
@@ -203,6 +171,24 @@ main {
       p {
         margin: 0;
       }
+    }
+
+    @keyframes lazyload {
+      from {
+        min-height: 200px;
+        transform: translate(100%);
+        opacity: 0;
+      }
+
+      to {
+        min-height: auto;
+        transform: translate(0%);
+        opacity: 1;
+      }
+    }
+
+    .lazyloaded {
+      animation: lazyload 0.6s ease;
     }
   }
 }

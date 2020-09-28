@@ -10,8 +10,8 @@
 </style>
 {{ end }}
 
-<section class="summary {{ with .Params.Cover }}{{ "with-cover" }}{{ end }}">
-  <summary class="summary-wrapper">
+<section role="summary" class="summary {{ with .Params.Cover }}{{ "with-cover" }}{{ end }}">
+  <div class="summary-wrapper">
     <h1>{{ .Page.Title }}</h1>
     <p class="lead">
       {{- .Params.Summary | default .Description -}}
@@ -29,5 +29,5 @@
       {{ .WordCount }}
       palabras
     </p>
-    </summary>
+    </div>
 </section>
