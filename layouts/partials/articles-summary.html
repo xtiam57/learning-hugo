@@ -2,18 +2,42 @@
 {{ $styles = $styles | toCSS | minify | fingerprint }}
 <style>{{ $styles.Content | safeCSS }}</style>
 
-{{ with .Params.Cover }}
-<style>
-  .summary.with-cover {
-    background-image: url({{ . }});
-  }
-</style>
+{{ if eq .Params.Style "cover" }}
+
 {{ end }}
 
-<section role="summary" class="summary {{ with .Params.Cover }}{{ "with-cover" }}{{ end }}">
+{{/* {{- .Title | default .Site.Title -}} */}}
+
+{{ $class := "" }}
+{{ $style := .Params.Style | default "cover" }}
+
+{{ if eq $style "cover" }}
+{{ $class = "full-cover" }}
+<style>
+  .summary.full-cover {
+    background-image: url({{ with .Params.Cover }}{{ . }}{{ end }});
+  }
+</style>
+{{ else if eq $style "fit" }}
+{{ $class = "fit-cover" }}
+{{ end }}
+
+{{ if not .Params.Cover }}
+{{ $class = "" }}
+{{ $style = "" }}
+{{ end }}
+
+<section role="summary" class="summary {{ $class }}">
+  {{ if eq $style "fit" }}
+  <picture>
+    <img {{ with .Params.Cover }}data-lazy="{{ . }}" {{ end }} alt="{{- .Params.Summary | default .Description -}}"
+         class="img-lazy">
+  </picture>
+  {{ end }}
+
   <div class="summary-wrapper">
     <h1>{{ .Page.Title }}</h1>
-    <p class="lead">
+    <p class="summary-description">
       {{- .Params.Summary | default .Description -}}
     </p>
     <p class="summary-info">
