@@ -23,6 +23,10 @@ main {
   overflow: hidden;
 }
 
+.text-primary {
+  color: $primary-color;
+}
+
 .container {
   @include make-container();
 }

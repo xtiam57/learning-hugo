@@ -7,6 +7,7 @@ draft: false
 cover: /images/cover3.webp
 toc: true
 author: Pepito Perez
+categories: ["tech", "test", "food"]
 ---
 
 ## Primer titulo

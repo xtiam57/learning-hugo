@@ -1,0 +1,25 @@
+<ul class="blog-list">
+  {{ range (.Paginate .RegularPagesRecursive).Pages }}
+  <li>
+    <div class="post-info">
+      <h4>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </h4>
+      <p class="description">
+        {{- .Params.Summary | default .Description -}}
+      </p>
+    </div>
+    <p class="post-details">
+      {{ if .Params.Author }}
+      Por <strong>{{ .Params.Author }}</strong> ·
+      {{ else }}
+      Por <strong>Christiam Mena</strong> ·
+      {{ end }}
+      <time datetime="{{ .PublishDate.Format "January 2, 2006" }}">
+        {{ .PublishDate.Format "January 2, 2006" }}
+      </time> ·
+      {{.ReadingTime}} minutos de lectura
+    </p>
+  </li>
+  {{ end }}
+</ul>

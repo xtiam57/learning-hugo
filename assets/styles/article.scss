@@ -3,25 +3,38 @@
 @import 'summary';
 @import 'toc';
 
-article {
-  .article-pagination {
-    align-items: center;
-    border-top: $border-base;
-    display: flex;
-    font-weight: $font-weight-bold;
-    justify-content: space-between;
-    padding: $margin-base 0;
+.article-pagination {
+  align-items: center;
+  border-top: $border-base;
+  display: flex;
+  font-weight: $font-weight-bold;
+  justify-content: space-between;
+  padding: $margin-base 0;
 
-    .prev-post,
-    .next-post {
-      max-width: 48%;
-    }
-
-    .next-post {
-      text-align: right;
-    }
+  .prev-post,
+  .next-post {
+    max-width: 48%;
   }
 
+  .next-post {
+    text-align: right;
+  }
+}
+
+.article-tags {
+  margin-bottom: $margin-base;
+
+  a {
+    background-color: $lighterGray-color;
+    border-radius: $border-radius;
+    padding: 3px 10px;
+    margin-bottom: $margin-base * 0.3;
+    font-size: $font-size-sm;
+    display: inline-block;
+  }
+}
+
+article {
   // Thanks to https://css-tricks.com/full-width-containers-limited-width-parents/
   .full-width {
     left: 50%;

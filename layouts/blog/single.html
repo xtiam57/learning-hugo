@@ -13,9 +13,13 @@
     {{ partial "article-toc" . }}
 
     {{ .Content }}
+  </article>
+
+  <div class="container">
+    {{ partial "article-tags" . }}
 
     {{ partial "article-pagination" . }}
-  </article>
+  </div>
 </main>
 
 {{ partial "article-lazyload-script" . }}

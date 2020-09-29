@@ -1,0 +1,21 @@
+{{ define "styles" }}
+{{ $styles := resources.Get "styles/blog.scss" }}
+{{ $styles = $styles | toCSS | minify | fingerprint }}
+<style>{{ $styles.Content | safeCSS }}</style>
+{{ end }}
+
+{{ define "content" }}
+
+<main>
+  <section class="container">
+    <h2>
+      Categorías:
+    </h2>
+
+    {{ partial "blog-categories" . }}
+
+    {{ partial "blog-pagination" . }}
+  </section>
+</main>
+
+{{ end }}

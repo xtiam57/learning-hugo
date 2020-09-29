@@ -56,6 +56,22 @@ main {
       }
     }
 
+    ul.blog-categories-list {
+      display: flex;
+      list-style: none;
+      margin-bottom: $margin-base;
+      margin: 0;
+      padding: 0;
+
+      a {
+        background-color: $lighterGray-color;
+        border-radius: $border-radius;
+        display: inline-block;
+        margin-right: $margin-base * 0.5;
+        padding: 5px 15px;
+      }
+    }
+
     .blog-pagination {
       align-items: center;
       border-top: $border-base;

@@ -17,5 +17,5 @@ Para crear un nuevo post usar el siguiente comando:
 - [ ] Summary tipo Hero
 - [ ] Buscar mejor contraste con el primary ([Ver más](https://whocanuse.com/))
 - [ ] Botones de share
-- [ ] Implementar taxonomy
+- [x] Implementar taxonomy
 - [x] Implementar archetypes

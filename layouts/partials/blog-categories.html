@@ -1,0 +1,11 @@
+<ul class="blog-categories-list">
+  {{ range .Data.Terms.ByCount }}
+  <li>
+    {{ $pageCount := len .Page.Pages }}
+    <a href="{{ .Page.Permalink }}">
+      <strong>{{ .Page.Title }}</strong>
+      ({{ $pageCount }})
+    </a>
+  </li>
+  {{ end }}
+</ul>
