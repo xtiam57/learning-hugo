@@ -60,9 +60,11 @@ main {
     .blog-pagination {
       align-items: center;
       border-top: $border-base;
-      display: flex;
-      justify-content: space-between;
       padding: $margin-base 0;
+
+      a {
+        font-weight: $font-weight-bold;
+      }
     }
   }
 }
