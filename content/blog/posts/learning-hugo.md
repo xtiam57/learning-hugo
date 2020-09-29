@@ -1,7 +1,7 @@
 ---
 title: "Learning Hugo: A full example of the article power"
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus sapien ipsum, eget egestas urna pulvinar sit amet.
-cover: /images/cover2.png
+cover: /images/cover2.webp
 style: cover
 date: 2020-09-17T16:59:56-05:00
 draft: false
@@ -135,7 +135,7 @@ Nulla condimentum nibh ac felis molestie commodo. Curabitur eu urna feugiat, mol
 < figure src="/images/my_image.jpg" caption="My caption" class="full-width" >
 ```
 
-{{< figure src="/images/cover2.png" caption="UIn maximus dictum turpis, vel suscipit tortor. Nam ut purus sit amet nisi tincidunt." class="full-width" >}}
+{{< figure src="/images/cover2.webp" caption="UIn maximus dictum turpis, vel suscipit tortor. Nam ut purus sit amet nisi tincidunt." class="full-width" >}}
 
 Sed tincidunt eget enim et finibus. Nam pulvinar lorem sit amet pulvinar mattis. Curabitur massa tellus, molestie et augue ac, rutrum cursus diam. Curabitur convallis dictum nibh, eget ultrices elit elementum id. Sed quis facilisis est. Curabitur tellus lorem, tempus quis enim sit amet, venenatis malesuada urna. Proin ac metus sed urna vehicula elementum. Etiam congue in lectus at elementum. Ut consequat non felis sit amet pretium.
 
@@ -219,7 +219,7 @@ Fusce ac risus urna. Curabitur et justo eu arcu ultrices suscipit. Proin vel ull
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id orci id risus aliquet blandit. Suspendisse dapibus ligula id massa gravida, at pellentesque ex efficitur. Praesent tempus lacus eget est condimentum volutpat. Nullam sed pellentesque ipsum, ac bibendum diam. Phasellus at nulla consectetur, interdum lectus a, semper lectus. Fusce ac risus urna. Curabitur et justo eu arcu ultrices suscipit. Proin vel ullamcorper mauris. Phasellus congue lectus sit amet augue lobortis vestibulum. Curabitur est tellus, aliquet id vulputate a, tincidunt ut ante.
 
-{{< figure src="/images/cover.png" caption="UIn maximus **dictum turpis**, vel suscipit tortor. Nam ut purus sit amet [link text](http://dev.nodeca.com) nisi tincidunt." class="fit-width" >}}
+{{< figure src="/images/cover.webp" caption="UIn maximus **dictum turpis**, vel suscipit tortor. Nam ut purus sit amet [link text](http://dev.nodeca.com) nisi tincidunt." class="fit-width" >}}
 
 Nulla condimentum nibh ac felis molestie commodo. Curabitur eu urna feugiat, molestie est sit amet, mollis nisl. Cras sit amet semper augue. Vivamus rutrum condimentum odio, eget pulvinar nibh posuere non. Nunc purus ipsum, tincidunt vitae metus eget, tristique sollicitudin neque. Aliquam at massa imperdiet, faucibus metus vel, eleifend mauris. Nunc pulvinar accumsan est ut sagittis. Praesent vitae justo non erat finibus condimentum. Donec finibus hendrerit nisl, sit amet laoreet est aliquet ut.
 
