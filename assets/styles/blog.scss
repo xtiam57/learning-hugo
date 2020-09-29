@@ -1,12 +1,11 @@
 @import 'mixins';
 @import 'highlight';
 
-
 main {
   .container {
     margin-top: $margin-base;
 
-    ul {
+    ul.blog-list {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -62,8 +61,23 @@ main {
       border-top: $border-base;
       padding: $margin-base 0;
 
-      a {
-        font-weight: $font-weight-bold;
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+
+        li {
+          margin: 0 $margin-base * 0.5;
+          font-weight: $font-weight-bold;
+
+          a.is-current,
+          a.disabled {
+            color: $text-muted;
+            pointer-events: none;
+          }
+        }
       }
     }
   }
