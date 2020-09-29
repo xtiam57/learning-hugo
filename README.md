@@ -1,7 +1,13 @@
 ## TODO
-- [ ] Crear landingpage
-- [ ] Listado de posts
-- [ ] Página de posts
-- [ ] Estilos de home
-- [ ] Estilos de listado de posts
-- [ ] Estilos de un post
+- [x] Crear landingpage
+- [x] Listado de posts
+- [x] Página de posts
+- [x] Estilos de home
+- [x] Estilos de listado de posts
+- [x] Estilos de un post
+- [ ] Mejorar SEO
+- [ ] Página de About
+- [ ] Página de Portafolio
+- [ ] Summary tipo Hero
+- [ ] Buscar mejor contraste con el primary ([Ver más](https://whocanuse.com/))
+- [ ] Botones de share
