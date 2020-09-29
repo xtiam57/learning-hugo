@@ -1,3 +1,9 @@
+## Crear un nuevo post
+
+Para crear un nuevo post usar el siguiente comando:
+
+``hugo new blog/{NOMBRE_DEL_POST}.md``
+
 ## TODO
 - [x] Crear landingpage
 - [x] Listado de posts
@@ -11,3 +17,5 @@
 - [ ] Summary tipo Hero
 - [ ] Buscar mejor contraste con el primary ([Ver más](https://whocanuse.com/))
 - [ ] Botones de share
+- [ ] Implementar taxonomy
+- [x] Implementar archetypes
