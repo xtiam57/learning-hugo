@@ -1,0 +1,175 @@
+@import 'mixins';
+@import 'highlight';
+@import 'summary';
+@import 'toc';
+
+article {
+  .article-pagination {
+    align-items: center;
+    border-top: $border-base;
+    display: flex;
+    font-weight: $font-weight-bold;
+    justify-content: space-between;
+    padding: $margin-base 0;
+
+    .prev-post,
+    .next-post {
+      max-width: 48%;
+    }
+
+    .next-post {
+      text-align: right;
+    }
+  }
+
+  // Thanks to https://css-tricks.com/full-width-containers-limited-width-parents/
+  .full-width {
+    left: 50%;
+    margin: ($margin-base * 1.5) -50vw;
+    position: relative;
+    right: 50%;
+    width: 100vw;
+    display: block;
+  }
+
+  .fit-width {
+    left: 50%;
+    margin: ($margin-base * 1.5) -50vw;
+    padding: 0 15vw;
+    position: relative;
+    right: 50%;
+    width: 100vw;
+    display: block;
+
+    @media (max-width: 960px) {
+      padding: 0;
+    }
+  }
+
+  .hero {
+    background-color: $hero-background;
+    color: $hero-color;
+    font-family: $hero-font-family;
+    font-size: $hero-font-size;
+    line-height: $hero-line-height;
+    margin-bottom: $hero-margin;
+    margin-top: $hero-margin;
+    padding: $hero-padding;
+    position: relative;
+
+    .hero-content {
+      @include make-container();
+
+      p:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  img {
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+  }
+
+  figure {
+    img {
+      margin-bottom: $margin-base * 0.5;
+    }
+
+    figcaption {
+      text-align: center;
+      font-style: italic;
+      font-size: $font-size-sm;
+      @include make-container();
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  // Table styles
+  table {
+    width: 100%;
+    margin-bottom: $table-margin-bottom;
+    color: $table-text-color;
+    vertical-align: top;
+    border-color: $table-border-color;
+
+    > :not(caption) > * > * {
+      padding: $table-cell-padding-y $table-cell-padding-x;
+      border-bottom-width: $table-border-width;
+    }
+
+    > tbody {
+      vertical-align: inherit;
+    }
+
+    > thead {
+      vertical-align: bottom;
+      background-color: $lighterGray-color;
+    }
+
+    // Highlight border color between thead, tbody and tfoot.
+    > :not(:last-child) > :last-child > * {
+      border-bottom-color: $table-border-color;
+    }
+
+    > :not(caption) > * {
+      border-width: $table-border-width 0;
+
+      // stylelint-disable-next-line selector-max-universal
+      > * {
+        border-width: 0 $table-border-width;
+      }
+    }
+  }
+
+  // Blockquotes
+  // Blockquote CSS
+  blockquote {
+    border-top-right-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+    border-left: $blockquote-border;
+    background-color: $blockquote-background;
+    color: $blockquote-color;
+    font-family: $blockquote-font-family;
+    font-size: $blockquote-font-size;
+    font-style: $blockquote-font-style;
+    line-height: $blockquote-line-height;
+    padding: $blockquote-padding;
+    position: relative;
+
+    p:last-child {
+      margin-bottom: 0 !important;
+    }
+
+    cite {
+      display: block;
+      font-size: $font-size-sm;
+      line-height: 1.5;
+    }
+  }
+
+  .footnotes {
+    font-size: $font-size-sm;
+    font-family: $font-family-footnotes !important;
+    p {
+      margin: 0;
+    }
+  }
+
+  @keyframes lazyload {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .lazyloaded {
+    animation: lazyload $lazyload-time ease;
+  }
+}

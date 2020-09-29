@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
-{{ partial "site-head" . }}
+<head>
+  {{ partial "site-head" . }}
 
-{{ $styles := resources.Get "styles/home.scss" }}
-{{ $styles = $styles | toCSS | minify | fingerprint }}
-<style>{{ $styles.Content | safeCSS }}</style>
+  {{ $styles := resources.Get "styles/home.scss" }}
+  {{ $styles = $styles | toCSS | minify | fingerprint }}
+  <style>{{ $styles.Content | safeCSS }}</style>
+</head>
 
-<body>
-  <div class="content-wrapper">
-    <main id="main">
+<body class="bare-layout">
+  <main>
+    <div class="content-wrapper">
       {{/* <img class="profile-pic" src="images/profile.jpg" alt="Profile Image" />  */}}
       <img class="logo-pic" src="images/logo-negative.svg" alt="Profile Image" />
 
@@ -20,8 +22,8 @@
         <a href="https://www.instagram.com/xtiam57/" target="_blank">Instagram</a> ·
         <a href="{{ "/index.xml" | relURL }}">RSS</a>
       </p>
-    </main>
-  </div>
+    </div>
+  </main>
 </body>
 
 </html>

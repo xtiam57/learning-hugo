@@ -1,6 +1,6 @@
 <figure {{ with .Get "class" }} class="{{ . }}" {{ end }}>
-  <img {{ with .Get "caption" }}alt="{{ . }}" {{ end }} data-lazy="{{ .Get "src" }}" class="img-lazy" />
+  <img {{ with .Get "caption" }}alt="{{ . | markdownify }}" {{ end }} data-lazy="{{ .Get "src" }}" class="img-lazy" />
   {{ with .Get "caption" }}
-  <figcaption>{{ . }}</figcaption>
+  <figcaption>{{ . | markdownify }}</figcaption>
   {{ end }}
 </figure>

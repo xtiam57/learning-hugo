@@ -1,21 +1,23 @@
-{{ define "content" }}
-
-{{ $styles := resources.Get "styles/articles.scss" }}
+{{ define "styles" }}
+{{ $styles := resources.Get "styles/article.scss" }}
 {{ $styles = $styles | toCSS | minify | fingerprint }}
 <style>{{ $styles.Content | safeCSS }}</style>
+{{ end }}
+
+{{ define "content" }}
 
 <main>
-  {{ partial "articles-summary" . }}
+  {{ partial "article-summary" . }}
 
   <article role="article" class="container">
-    {{ partial "articles-toc" . }}
+    {{ partial "article-toc" . }}
 
     {{ .Content }}
 
-    {{ partial "articles-pagination" . }}
+    {{ partial "article-pagination" . }}
   </article>
 </main>
 
-{{ partial "articles-lazyload" . }}
+{{ partial "article-lazyload-script" . }}
 
 {{ end }}

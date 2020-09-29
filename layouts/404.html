@@ -1,9 +1,20 @@
+{{ define "styles" }}
+{{ $styles := resources.Get "styles/404.scss" }}
+{{ $styles = $styles | toCSS | minify | fingerprint }}
+<style>{{ $styles.Content | safeCSS }}</style>
+{{ end }}
+
 {{ define "content"}}
-<main id="main">
-  <div>
+<main>
+  <section class="container">
     <h1>
-      <a href="{{ "/" | relURL }}">Go Home</a>
-    </h1>
-  </div>
+      404
+      </h1>
+      <h4>Página no encontrada</h4>
+
+      <p>
+        La página que estás buscando no existe u otro error ha ocurrido. <a href="{{ "/" | relURL }}">Ir al inicio</a>
+      </p>
+      </section>
 </main>
 {{ end }}

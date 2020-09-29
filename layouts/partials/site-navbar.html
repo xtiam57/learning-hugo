@@ -1,9 +1,5 @@
-{{ $styles := resources.Get "styles/navbar.scss" }}
-{{ $styles = $styles | toCSS | minify | fingerprint }}
-<style>{{ $styles.Content | safeCSS }}</style>
-
 <div class="navbar">
-  <nav>
+  <nav role="navbar">
     <a href="{{ "/" | relURL }}" title="Home">
       <img src="/images/nav-logo.svg" alt="Logo" width="50px">
     </a>

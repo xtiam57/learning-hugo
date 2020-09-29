@@ -1,0 +1,27 @@
+@import 'variables';
+@import 'rfs';
+
+@mixin make-container() {
+  max-width: $body-max-width;
+  margin: 0 auto;
+  padding-left: $container-gutter;
+  padding-right: $container-gutter;
+}
+
+@mixin make-regular-layout() {
+  body.regular-layout {
+    grid-template-rows: 50px auto 50px;
+    grid-template-areas:
+      'navbar'
+      'main'
+      'footer';
+  }
+}
+
+@mixin make-bare-layout() {
+  body.bare-layout {
+    grid-template-rows: auto;
+    grid-template-areas: 'main';
+  }
+}
+

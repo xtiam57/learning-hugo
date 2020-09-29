@@ -1,0 +1,31 @@
+@import 'variables';
+@import 'mixins';
+
+:root {
+  @each $color, $value in $theme-vars {
+    --cm-#{$color}: #{$value};
+  }
+}
+
+::selection {
+  color: $white-color;
+  background: $primary-color;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+main {
+  grid-area: main;
+  overflow: hidden;
+}
+
+.container {
+  @include make-container();
+}
+
+@include make-regular-layout();
+@include make-bare-layout();

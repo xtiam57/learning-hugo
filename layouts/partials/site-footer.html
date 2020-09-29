@@ -1,7 +1,3 @@
-{{ $styles := resources.Get "styles/footer.scss" }}
-{{ $styles = $styles | toCSS | minify | fingerprint }}
-<style>{{ $styles.Content | safeCSS }}</style>
-
 <footer>
   <nav>
     <p>

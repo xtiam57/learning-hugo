@@ -32,6 +32,7 @@ $h3-font-size:                $font-size-base * 1.75 !default;
 $h4-font-size:                $font-size-base * 1.5 !default;
 $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
+$text-muted:                  #86919b !default;
 
 // Margins
 $margin-base:                 1rem !default;
@@ -39,6 +40,7 @@ $paragraph-margin-bottom:     $margin-base * 1.25 !default;
 $highlight-margin-bottom:     $margin-base * 1.25 !default;
 $table-margin-bottom:         $margin-base * 1.25 !default;
 $hr-margin-y:                 $margin-base !default;
+$container-gutter:            $margin-base * 1.5 !default;
 
 // Borders
 $border-radius:               .25rem !default;
@@ -75,5 +77,31 @@ $table-text-color:            $body-text-color !default;
 $table-border-color:          $lightGray-color !default;
 $table-border-width:          1px !default;
 
+// Hero
+$hero-background:             $lighterGray-color !default;
+$hero-color:                  $darkGray-color !default;
+$hero-font-family:            $font-family-quotes !default;
+$hero-font-size:              $font-size-lg !default;
+$hero-line-height:            1.8em !default;
+$hero-padding:                2em !default;
+$hero-margin:                 $margin-base !default;
 
+// Blockquote
+$blockquote-border:      5px solid $primary-color !default;
+$blockquote-background:       $lighterGray-color !default;
+$blockquote-color:            $darkGray-color !default;
+$blockquote-font-family:      $font-family-quotes !default;
+$blockquote-font-size:        $font-size-lg !default;
+$blockquote-font-style:       italic !default;
+$blockquote-line-height:      1.8em !default;
+$blockquote-padding:          1em 2em !default;
+
+// Lazyload
+$lazyload-time:               0.7s !default;
+
+// Theme vars
+$theme-vars: (
+  "primary":    $primary-color,
+  "secondary":  $secondary-color,
+) !default;
 

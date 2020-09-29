@@ -9,16 +9,15 @@
   <style>{{ $styles.Content | safeCSS }}</style>
 </head>
 
-<body>
+<body class="regular-layout">
   {{ partial "site-navbar" . }}
 
   <main>
-    <section class="content-wrapper">
+    <section class="container">
       <ul>
         {{ range (.Paginate .RegularPagesRecursive).Pages }}
         <li>
-
-          <div class="post">
+          <div class="post-info">
             <h4>
               <a href="{{ .Permalink }}">{{ .Title }}</a>
             </h4>
@@ -26,7 +25,7 @@
               {{- .Params.Summary | default .Description -}}
             </p>
           </div>
-          <p class="info">
+          <p class="post-details">
             {{ if .Params.Author }}
             By <strong>{{ .Params.Author }}</strong> ·
             {{ else }}
@@ -42,8 +41,6 @@
         </li>
         {{ end }}
       </ul>
-      <hr />
-
       {{ partial "blog-pagination" . }}
     </section>
   </main>

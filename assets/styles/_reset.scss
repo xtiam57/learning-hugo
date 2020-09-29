@@ -22,11 +22,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-::selection {
-  color: $white-color;
-  background: $primary-color;
-}
-
 [tabindex='-1']:focus:not(:focus-visible) {
   outline: 0 !important;
 }

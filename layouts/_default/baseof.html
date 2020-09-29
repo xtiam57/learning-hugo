@@ -4,26 +4,10 @@
 <head>
   {{ partial "site-head" . }}
 
-  <style>
-    body {
-      min-height: 100vh;
-      display: grid;
-      grid-template-columns: 100%;
-      grid-template-rows: 50px auto 50px;
-      grid-template-areas:
-        'navbar'
-        'main'
-        'footer';
-    }
+  {{ block "styles" . }}{{ end }}
+</head>
 
-    main {
-      grid-area: main;
-      overflow: hidden;
-    }
-  </style>
-  </head>
-
-<body>
+<body class="regular-layout">
   {{ partial "site-navbar" . }}
   {{ block "content" . }}{{ end }}
   {{ partial "site-footer" . }}
