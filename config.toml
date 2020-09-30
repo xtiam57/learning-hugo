@@ -20,8 +20,12 @@ paginate = 10
   toLower = false
 
   [[related.indices]]
-      name = "categories"
-      weight = 100
+    name = "categories"
+    weight = 100
+
+  [[related.indices]]
+    name = "tags"
+    weight = 80
 
   [[related.indices]]
       name = "date"
