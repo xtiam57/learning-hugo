@@ -18,11 +18,11 @@ Nulla condimentum nibh ac felis molestie commodo. Curabitur eu urna feugiat, mol
 
 ```json
 {
-  name: "string",
-  day: 86400,
-  hour: 3600,
-  minute: 60,
-  second: 1 // un segundo tiene... un segundo :D
+  "name": "string",
+  "day": 86400,
+  "hour": 3600,
+  "minute": 60,
+  "second": 1 // un segundo tiene... un segundo :D
 }
 ```
 

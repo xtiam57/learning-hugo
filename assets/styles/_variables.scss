@@ -87,7 +87,7 @@ $hero-padding:                2em !default;
 $hero-margin:                 $margin-base !default;
 
 // Blockquote
-$blockquote-border:      5px solid $primary-color !default;
+$blockquote-border:           5px solid $primary-color !default;
 $blockquote-background:       $lighterGray-color !default;
 $blockquote-color:            $darkGray-color !default;
 $blockquote-font-family:      $font-family-quotes !default;
@@ -99,9 +99,30 @@ $blockquote-padding:          1em 2em !default;
 // Lazyload
 $lazyload-time:               0.7s !default;
 
+// Shadows
+$blog-card-shadow:            0 11px 21px -5px rgba(0, 0, 0, 0.1) !default;
+$highlight-shadow:            0 11px 21px -5px rgba(0,0,0,.44) !default;
+
 // Theme vars
+$theme-colors: (
+  "primary": $primary-color,
+  "secondary": $secondary-color,
+  "darkGray": $darkGray-color,
+  "lightGray": $lightGray-color,
+  "lighterGray": $lighterGray-color,
+  "black": $black-color,
+  "white": $white-color,
+  "muted": $text-muted,
+) !default;
+
 $theme-vars: (
-  "primary":    $primary-color,
-  "secondary":  $secondary-color,
+  "primary": $primary-color,
+  "secondary": $secondary-color,
+  "darkGray": $darkGray-color,
+  "lightGray": $lightGray-color,
+  "lighterGray": $lighterGray-color,
+  "black": $black-color,
+  "white": $white-color,
+  "muted": $text-muted,
 ) !default;
 

@@ -23,12 +23,11 @@ main {
   overflow: hidden;
 }
 
-.text-primary {
-  color: $primary-color;
-}
-
-.text-muted {
-  color: $text-muted;
+// Text colors
+@each $color, $value in $theme-colors {
+  .text-#{$color} {
+    color: $value;
+  }
 }
 
 .container {

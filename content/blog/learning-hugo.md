@@ -2,7 +2,7 @@
 title: "Learning Hugo: A full example of the article power"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus sapien ipsum, eget egestas urna pulvinar sit amet."
 cover: /images/cover2.webp
-style: "fit"
+style: "cover"
 date: 2020-09-17T16:59:56-05:00
 draft: false
 toc: true
@@ -68,11 +68,11 @@ JSON code example:
 
 ```json
 {
-  name: "string",
-  day: 86400,
-  hour: 3600,
-  minute: 60,
-  second: 1 // un segundo tiene... un segundo :D
+  "name": "string",
+  "day": 86400,
+  "hour": 3600,
+  "minute": 60,
+  "second": 1 // un segundo tiene... un segundo :D
 }
 ```
 
