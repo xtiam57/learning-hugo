@@ -6,7 +6,13 @@ style: "cover"
 date: 2020-09-17T16:59:56-05:00
 draft: false
 toc: true
-categories: ["tech", "test", "react", "learning react", "a long category", "something else"]
+tags:
+  - tech
+  - test
+  - react
+  - learning react
+categories:
+  - learning HUGO
 ---
 
 In maximus dictum turpis, vel suscipit tortor. Nam ut purus sit amet nisi tincidunt pharetra id vitae nunc. Donec blandit ipsum turpis, in ultricies libero ullamcorper eget. Pellentesque blandit aliquam maximus.

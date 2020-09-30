@@ -65,6 +65,17 @@
       background-color: $white-color;
       box-shadow: $blog-card-shadow;
 
+      .article-categories {
+        color: $text-muted;
+            line-height: 1;
+            margin-bottom: $margin-base * 0.7;
+            a {
+              font-size: $font-size-sm * 0.85;
+              display: inline-block;
+              color: $text-muted;
+            }
+      }
+
       img {
         width: 100%;
         height: auto;

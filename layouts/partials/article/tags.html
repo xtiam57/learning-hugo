@@ -1,8 +1,8 @@
-{{ if .Params.categories }}
+{{ if .Params.tags }}
 <section class="article-tags">
 
-  {{ range .Params.categories }}
-  <a href="/categories/{{ . | urlize }}">{{ . }}</a>
+  {{ range .Params.tags }}
+  <a href="/tags/{{ . | urlize }}">{{ . }}</a>
   {{ end }}
 </section>
 {{ end }}
