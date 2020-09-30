@@ -8,15 +8,14 @@
 
 <main>
   <section class="container">
-    <a href="{{ "/categories" | relURL }}">&larr; Listado de categorías</a>
     <h2>
       Categoría:
       <span class="text-primary">{{ .Title }}</span>
     </h2>
 
-    {{ partial "blog-list" . }}
+    {{ partial "blog/list" . }}
 
-    {{ partial "blog-pagination" . }}
+    {{ partial "blog/pagination" . }}
   </section>
 </main>
 

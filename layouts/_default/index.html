@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  {{ partial "site-head" . }}
+  {{ partial "site/head" . }}
 
   {{ $styles := resources.Get "styles/home.scss" }}
   {{ $styles = $styles | toCSS | minify | fingerprint }}
@@ -12,7 +12,6 @@
 <body class="bare-layout">
   <main>
     <div class="content-wrapper">
-      {{/* <img class="profile-pic" src="images/profile.jpg" alt="Profile Image" />  */}}
       <img class="logo-pic" src="images/logo-negative.svg" alt="Profile Image" />
 
       <p class="links">

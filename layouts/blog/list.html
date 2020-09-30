@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  {{ partial "site-head" . }}
+  {{ partial "site/head" . }}
 
   {{ $styles := resources.Get "styles/blog.scss" }}
   {{ $styles = $styles | toCSS | minify | fingerprint }}
@@ -10,17 +10,17 @@
 </head>
 
 <body class="regular-layout">
-  {{ partial "site-navbar" . }}
+  {{ partial "site/navbar" . }}
 
   <main>
     <section class="container">
-      {{ partial "blog-list" . }}
+      {{ partial "blog/list" . }}
 
-      {{ partial "blog-pagination" . }}
+      {{ partial "blog/pagination" . }}
     </section>
   </main>
 
-  {{ partial "site-footer" . }}
+  {{ partial "site/footer" . }}
 </body>
 
 </html>

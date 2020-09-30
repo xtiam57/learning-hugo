@@ -1,5 +1,5 @@
 {{ define "styles" }}
-{{ $styles := resources.Get "styles/blog.scss" }}
+{{ $styles := resources.Get "styles/categories.scss" }}
 {{ $styles = $styles | toCSS | minify | fingerprint }}
 <style>{{ $styles.Content | safeCSS }}</style>
 {{ end }}
@@ -12,9 +12,9 @@
       Categorías:
     </h2>
 
-    {{ partial "blog-categories" . }}
+    {{ partial "blog/categories" . }}
 
-    {{ partial "blog-pagination" . }}
+    {{ partial "blog/pagination" . }}
   </section>
 </main>
 

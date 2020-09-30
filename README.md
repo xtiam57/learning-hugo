@@ -19,3 +19,4 @@ Para crear un nuevo post usar el siguiente comando:
 - [ ] Botones de share
 - [x] Implementar taxonomy
 - [x] Implementar archetypes
+- [x] Post relacionados

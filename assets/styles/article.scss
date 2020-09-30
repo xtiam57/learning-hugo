@@ -34,6 +34,11 @@
   }
 }
 
+.article-related {
+  border-top: $border-base;
+  padding-top: $margin-base;
+}
+
 article {
   // Thanks to https://css-tricks.com/full-width-containers-limited-width-parents/
   .full-width {

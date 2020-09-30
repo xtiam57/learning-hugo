@@ -1,0 +1,11 @@
+{{ $related := (where (.Site.RegularPages.Related .) "Type" "blog") | first 3 }}
+<section class="article-related">
+  <h4>Relacionados:</h4>
+  <ul>
+    {{ range $related }}
+    <li>
+      <a class="title is-5" href="{{ .Permalink }}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+  </ul>
+</section>

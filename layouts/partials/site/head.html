@@ -9,7 +9,7 @@
 {{ $style = $style | toCSS | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">
 
-{{ partial "site-favicons" . }}
+{{ partial "site/favicons" . }}
 {{ with .OutputFormats.Get "RSS" }}
 <link rel="alternate" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ site.Title }}">
 <link rel="feed" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ site.Title }}">
