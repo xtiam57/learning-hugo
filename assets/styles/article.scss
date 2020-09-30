@@ -4,10 +4,9 @@
 @import 'toc';
 
 .article-pagination {
-  align-items: center;
+  align-items: flex-start;
   border-top: $border-base;
   display: flex;
-
   justify-content: space-between;
   padding: $margin-base 0;
 
