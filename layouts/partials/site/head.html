@@ -3,7 +3,6 @@
 <title>{{- .Title | default .Site.Title -}}</title>
 <meta name="description"
       content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{end }}{{ end }}">
-<link rel="canonical" href="{{ .Permalink }}" />
 
 <meta name="robots" content="index, follow">
 
