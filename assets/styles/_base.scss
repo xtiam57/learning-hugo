@@ -27,6 +27,10 @@ main {
   color: $primary-color;
 }
 
+.text-muted {
+  color: $text-muted;
+}
+
 .container {
   @include make-container();
 }

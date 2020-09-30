@@ -1,16 +1,22 @@
 <section role="pagination" class="article-pagination">
   <div class="prev-post">
     {{ with .PrevInSection }}
+    &larr; Anterior
     <a href="{{ .Permalink }}">
-      &larr; {{ .Title }}
+      <div>
+        {{ .Title }}
+      </div>
     </a>
     {{ end }}
   </div>
 
   <div class="next-post">
     {{ with .NextInSection }}
+    Siguiente &rarr;
     <a href="{{ .Permalink }}">
-      {{ .Title }} &rarr;
+      <div>
+        {{ .Title }}
+      </div>
     </a>
     {{ end }}
   </div>
