@@ -7,23 +7,23 @@
 {{ define "content" }}
 
 <main>
-  {{ partial "article/summary" . }}
+  {{ partial "article/summary.html" . }}
 
   <article role="article" class="container">
-    {{ partial "article/toc" . }}
+    {{ partial "article/toc.html" . }}
 
     {{ .Content }}
   </article>
 
   <div class="container">
-    {{ partial "article/tags" . }}
+    {{ partial "article/tags.html" . }}
 
-    {{ partial "article/pagination" . }}
+    {{ partial "article/pagination.html" . }}
 
-    {{ partial "article/related" . }}
+    {{ partial "article/related.html" . }}
   </div>
 </main>
 
-{{ partial "article/lazyload-script" . }}
+{{ partial "article/lazyload-script.html" . }}
 
 {{ end }}

@@ -7,5 +7,8 @@ draft: true
 toc: false
 cover: /images/{COVER_IMAGE}
 style: "cover|fit"
-categories: []
+categories:
+  - cat1
+tags:
+  - tag1
 ---

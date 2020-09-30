@@ -2,7 +2,7 @@
 <html lang="{{ .Site.LanguageCode }}">
 
 <head>
-  {{ partial "site/head" . }}
+  {{ partial "site/head.html" . }}
 
   {{ $styles := resources.Get "styles/home.scss" }}
   {{ $styles = $styles | toCSS | minify | fingerprint }}

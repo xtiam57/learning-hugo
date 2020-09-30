@@ -2,15 +2,15 @@
 <html lang="{{ .Site.LanguageCode }}">
 
 <head>
-  {{ partial "site/head" . }}
+  {{ partial "site/head.html" . }}
 
   {{ block "styles" . }}{{ end }}
 </head>
 
 <body class="regular-layout">
-  {{ partial "site/navbar" . }}
+  {{ partial "site/navbar.html" . }}
   {{ block "content" . }}{{ end }}
-  {{ partial "site/footer" . }}
+  {{ partial "site/footer.html" . }}
 </body>
 
 </html>
