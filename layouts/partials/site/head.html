@@ -6,30 +6,25 @@
 
 <meta name="robots" content="index, follow">
 
+{{/* Main styles  */}}
 {{ $style := resources.Get "styles/main.scss" }}
 {{ $style = $style | toCSS | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">
 
+{{/* Favicons  */}}
 {{ partial "site/favicons" . }}
 
-{{ with .OutputFormats.Get "RSS" }}
-<link rel="alternate" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ site.Title }}">
-<link rel="feed" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ site.Title }}">
-{{end}}
-
+{{/* Twitter  */}}
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:creator" content="@xtiam57" />
-<meta name="twitter:domain" content="christiam-mena.netlify.app" />
-<meta name="twitter:image"
-      content="https://christiam-mena.netlify.app{{ .Params.image | default .Site.Params.Image }}" />
 <meta name="twitter:site" content="@xtiam57" />
+<meta name="twitter:creator" content="@xtiam57" />
 
-<link rel="manifest" href="/manifest.json" />
-
-<meta property="og:url" content="{{.Permalink}}" />
-<meta property="og:locale" content="es_ES" />
+{{/* Open Graph  */}}
+<meta property="og:url" content="{{ .Permalink }}" />
 <meta property="og:title" content="{{ .Title | default .Site.Title }}" />
-<meta property="og:image"
-      content="https://christiam-mena.netlify.app{{ .Params.image | default .Site.Params.Image }}" />
 <meta property="og:description" content="{{- .Description | default .Site.Params.Description -}}" />
-<meta property="og:site_name" content="christiam-mena.netlify.app" />
+<meta property="og:locale" content="es_ES" />
+<meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.image | default .Site.Params.Image }}" />
+
+{{/* Manifest  */}}
+<link rel="manifest" href="/manifest.json" />

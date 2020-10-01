@@ -2,6 +2,7 @@
 @import 'highlight';
 @import 'summary';
 @import 'toc';
+@import 'hero';
 
 .article-pagination {
   align-items: flex-start;
@@ -110,50 +111,6 @@
 }
 
 article {
-  // Thanks to https://css-tricks.com/full-width-containers-limited-width-parents/
-  .full-width {
-    left: 50%;
-    margin: ($margin-base * 1.5) -50vw;
-    position: relative;
-    right: 50%;
-    width: 100vw;
-    display: block;
-  }
-
-  .fit-width {
-    left: 50%;
-    margin: ($margin-base * 1.5) -50vw;
-    padding: 0 15vw;
-    position: relative;
-    right: 50%;
-    width: 100vw;
-    display: block;
-
-    @media (max-width: 960px) {
-      padding: 0;
-    }
-  }
-
-  .hero {
-    background-color: $hero-background;
-    color: $hero-color;
-    font-family: $hero-font-family;
-    font-size: $hero-font-size;
-    line-height: $hero-line-height;
-    margin-bottom: $hero-margin;
-    margin-top: $hero-margin;
-    padding: $hero-padding;
-    position: relative;
-
-    .hero-content {
-      @include make-container();
-
-      p:last-child {
-        margin-bottom: 0;
-      }
-    }
-  }
-
   img {
     vertical-align: middle;
     width: 100%;
@@ -161,14 +118,11 @@ article {
   }
 
   figure {
-    img {
-      margin-bottom: $margin-base * 0.5;
-    }
-
     figcaption {
       text-align: center;
       font-style: italic;
       font-size: $font-size-sm;
+      margin-top: $margin-base * 0.5;
       @include make-container();
 
       p {
@@ -246,18 +200,5 @@ article {
     p {
       margin: 0;
     }
-  }
-
-  @keyframes lazyload {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-  .lazyloaded {
-    animation: lazyload $lazyload-time ease;
   }
 }

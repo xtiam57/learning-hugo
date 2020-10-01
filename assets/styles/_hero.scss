@@ -1,0 +1,22 @@
+@import 'mixins';
+
+.hero {
+  background-color: $hero-background;
+  color: $hero-color;
+  font-family: $hero-font-family;
+  font-size: $hero-font-size;
+  line-height: $hero-line-height;
+  margin-bottom: $hero-margin;
+  margin-top: $hero-margin;
+  padding: $hero-padding;
+  position: relative;
+
+  .hero-content {
+    @include make-container();
+
+    p:last-child,
+    figure:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

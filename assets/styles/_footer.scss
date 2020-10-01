@@ -1,9 +1,9 @@
-@import "variables";
+@import "mixins";
 
 footer {
   background-color: $primary-color;
   grid-area: footer;
-  min-height: 50px;
+  min-height: $footer-height;
   color: $white-color;
   font-size: $font-size-sm * 0.9;
 
@@ -12,10 +12,7 @@ footer {
     display: flex;
     height: 100%;
     justify-content: space-between;
-    max-width: $body-max-width;
-    margin: 0 auto;
-    padding-left: $margin-base;
-    padding-right: $margin-base;
+    @include make-container();
   }
 
   p {

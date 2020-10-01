@@ -188,7 +188,7 @@ pre.highlight {
   }
 
   code::before {
-    background: $primary-color;
+    background: $highlight-before-background;
     border-radius: 4px;
     color: #fff;
     content: attr(data-lang);

@@ -10,7 +10,7 @@
 
 @mixin make-regular-layout() {
   body.regular-layout {
-    grid-template-rows: 50px auto 50px;
+    grid-template-rows: $navbar-height auto $footer-height;
     grid-template-areas:
       'navbar'
       'main'

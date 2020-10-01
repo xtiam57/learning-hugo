@@ -1,7 +1,7 @@
 
 // Main Colors
-$primary-color:               #e21791 !default;
-$secondary-color:             #01FFFF !default;
+$primary-color:               #DA0B86 !default;
+$secondary-color:             #32add7 !default;
 $darkGray-color:              #1f2125 !default;
 $lightGray-color:             #E2E8F0 !default;
 $lighterGray-color:             lighten($lightGray-color, 6%) !default;
@@ -48,6 +48,7 @@ $border-base:                 1px solid $lightGray-color;
 
 // Highlight (code)
 $highlight-background:        #2D3748 !default; // #282c34 !default;
+$highlight-before-background:   $secondary-color !default; // #282c34 !default;
 $highlight-blue:              #61afef !default;
 $highlight-pink:              #e06c75 !default;
 $highlight-orange:            #eea112 !default;
@@ -67,7 +68,7 @@ $highlight-padding:           20px !default;
 // Links
 $link-color:                  $primary-color !default;
 $link-decoration:             none !default;
-$link-hover-color:            darken($link-color, 5%) !default;
+$link-hover-color:            $secondary-color !default;
 $link-hover-decoration:       underline !default;
 
 // Tables
@@ -87,7 +88,7 @@ $hero-padding:                2em 0 !default;
 $hero-margin:                 $margin-base !default;
 
 // Blockquote
-$blockquote-border:           5px solid $primary-color !default;
+$blockquote-border:           5px solid $secondary-color !default;
 $blockquote-background:       $lighterGray-color !default;
 $blockquote-color:            $darkGray-color !default;
 $blockquote-font-family:      $font-family-quotes !default;
@@ -102,6 +103,10 @@ $lazyload-time:               0.7s !default;
 // Shadows
 $blog-card-shadow:            0 11px 21px -5px rgba(0, 0, 0, 0.1) !default;
 $highlight-shadow:            0 11px 21px -5px rgba(0,0,0,.44) !default;
+
+// Heights
+$navbar-height:               55px !default;
+$footer-height:               55px !default;
 
 // Theme vars
 $theme-colors: (
