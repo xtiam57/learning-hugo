@@ -83,7 +83,7 @@ $hero-color:                  $darkGray-color !default;
 $hero-font-family:            $font-family-quotes !default;
 $hero-font-size:              $font-size-lg !default;
 $hero-line-height:            1.8em !default;
-$hero-padding:                2em !default;
+$hero-padding:                2em 0 !default;
 $hero-margin:                 $margin-base !default;
 
 // Blockquote
@@ -94,7 +94,7 @@ $blockquote-font-family:      $font-family-quotes !default;
 $blockquote-font-size:        $font-size-lg !default;
 $blockquote-font-style:       italic !default;
 $blockquote-line-height:      1.8em !default;
-$blockquote-padding:          1em 2em !default;
+$blockquote-padding:          1em 1.5em !default;
 
 // Lazyload
 $lazyload-time:               0.7s !default;
