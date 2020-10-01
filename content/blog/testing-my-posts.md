@@ -1,19 +1,18 @@
 ---
-title: "Learning Hugo: A full example of the article power"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus sapien ipsum, eget egestas urna pulvinar sit amet."
+title: "Aprendiendo HUGO: prueba de todo lo que puede tener un post"
+description: "Descripción del post de prueba..."
 image: /images/cover4.webp
 cover: /images/cover4.webp
 style: "cover"
 date: 2020-09-17T16:59:56-05:00
-draft: false
+draft: true
 toc: true
 tags:
-  - tech
-  - test
-  - react
-  - learning react
+  - testing
+  - hugo
+  - draft
 categories:
-  - learning HUGO
+  - Post de prueba
 ---
 
 In maximus dictum turpis, vel suscipit tortor. Nam ut purus sit amet nisi tincidunt pharetra id vitae nunc. Donec blandit ipsum turpis, in ultricies libero ullamcorper eget. Pellentesque blandit aliquam maximus.

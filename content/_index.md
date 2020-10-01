@@ -1,4 +1,4 @@
 ---
-title: Christiam Mena Website
-description: Una pequeña página donde muestro mis trabajos y escribo un poco sobre todo.
+title: Christiam Mena
+description: Una pequeña página donde muestro quién soy, algo de mis trabajos y escribo un poco sobre todo.
 ---

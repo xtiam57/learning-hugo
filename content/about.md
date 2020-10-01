@@ -1,7 +1,9 @@
 ---
-title: Christiam Mena Website
-description: Una pequeña página donde muestro mis trabajos y escribo un poco sobre todo.
+title: Sobre mí
+description: Mi nombre es Christiam y soy licenciado en Ciencias de la Computación de la Universidad Central de Venezuela (U-U-UCV!)
 layout: about
+image: /images/profile.jpg
+type: page
 ---
 
 # Hola, extraño

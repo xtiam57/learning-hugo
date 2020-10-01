@@ -150,6 +150,8 @@ a {
   &:hover {
     color: $link-hover-color;
     text-decoration: $link-hover-decoration;
+    // -webkit-text-decoration-color: $link-decoration-color;
+    // text-decoration-color: $link-decoration-color;
   }
 }
 
