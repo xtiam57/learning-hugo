@@ -48,9 +48,7 @@
       <time datetime="{{ .PublishDate.Format "January 2, 2006" }}">
         {{ .PublishDate.Format "January 2, 2006" }}
       </time> ·
-      {{.ReadingTime}} minutos de lectura ·
-      {{ .WordCount }}
-      palabras
+      {{.ReadingTime}} minutos de lectura
     </p>
 
     {{ partial "article/share-buttons.html" . }}
