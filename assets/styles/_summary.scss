@@ -1,10 +1,14 @@
 @import 'share-buttons';
 
 .article-summary {
-  margin-bottom: $margin-base;
-  padding: ($margin-base * 2) 0;
+  picture {
+    margin-bottom: 0;
+  }
 
   .summary-wrapper {
+    background-color: $white-color;
+    padding-top: $container-gutter;
+    padding-bottom: $container-gutter;
     @include make-container();
     display: flex;
     flex-direction: column;
@@ -20,11 +24,11 @@
 
     h1 {
       color: $darkGray-color;
-      line-height: 1.3;
+      line-height: 1.25;
     }
 
     .summary-description {
-      @include font-size($font-size-base * 1.2);
+      @include font-size($font-size-base * 1.15);
       margin: 0;
     }
 
@@ -40,7 +44,7 @@
     padding-top: 0;
 
     picture {
-      margin-bottom: $margin-base * 1.5;
+      background-color: $white-color;
       text-align: center;
       display: block;
 
@@ -48,27 +52,32 @@
         width: 100vw;
         height: auto;
 
-        @media (min-width: 960px) {
+        @media (min-width: 1024px) {
           width: 70vw;
         }
       }
 
-      @media (min-width: 960px) {
-        padding-top: $margin-base * 2;
+      @media (min-width: 1024px) {
+        padding-top: $container-gutter;
       }
     }
   }
 
   &.full-cover {
+    background-color: $white-color;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: calc(95vh - 50px);
     background-color: rgba(0, 0, 0, 0.55);
     background-blend-mode: multiply;
-    margin-bottom: $margin-base * 2;
-    padding: ($margin-base * 3) 0;
+    // margin-bottom: $margin-base * 2;
+    // padding: ($margin-base * 3) 0;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+
+    .summary-wrapper {
+      background-color: transparent;
+    }
 
     .article-categories {
       color: rgba(255, 255, 255, 0.7);

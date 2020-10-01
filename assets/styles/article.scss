@@ -68,13 +68,13 @@
 
       .article-categories {
         color: $text-muted;
-            line-height: 1;
-            margin-bottom: $margin-base * 0.7;
-            a {
-              font-size: $font-size-sm * 0.85;
-              display: inline-block;
-              color: $text-muted;
-            }
+        line-height: 1;
+        margin-bottom: $margin-base * 0.7;
+        a {
+          font-size: $font-size-sm * 0.85;
+          display: inline-block;
+          color: $text-muted;
+        }
       }
 
       img {
@@ -111,6 +111,35 @@
 }
 
 article {
+  position: relative;
+  background-color: $white-color;
+  padding-top: $container-gutter;
+
+  &.cover {
+    &:after,
+    &:before {
+      display: block;
+      content: '';
+      position: absolute;
+      top: -500px;
+      z-index: -1;
+      width: 20px;
+      height: 900px;
+      background: rgba(39, 44, 49, 0.08);
+      filter: blur(9px);
+    }
+
+    &:after {
+      right: -3px;
+      transform: rotate(1deg);
+    }
+
+    &:before {
+      left: -3px;
+      transform: rotate(-1deg);
+    }
+  }
+
   img {
     vertical-align: middle;
     width: 100%;
@@ -122,8 +151,8 @@ article {
       text-align: center;
       font-style: italic;
       font-size: $font-size-sm;
-      margin-top: $margin-base * 0.5;
       @include make-container();
+      margin-top: $margin-base * 0.7;
 
       p {
         margin: 0;

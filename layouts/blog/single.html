@@ -6,10 +6,15 @@
 
 {{ define "content" }}
 
+{{ $style := .Params.Style | default "fit" }}
+{{ if not .Params.Cover }}
+{{ $style = "" }}
+{{ end }}
+
 <main>
   {{ partial "article/summary.html" . }}
 
-  <article role="article" class="container">
+  <article role="article" class="container {{ $style }}">
     {{ partial "article/toc.html" . }}
 
     {{ .Content }}
