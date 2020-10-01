@@ -4,8 +4,9 @@
       <img src="/images/nav-logo.svg" alt="Logo" width="50px">
     </a>
     <div class="navbar-links">
-      <a href="{{ "/blog" | relURL }}">Blog</a> ·
-      <a href="{{ "/index.xml" | relURL }}">RSS</a>
+      {{ range .Site.Menus.navbar }}
+      <a href="{{ .URL }}" class="">{{ .Name }}</a>
+      {{ end }}
     </div>
   </nav>
 </header>

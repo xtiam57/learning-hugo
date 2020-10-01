@@ -15,11 +15,11 @@
       <img class="logo-pic" src="images/logo-negative.svg" alt="Profile Image" />
 
       <p class="links">
-        <a href="{{ "/blog" | relURL }}">Blog</a> ·
-        <a href="https://github.com/xtiam57" target="_blank">Github</a> ·
-        <a href="https://twitter.com/xtiam57" target="_blank">Twitter</a> ·
-        <a href="https://www.instagram.com/xtiam57/" target="_blank">Instagram</a> ·
-        <a href="{{ "/index.xml" | relURL }}">RSS</a>
+        {{ range $index, $items := .Site.Menus.main }}
+        {{- if gt $index 0 }} · {{ end -}}
+        <a href="{{ .URL }}">{{ .Name }}</a>
+        {{ end }}
+
       </p>
     </div>
   </main>
