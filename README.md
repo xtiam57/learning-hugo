@@ -17,11 +17,10 @@ Para crear un nuevo post usar el siguiente comando:
 - [x] Estilos de home
 - [x] Estilos de listado de posts
 - [x] Estilos de un post
-- [ ] Mejorar SEO
-- [ ] Página de About
+- [x] Mejorar SEO
+- [x] Página de About
 - [ ] Página de Portafolio
-- [ ] Summary tipo Hero
-- [ ] Buscar mejor contraste con el primary ([Ver más](https://whocanuse.com/))
+- [x] Buscar mejor contraste con el primary ([Ver más](https://whocanuse.com/))
 - [ ] Botones de share
 - [x] Implementar taxonomy
 - [x] Implementar archetypes

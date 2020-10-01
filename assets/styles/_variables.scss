@@ -108,6 +108,11 @@ $highlight-shadow:            0 11px 21px -5px rgba(0,0,0,.44) !default;
 $navbar-height:               55px !default;
 $footer-height:               55px !default;
 
+// Share buttons
+$share-buttons-size:          1.25rem !default;
+$share-buttons-margin:        0.7rem !default;
+$share-buttons-color:         lighten($text-muted, 15%) !default;
+
 // Theme vars
 $theme-colors: (
   "primary": $primary-color,

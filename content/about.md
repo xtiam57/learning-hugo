@@ -4,8 +4,6 @@ description: Una pequeña página donde muestro mis trabajos y escribo un poco s
 layout: about
 ---
 
-
-
 # Hola, extraño
 
 Mi nombre es Christiam y soy **licenciado en Ciencias de la Computación** de la Universidad Central de Venezuela (**U-U-UCV!**). Soy experto en karate bajo el agua, apasionado lector de cajas de cereal y superheroe asintomático. Cuando no estoy haciendo algo de eso, estoy programando o aprendiendo algo nuevo.
@@ -25,6 +23,7 @@ Soy nativo de Venezuela, pero actualmente vivo en Perú. Si te gusta lo que hago
 ```js
 import { Javascript, Typescript, HTML, CSS } from 'code/lang';
 
+// No soy un robot, también me gustan otras cosas...
 const hobbies = [
   'read',
   'movies',
@@ -35,6 +34,7 @@ const hobbies = [
 const about = {
   God: 1,
   code: [Javascript, Typescript, HTML, CSS],
+  // Algunas de mis habilidades
   tools: [
     'Angular',
     'Sass',
@@ -47,7 +47,9 @@ const about = {
   getCountry(from = 'Venezuela') {
     return 'Perú';
   },
+  // Tratando de mejorar:
   basic: ['PS', 'Illustrator', 'UX & UI Design'],
+  // Si deseas invitarme un almuerzo:
   food: {
     pizza: true,
     lasagna: 'oh, yeah! 😄',

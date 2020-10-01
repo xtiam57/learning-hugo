@@ -1,0 +1,37 @@
+@import 'mixins';
+
+
+
+.share-buttons {
+  display: flex;
+  flex-direction: row;
+
+  div {
+    margin-right: $share-buttons-margin;
+
+    svg {
+      fill: $share-buttons-color;
+      display: block;
+      width: $share-buttons-size;
+      height: $share-buttons-size;
+      cursor: pointer;
+      transition: fill 0.5s ease;
+    }
+
+    &.facebook:hover svg {
+      fill: #3b5998;
+    }
+
+    &.twitter:hover svg {
+      fill: #55acee;
+    }
+
+    &.linkedin:hover svg {
+      fill: #0077b5;
+    }
+
+    &.mail:hover svg {
+      fill: $text-muted;
+    }
+  }
+}
