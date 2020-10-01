@@ -1,3 +1,9 @@
+## Información
+
+[Visita el website](https://christiam-mena.netlify.app/)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7a2eb971-cefb-451c-8e52-96b565217e61/deploy-status)](https://app.netlify.com/sites/christiam-mena/deploys)
+
 ## Crear un nuevo post
 
 Para crear un nuevo post usar el siguiente comando:
