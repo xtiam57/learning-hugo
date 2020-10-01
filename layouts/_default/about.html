@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+<head>
+  {{ partial "site/head.html" . }}
+
+  {{ $styles := resources.Get "styles/about.scss" }}
+  {{ $styles = $styles | toCSS | minify | fingerprint }}
+  <style>{{ $styles.Content | safeCSS }}</style>
+</head>
+
+<body class="regular-layout">
+  {{ partial "site/navbar.html" . }}
+
+  <main>
+    <section class="container">
+      {{ .Content }}
+    </section>
+  </main>
+
+  {{ partial "lazyload-script.html" . }}
+
+  {{ partial "site/footer.html" . }}
+</body>
+
+</html>
