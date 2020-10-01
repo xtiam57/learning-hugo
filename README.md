@@ -1,8 +1,10 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7a2eb971-cefb-451c-8e52-96b565217e61/deploy-status)](https://app.netlify.com/sites/christiam-mena/deploys)
+
 ## Información
 
-[Visita el website](https://christiam-mena.netlify.app/)
+Una pequeña página donde muestro mis trabajos y escribo un poco sobre todo.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/7a2eb971-cefb-451c-8e52-96b565217e61/deploy-status)](https://app.netlify.com/sites/christiam-mena/deploys)
+[Visita el website](https://christiam-mena.netlify.app/)
 
 ## Crear un nuevo post
 
@@ -21,7 +23,7 @@ Para crear un nuevo post usar el siguiente comando:
 - [x] Página de About
 - [ ] Página de Portafolio
 - [x] Buscar mejor contraste con el primary ([Ver más](https://whocanuse.com/))
-- [ ] Botones de share
+- [x] Botones de share
 - [x] Implementar taxonomy
 - [x] Implementar archetypes
 - [x] Post relacionados

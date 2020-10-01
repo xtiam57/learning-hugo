@@ -1,6 +1,7 @@
 ---
 title: "Learning Hugo: A full example of the article power"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus sapien ipsum, eget egestas urna pulvinar sit amet."
+image: /images/cover4.webp
 cover: /images/cover4.webp
 style: "cover"
 date: 2020-09-17T16:59:56-05:00

@@ -14,8 +14,7 @@
   .hero-content {
     @include make-container();
 
-    p:last-child,
-    figure:last-child {
+    *:last-child {
       margin-bottom: 0;
     }
   }
