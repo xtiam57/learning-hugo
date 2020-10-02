@@ -1,6 +1,5 @@
+@import 'variables';
 @import 'mixins';
-
-
 
 .share-buttons {
   display: flex;
@@ -10,12 +9,12 @@
     margin-right: $share-buttons-margin;
 
     svg {
-      fill: $share-buttons-color;
-      display: block;
-      width: $share-buttons-size;
-      height: $share-buttons-size;
       cursor: pointer;
+      display: block;
+      fill: $share-buttons-color;
+      height: $share-buttons-size;
       transition: fill 0.5s ease;
+      width: $share-buttons-size;
     }
 
     &.facebook:hover svg {

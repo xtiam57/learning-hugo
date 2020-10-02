@@ -1,8 +1,10 @@
+@import 'variables';
 @import 'mixins';
 
 main {
   .container {
-    margin-top: $margin-base;
+    padding-top: $container-gutter;
+    padding-bottom: $container-gutter - $margin-base;
 
     ul.blog-list {
       display: flex;

@@ -93,6 +93,10 @@ $hero-font-size:              $font-size-lg !default;
 $hero-line-height:            1.8em !default;
 $hero-padding:                2em 0 !default;
 
+// Selection
+$selection-background:        $primary-color !default;
+$selection-color:             $white-color !default;
+
 // Blockquote
 $blockquote-border:           5px solid $secondary-color !default;
 $blockquote-background:       $lighterGray-color !default;
@@ -112,14 +116,22 @@ $blog-card-shadow:            0 11px 21px -5px rgba(0, 0, 0, 0.1) !default;
 $highlight-shadow:            $shadow-base !default;
 $navbar-shadow:               0 4px 12px 0 rgba(0, 0, 0, 0.05) !default;
 
-// Heights
+// Navbar
 $navbar-height:               55px !default;
-$footer-height:               55px !default;
+$navbar-background:           $white-color !default;
+$navbar-color:                $primary-color !default;
+$navbar-font-size:            $font-size-base * 0.92 !default;
 
 // Share buttons
 $share-buttons-size:          1.2rem !default;
 $share-buttons-margin:        0.7rem !default;
 $share-buttons-color:         lighten($text-muted, 15%) !default;
+
+// Footer
+$footer-height:               55px !default;
+$footer-background:           $secondary-color !default;
+$footer-color:                $white-color !default;
+$footer-font-size:            $font-size-sm * 0.9 !default;
 
 // Theme vars
 $theme-colors: (

@@ -1,11 +1,12 @@
+@import "variables";
 @import "mixins";
 
 footer {
-  background-color: $primary-color;
+  background-color: $footer-background;
   grid-area: footer;
   min-height: $footer-height;
-  color: $white-color;
-  font-size: $font-size-sm * 0.9;
+  color: $footer-color;
+  font-size: $footer-font-size;
 
   > nav {
     align-items: center;
@@ -22,7 +23,7 @@ footer {
   a,
   a:focus,
   a:visited {
-    color: $white-color;
+    color: $footer-color;
     text-decoration: none;
   }
 

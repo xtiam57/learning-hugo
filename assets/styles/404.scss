@@ -1,6 +1,9 @@
+@import 'variables';
 @import 'mixins';
 
 .container {
+  padding-top: $container-gutter;
+  padding-bottom: $container-gutter;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -11,10 +14,6 @@
     color: $primary-color;
     @include font-size($font-size-base * 20);
     line-height: 1;
-  }
-
-  h4 {
-
   }
 
   p {

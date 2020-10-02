@@ -1,3 +1,4 @@
+@import 'variables';
 @import 'mixins';
 
 :root {
@@ -7,8 +8,8 @@
 }
 
 ::selection {
-  color: $white-color;
-  background: $secondary-color;
+  color: $selection-color;
+  background: $selection-background;
 }
 
 body {
@@ -32,30 +33,61 @@ main {
   }
 }
 
-.text-center { text-align: center !important; }
-.text-left { text-align: left !important; }
-.text-right { text-align: right !important; }
+.text-center {
+  text-align: center !important;
+}
+.text-left {
+  text-align: left !important;
+}
+.text-right {
+  text-align: right !important;
+}
 
-.float-left { float: left !important; }
-.float-right { float: right !important; }
+.float-left {
+  float: left !important;
+}
+.float-right {
+  float: right !important;
+}
 
-.box-shadow { box-shadow: $shadow-base !important; }
-.rounded { border-radius: 9999px !important; }
+.box-shadow {
+  box-shadow: $shadow-base !important;
+}
 
-.padding-0 { padding: 0 !important; }
-.padding-top-0 { padding-top: 0 !important; }
-.padding-right-0 { padding-right: 0 !important; }
-.padding-bottom-0 { padding-bottom: 0 !important; }
-.padding-right-0 { padding-right: 0 !important; }
+.rounded {
+  border-radius: 9999px !important;
+}
 
-.margin-0 { margin: 0 !important; }
-.margin-top-0 { margin-top: 0 !important; }
-.margin-right-0 { margin-right: 0 !important; }
-.margin-bottom-0 { margin-bottom: 0 !important; }
-.margin-right-0 { margin-right: 0 !important; }
+.padding-0 {
+  padding: 0 !important;
+}
+.padding-top-0 {
+  padding-top: 0 !important;
+}
+.padding-right-0 {
+  padding-right: 0 !important;
+}
+.padding-bottom-0 {
+  padding-bottom: 0 !important;
+}
+.padding-left-0 {
+  padding-left: 0 !important;
+}
 
-.container {
-  @include make-container();
+.margin-0 {
+  margin: 0 !important;
+}
+.margin-top-0 {
+  margin-top: 0 !important;
+}
+.margin-right-0 {
+  margin-right: 0 !important;
+}
+.margin-bottom-0 {
+  margin-bottom: 0 !important;
+}
+.margin-left-0 {
+  margin-left: 0 !important;
 }
 
 // Thanks to https://css-tricks.com/full-width-containers-limited-width-parents/
@@ -85,10 +117,10 @@ main {
 
 figure {
   figcaption {
+    @include make-container();
     text-align: center;
     font-style: italic;
     font-size: $font-size-sm;
-    @include make-container();
     margin-top: $margin-base * 0.7;
 
     p {
@@ -112,3 +144,36 @@ figure {
 
 @include make-regular-layout();
 @include make-bare-layout();
+
+.container {
+  @include make-container();
+}
+
+.align-items-center { align-items: center !important; }
+.align-items-end { align-items: flex-end !important; }
+.align-items-start { align-items: flex-start !important; }
+.align-items-stretch { align-items: stretch !important; }
+
+.columns {
+  display: flex;
+
+  .column {
+    padding-right: $margin-base;
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  @media screen and (max-width: $body-max-width) {
+    display: block;
+
+    .column {
+      padding-right: 0;
+    }
+  }
+}

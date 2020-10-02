@@ -18,6 +18,20 @@ In maximus dictum turpis, vel suscipit tortor. Nam ut purus sit amet nisi tincid
 
 In molestie nisl at est facilisis, sit amet egestas neque volutpat. Cras ut iaculis dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus.
 
+{{< columns >}}
+### 1st column
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua.
+***
+### 2nd column
+Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+***
+### 3rd column
+Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+{{< /columns >}}
+
 # h1 Heading
 ## h2 Heading
 ### h3 Heading
@@ -253,11 +267,15 @@ Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
 
 ## Images
 
-| Column 1 | Column 2 |
-| ------ | ----------- |
-| ![Minion](https://octodex.github.com/images/minion.png)  |  ![Minion](https://octodex.github.com/images/minion.png?width=100px) |
-| ![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")    |  |
+{{< columns >}}
+This is an image with title attribute
 
+![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
+***
+This is a simple image
+
+![Minion](https://octodex.github.com/images/minion.png)
+***
 Like links, Images also have a footnote style syntax
 
 ![Alt text][id]
@@ -265,6 +283,8 @@ Like links, Images also have a footnote style syntax
 With a reference later in the document defining the URL location:
 
 [id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
+{{< /columns >}}
+
 
 ### [Emojies](https://github.com/markdown-it/markdown-it-emoji)
 

@@ -1,3 +1,4 @@
+@import 'variables';
 @import 'mixins';
 
 .navbar {
@@ -5,20 +6,21 @@
   min-height: $navbar-height;
   top: 0;
   grid-area: navbar;
-  background-color: $white-color;
+  background-color: $navbar-background;
+  color: $navbar-color;
   z-index: 2;
   box-shadow: $navbar-shadow;
 
   > nav {
+    @include make-container();
     align-items: center;
     display: flex;
     height: 100%;
     justify-content: space-between;
-    @include make-container();
 
     .navbar-links {
-      color: $primary-color;
-      font-size: $font-size-base * 0.92;
+      color: $navbar-color;
+      font-size: $navbar-font-size;
 
       a {
         display: inline-block;

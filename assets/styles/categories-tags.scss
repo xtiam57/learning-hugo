@@ -1,14 +1,15 @@
-@import 'mixins';
+@import 'variables';
 
 main {
   .container {
-    margin-top: $margin-base;
+    padding-top: $container-gutter;
+    padding-bottom: $container-gutter;
 
     ul.blog-categories-list {
       display: flex;
       flex-wrap: wrap;
       list-style: none;
-      margin-bottom: $margin-base;
+      margin-bottom: 0;
       margin: 0;
       padding: 0;
 

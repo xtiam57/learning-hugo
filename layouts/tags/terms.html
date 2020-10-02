@@ -1,5 +1,5 @@
 {{ define "styles" }}
-{{ $styles := resources.Get "styles/categories.scss" }}
+{{ $styles := resources.Get "styles/categories-tags.scss" }}
 {{ $styles = $styles | toCSS | minify | fingerprint }}
 <style>{{ $styles.Content | safeCSS }}</style>
 {{ end }}
