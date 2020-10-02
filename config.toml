@@ -6,7 +6,7 @@ enableEmoji = true
 paginate = 10
 
 [author]
-  name = "Dereck Curry"
+  name = "Christiam Mena"
 
 [params]
   image = "/images/logo-small.png"
@@ -39,7 +39,7 @@ paginate = 10
 
   [[menu.main]]
     name = "RSS"
-    url = "/index.xml"
+    url = "/blog/index.xml"
     weight = 6
 
 
@@ -55,7 +55,7 @@ paginate = 10
 
   [[menu.navbar]]
     name = "RSS"
-    url = "/index.xml"
+    url = "/blog/index.xml"
     weight = 3
 
 [markup]
