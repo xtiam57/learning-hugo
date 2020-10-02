@@ -2,7 +2,7 @@
 @import 'mixins';
 
 body {
-  background-color: $darkGray-color;
+  // background-color: $darkGray-color;
   height: 100vh;
   overflow: hidden;
   // background-position: bottom left;
@@ -63,10 +63,12 @@ body {
 
     .links {
       color: $primary-color;
+      font-weight: $font-weight-bold;
+      margin-bottom: 0;
 
       a {
         display: inline-block;
-        margin: 0 ($margin-base * 0.125);
+        margin: 0 ($margin-base * 0.15);
       }
     }
   }

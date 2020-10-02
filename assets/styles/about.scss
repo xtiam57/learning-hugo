@@ -6,30 +6,30 @@
   position: relative;
   background-color: $white-color;
 
-  h2 {
-    // margin-top: $margin-base * 1.7;
+  *:nth-child(2) {
+    margin-top: $margin-base * 2.2;
   }
 
-  // &:after,
-  // &:before {
-  //   display: block;
-  //   content: '';
-  //   position: absolute;
-  //   top: -250px;
-  //   z-index: -1;
-  //   width: 20px;
-  //   height: 900px;
-  //   background: rgba(39, 44, 49, 0.08);
-  //   filter: blur(9px);
-  // }
+  &:after,
+  &:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: -250px;
+    z-index: -1;
+    width: 20px;
+    height: 900px;
+    background: rgba(39, 44, 49, 0.08);
+    filter: blur(9px);
+  }
 
-  // &:after {
-  //   right: -3px;
-  //   transform: rotate(1deg);
-  // }
+  &:after {
+    right: -3px;
+    transform: rotate(1deg);
+  }
 
-  // &:before {
-  //   left: -3px;
-  //   transform: rotate(-1deg);
-  // }
+  &:before {
+    left: -3px;
+    transform: rotate(-1deg);
+  }
 }

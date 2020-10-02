@@ -7,18 +7,19 @@ type: page
 ---
 
 {{< hero class="text-center margin-top-0" >}}
-{{< figure src="/images/profile.jpg" width="200px" imageClass="rounded box-shadow"  >}}
+{{< figure src="/images/profile.jpg" width="150px" imageClass="rounded box-shadow"  >}}
+{{< figure src="/images/logo.svg" width="230px"   >}}
 {{< /hero >}}
 
 ## Hola, extraño
 
 Mi nombre es Christiam y soy **licenciado en Ciencias de la Computación** de la Universidad Central de Venezuela (**U-U-UCV!**). Soy experto en karate bajo el agua, apasionado lector de cajas de cereal y superheroe asintomático. Cuando no estoy haciendo algo de eso, estoy programando o aprendiendo algo nuevo.
 
-Aunque casi cualquier área de la computación, la programación despierta mi interés. Hasta el momento mi labor profesional se ha centrado en el ámbito del **diseño y desarrollo web** trabajando mayormente para la industria de perforación petrolera.
+Hasta el momento mi labor profesional se ha centrado en el ámbito del **diseño y desarrollo web** trabajando mayormente para la industria de perforación petrolera.
 
 Desde hace muchas lunas decidí crear cuentas con el nombre **xtiam57**, ahora puedes encontrarme en: Intagram, Facebook, Twitter y Github con ese alias.
 
-Soy nativo de Venezuela, pero actualmente vivo en Perú. Si te gusta lo que hago y te gustaría trabajar conmigo, me encantaría saber de ti: christiam.mena@gmail.com.
+Soy nativo de Venezuela, pero actualmente vivo en Perú. Si te gusta lo que hago y te gustaría trabajar conmigo, me encantaría saber de ti: christiam.mena@gmail.com
 
 
 #### Más sobre mi (_geek style_)

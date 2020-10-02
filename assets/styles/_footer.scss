@@ -9,11 +9,11 @@ footer {
   font-size: $footer-font-size;
 
   > nav {
+    @include make-container($container-gutter * 0.6);
     align-items: center;
     display: flex;
     height: 100%;
     justify-content: space-between;
-    @include make-container();
   }
 
   p {

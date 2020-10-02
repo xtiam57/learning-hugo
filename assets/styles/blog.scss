@@ -3,8 +3,10 @@
 
 main {
   .container {
-    padding-top: $container-gutter;
-    padding-bottom: $container-gutter - $margin-base;
+    $scale-padding: 0.6;
+    @include make-container($container-gutter * $scale-padding);
+    padding-top: $container-gutter * $scale-padding;
+    padding-bottom: $container-gutter * $scale-padding - $margin-base;
 
     ul.blog-list {
       display: flex;

@@ -1,11 +1,11 @@
 @import 'variables';
 @import 'rfs';
 
-@mixin make-container() {
+@mixin make-container($gutter: $container-gutter) {
   max-width: $body-max-width;
   margin: 0 auto;
-  padding-left: $container-gutter;
-  padding-right: $container-gutter;
+  padding-left: $gutter;
+  padding-right: $gutter;
 }
 
 @mixin make-regular-layout() {
