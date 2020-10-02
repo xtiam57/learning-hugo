@@ -6,13 +6,13 @@ image: /images/profile.jpg
 type: page
 ---
 
-# Hola, extraño
-
-Mi nombre es Christiam y soy **licenciado en Ciencias de la Computación** de la Universidad Central de Venezuela (**U-U-UCV!**). Soy experto en karate bajo el agua, apasionado lector de cajas de cereal y superheroe asintomático. Cuando no estoy haciendo algo de eso, estoy programando o aprendiendo algo nuevo.
-
 {{< hero >}}
 {{< figure src="/images/profile.jpg" class="rounded text-center" width="230px"  >}}
 {{< /hero >}}
+
+# Hola, extraño
+
+Mi nombre es Christiam y soy **licenciado en Ciencias de la Computación** de la Universidad Central de Venezuela (**U-U-UCV!**). Soy experto en karate bajo el agua, apasionado lector de cajas de cereal y superheroe asintomático. Cuando no estoy haciendo algo de eso, estoy programando o aprendiendo algo nuevo.
 
 Aunque casi cualquier área de la computación, la programación despierta mi interés. Hasta el momento mi labor profesional se ha centrado en el ámbito del **diseño y desarrollo web** trabajando mayormente para la industria de perforación petrolera.
 

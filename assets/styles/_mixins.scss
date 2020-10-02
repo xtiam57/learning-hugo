@@ -25,3 +25,56 @@
   }
 }
 
+@mixin make-blog-post() {
+  border: $border-base;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 0 $margin-base;
+  width: 100%;
+  border-radius: $border-radius;
+  background-color: $white-color;
+  box-shadow: $blog-card-shadow;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .post-info {
+    padding: ($margin-base * 1.5) ($margin-base * 2) 0;
+
+    .post-categories {
+      color: $secondary-color;
+      line-height: 1;
+      margin-bottom: $margin-base * 0.5;
+
+      a {
+        font-size: $font-size-sm * 0.85;
+        display: inline-block;
+        color: $secondary-color;
+      }
+    }
+
+    h4 {
+      margin-bottom: $margin-base;
+      line-height: 1.35;
+    }
+
+    .description {
+      font-size: $font-size-sm;
+      margin: 0;
+    }
+  }
+
+  .post-details {
+    color: $text-muted;
+    font-size: $font-size-sm * 0.875;
+    margin-top: $margin-base * 1.5;
+    padding: 0 ($margin-base * 2);
+  }
+
+  @media screen and (min-width: $body-max-width) {
+    width: 49%;
+  }
+}

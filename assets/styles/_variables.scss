@@ -41,6 +41,10 @@ $highlight-margin-bottom:     $margin-base * 1.25 !default;
 $table-margin-bottom:         $margin-base * 1.25 !default;
 $hr-margin-y:                 $margin-base !default;
 $container-gutter:            $margin-base * 2.4 !default;
+$hero-margin-top:             $margin-base !default;
+$hero-margin-bottom:          $margin-base !default;
+$special-width-margin-top:    $margin-base * 2 !default;
+$special-width-margin-bottom: $margin-base * 2 !default;
 
 // Borders
 $border-radius:               .25rem !default;
@@ -86,7 +90,6 @@ $hero-font-family:            $font-family-quotes !default;
 $hero-font-size:              $font-size-lg !default;
 $hero-line-height:            1.8em !default;
 $hero-padding:                2em 0 !default;
-$hero-margin:                 $margin-base !default;
 
 // Blockquote
 $blockquote-border:           5px solid $secondary-color !default;
@@ -110,7 +113,7 @@ $navbar-height:               55px !default;
 $footer-height:               55px !default;
 
 // Share buttons
-$share-buttons-size:          1.25rem !default;
+$share-buttons-size:          1.2rem !default;
 $share-buttons-margin:        0.7rem !default;
 $share-buttons-color:         lighten($text-muted, 15%) !default;
 

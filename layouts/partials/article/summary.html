@@ -27,7 +27,7 @@
 
   <div class="summary-wrapper">
     {{ if .Params.categories }}
-    <section class="article-categories">
+    <section class="summary-categories">
       {{ range $index, $categories := .Params.categories }}
       {{- if gt $index 0 }} · {{ end -}}
       <a href="/categories/{{ . | urlize }}">{{ . }}</a>

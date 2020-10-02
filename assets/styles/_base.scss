@@ -33,6 +33,9 @@ main {
 .text-left { text-align: left !important; }
 .text-right { text-align: right !important; }
 
+.float-left { float: left !important; }
+.float-right { float: right !important; }
+
 .container {
   @include make-container();
 }
@@ -40,7 +43,7 @@ main {
 // Thanks to https://css-tricks.com/full-width-containers-limited-width-parents/
 .full-width {
   left: 50%;
-  margin: ($margin-base * 2) -50vw;
+  margin: $special-width-margin-top -50vw $special-width-margin-bottom;
   position: relative;
   right: 50%;
   width: 100vw;
@@ -50,7 +53,7 @@ main {
 // Base on https://css-tricks.com/full-width-containers-limited-width-parents/
 .fit-width {
   left: 50%;
-  margin: ($margin-base * 2) -50vw;
+  margin: $special-width-margin-top -50vw $special-width-margin-bottom;
   padding: 0 15vw;
   position: relative;
   right: 50%;
@@ -83,9 +86,6 @@ figure {
     }
   }
 }
-
-.float-left { float: left !important; }
-.float-right { float: right !important; }
 
 @keyframes lazyload {
   from {

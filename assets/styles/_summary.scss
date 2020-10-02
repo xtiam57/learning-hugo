@@ -1,21 +1,22 @@
 @import 'share-buttons';
 
 .article-summary {
+
   picture {
     margin-bottom: 0;
   }
 
   .summary-wrapper {
+    @include make-container();
     background-color: $white-color;
     padding-top: $container-gutter;
-    padding-bottom: $container-gutter;
-    @include make-container();
+    padding-bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     height: 100%;
 
-    .article-categories {
+    .summary-categories {
       a {
         font-size: $font-size-sm;
         display: inline-block;
@@ -28,7 +29,6 @@
     }
 
     .summary-description {
-      @include font-size($font-size-base * 1.15);
       margin: 0;
     }
 
@@ -69,17 +69,16 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: calc(95vh - 50px);
-    background-color: rgba(0, 0, 0, 0.55);
+    background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: multiply;
-    // margin-bottom: $margin-base * 2;
-    // padding: ($margin-base * 3) 0;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 
     .summary-wrapper {
       background-color: transparent;
+      padding-bottom: $container-gutter;
     }
 
-    .article-categories {
+    .summary-categories {
       color: rgba(255, 255, 255, 0.7);
       a {
         color: rgba(255, 255, 255, 0.7);
