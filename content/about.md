@@ -6,8 +6,8 @@ image: /images/profile.jpg
 type: page
 ---
 
-{{< hero class="text-center margin-top-0" >}}
-{{< figure src="/images/profile.jpg" width="230px" imageClass="rounded box-shadow"  >}}
+{{< hero class="text-center margin-y-0" >}}
+{{< figure src="/images/profile.jpg" width="200px" imageClass="rounded box-shadow"  >}}
 {{< /hero >}}
 
 ## Hola, extraño
@@ -19,6 +19,7 @@ Aunque casi cualquier área de la computación, la programación despierta mi in
 Desde hace muchas lunas decidí crear cuentas con el nombre **xtiam57**, ahora puedes encontrarme en: Intagram, Facebook, Twitter y Github con ese alias.
 
 Soy nativo de Venezuela, pero actualmente vivo en Perú. Si te gusta lo que hago y te gustaría trabajar conmigo, me encantaría saber de ti: christiam.mena@gmail.com.
+
 
 #### Más sobre mi (_geek style_)
 
