@@ -5,8 +5,7 @@ author: "Christiam Mena"
 date: {{ .Date }}
 draft: true
 toc: false
-image: /images/{OG_IMAGE}
-cover: /images/{COVER_IMAGE}
+image: /images/{COVER_IMAGE}
 style: "cover|fit"
 categories:
   - cat1
