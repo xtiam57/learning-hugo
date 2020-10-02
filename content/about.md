@@ -6,7 +6,7 @@ image: /images/profile.jpg
 type: page
 ---
 
-{{< hero class="text-center margin-y-0" >}}
+{{< hero class="text-center margin-top-0" >}}
 {{< figure src="/images/profile.jpg" width="200px" imageClass="rounded box-shadow"  >}}
 {{< /hero >}}
 
