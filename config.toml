@@ -5,6 +5,9 @@ title = "Christiam Mena Website"
 enableEmoji = true
 paginate = 10
 
+[author]
+  name = "Dereck Curry"
+
 [params]
   image = "/images/logo-small.png"
 

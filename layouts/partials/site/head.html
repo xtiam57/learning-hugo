@@ -35,3 +35,16 @@
 
 {{/* Manifest  */}}
 <link rel="manifest" href="/manifest.json" />
+
+{{/* Tags */}}
+{{ if isset .Params "tags" }}
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "headline": "{{ .Title }}",
+    "image": ["{{- .Params.Image | default .Site.Params.Image | absURL -}}"],
+    "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}"
+  }
+</script>
+{{ end }}

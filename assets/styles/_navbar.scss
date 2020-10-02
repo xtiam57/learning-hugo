@@ -7,7 +7,7 @@
   grid-area: navbar;
   background-color: $white-color;
   z-index: 2;
-  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: $navbar-shadow;
 
   > nav {
     align-items: center;

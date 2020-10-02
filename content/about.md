@@ -6,11 +6,11 @@ image: /images/profile.jpg
 type: page
 ---
 
-{{< hero >}}
-{{< figure src="/images/profile.jpg" class="rounded text-center" width="230px"  >}}
+{{< hero class="text-center margin-top-0" >}}
+{{< figure src="/images/profile.jpg" width="230px" imageClass="rounded box-shadow"  >}}
 {{< /hero >}}
 
-# Hola, extraño
+## Hola, extraño
 
 Mi nombre es Christiam y soy **licenciado en Ciencias de la Computación** de la Universidad Central de Venezuela (**U-U-UCV!**). Soy experto en karate bajo el agua, apasionado lector de cajas de cereal y superheroe asintomático. Cuando no estoy haciendo algo de eso, estoy programando o aprendiendo algo nuevo.
 

@@ -14,6 +14,10 @@
   .hero-content {
     @include make-container();
 
+    h1, h2, h3, h4, h5, h6 {
+      font-family: $hero-font-family;
+    }
+
     *:last-child {
       margin-bottom: 0;
     }

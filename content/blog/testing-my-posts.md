@@ -2,7 +2,6 @@
 title: "Aprendiendo HUGO: prueba de todo lo que puede tener un post"
 description: "Descripción del post de prueba..."
 image: /images/cover4.webp
-cover: /images/cover4.webp
 style: "cover"
 date: 2020-09-17T16:59:56-05:00
 draft: true
@@ -209,7 +208,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id orci id risus
 < hero >Text width markdown< /hero >
 ```
 
-{{< hero >}}
+{{< hero class="text-center" >}}
 ## A title for a great hero
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. **Aenean id orci id risus aliquet blandit**. Suspendisse dapibus ligula id massa gravida, at pellentesque ex efficitur. Praesent tempus lacus eget est condimentum volutpat. Nullam sed pellentesque ipsum, ac bibendum diam. _Phasellus at nulla consectetur, interdum lectus a, semper lectus_.
 {{< /hero >}}

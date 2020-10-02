@@ -2,25 +2,27 @@
 {{ $style := .Params.Style | default "fit" }}
 
 {{ if eq $style "cover" }}
-{{ $class = "full-cover" }}
-<style>
-  .article-summary.full-cover {
-    background-image: url({{ with .Params.Cover }}{{ . }}{{ end }});
-  }
-</style>
+  {{ $class = "full-cover" }}
+  {{ with .Params.Image }}
+  <style>
+    .article-summary.full-cover {
+      background-image: url({{ . }});
+    }
+  </style>
+  {{ end }}
 {{ else if eq $style "fit" }}
-{{ $class = "fit-cover" }}
+  {{ $class = "fit-cover" }}
 {{ end }}
 
-{{ if not .Params.Cover }}
-{{ $class = "" }}
-{{ $style = "" }}
+{{ if not .Params.Image }}
+  {{ $class = "" }}
+  {{ $style = "" }}
 {{ end }}
 
 <section role="summary" class="article-summary {{ $class }}">
   {{ if eq $style "fit" }}
   <picture>
-    <img {{ with .Params.Cover }}data-lazy="{{ . }}" {{ end }} alt="{{- .Params.Summary | default .Description -}}"
+    <img {{ with .Params.Image }}data-lazy="{{ . }}" {{ end }} alt="{{- .Params.Summary | default .Description -}}"
          class="img-lazy">
   </picture>
   {{ end }}
