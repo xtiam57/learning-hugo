@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Fira Code';
+  src: local('FiraCode'), local('FiraCode Regular'), local('FiraCode-Regular'),
+    url('/fonts/FiraCode-Regular.woff2') format('woff2'),
+    url('/fonts/FiraCode-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/Inter-Regular.woff2') format('woff2'),
+    url('/fonts/Inter-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/Inter-SemiBold.woff2') format('woff2'),
+    url('/fonts/Inter-SemiBold.woff') format('woff');
+}
+
+.wf-inter-n4-loading body,
+.wf-inter-n7-loading body,
+.wf-loading body {
+  visibility: hidden;
+}
+
+.wf-inter-n4-active body,
+.wf-inter-n7-active body,
+.wf-active body {
+  visibility: visible;
+}

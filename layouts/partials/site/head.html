@@ -10,8 +10,16 @@
 
 <meta name="robots" content="index, follow">
 
+{{/* Main styles  */}}
+{{ $mainStyles := resources.Get "styles/main.scss" }}
+{{ $mainStyles = $mainStyles | toCSS | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $mainStyles.Permalink }}">
+
+{{/* Pre-load fonts  */}}
+{{ partial "site/preload-fonts.html"}}
+
 {{/* Favicons  */}}
-{{ partial "site/favicons" . }}
+{{ partial "site/favicons.html" . }}
 
 {{/* Twitter  */}}
 {{ if .Params.Image }}
