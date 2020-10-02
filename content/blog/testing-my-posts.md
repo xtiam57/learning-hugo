@@ -4,7 +4,7 @@ description: "Descripción del post de prueba..."
 image: /images/cover4.webp
 style: "cover"
 date: 2020-09-17T16:59:56-05:00
-draft: true
+draft: false
 toc: true
 tags:
   - testing
@@ -26,18 +26,8 @@ tempor incididunt ut labore et dolore magna aliqua.
 ### 2nd column
 Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-***
-### 3rd column
-Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-{{< /columns >}}
 
-# h1 Heading
-## h2 Heading
-### h3 Heading
-#### h4 Heading
-##### h5 Heading
-###### h6 Heading
+{{< /columns >}}
 
 Nulla condimentum nibh ac felis molestie commodo. Curabitur eu urna feugiat, molestie est sit amet, mollis nisl. Cras sit amet semper augue. Vivamus rutrum condimentum odio, eget pulvinar nibh posuere non. Nunc purus ipsum, tincidunt vitae metus eget, tristique sollicitudin neque. Aliquam at massa imperdiet, faucibus metus vel, eleifend mauris. Nunc pulvinar accumsan est ut sagittis. Praesent vitae justo non erat finibus condimentum. Donec finibus hendrerit nisl, sit amet laoreet est aliquet ut.
 
@@ -163,7 +153,7 @@ Sed tincidunt eget enim et finibus. Nam pulvinar lorem sit amet pulvinar mattis.
 
 ## Instagram?
 
-{{< instagram BWNjjyYFxVx hidecaption  >}}
+{{< instagram BWNjjyYFxVx hidecaption >}}
 
 Sed tincidunt eget enim et finibus. Nam pulvinar lorem sit amet pulvinar mattis. Curabitur massa tellus, molestie et augue ac, rutrum cursus diam. Curabitur convallis dictum nibh, eget ultrices elit elementum id. Sed quis facilisis est. Curabitur tellus lorem, tempus quis enim sit amet, venenatis malesuada urna. Proin ac metus sed urna vehicula elementum. Etiam congue in lectus at elementum. Ut consequat non felis sit amet pretium.
 
@@ -222,7 +212,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id orci id risus
 < hero >Text width markdown< /hero >
 ```
 
-{{< hero class="text-center" >}}
+{{< hero >}}
 ## A title for a great hero
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. **Aenean id orci id risus aliquet blandit**. Suspendisse dapibus ligula id massa gravida, at pellentesque ex efficitur. Praesent tempus lacus eget est condimentum volutpat. Nullam sed pellentesque ipsum, ac bibendum diam. _Phasellus at nulla consectetur, interdum lectus a, semper lectus_.
 {{< /hero >}}

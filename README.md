@@ -22,6 +22,7 @@ Para crear un nuevo post usar el siguiente comando:
 - [x] Mejorar SEO
 - [x] Página de About
 - [ ] Página de Portafolio
+- [ ] Agregar Google Analytics
 - [x] Buscar mejor contraste con el primary ([Ver más](https://whocanuse.com/))
 - [x] Botones de share
 - [x] Implementar taxonomy
