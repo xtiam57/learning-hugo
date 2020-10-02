@@ -1,6 +1,6 @@
 baseURL = "https://christiam-mena.netlify.app/"
 languageCode = "es-ES"
-title = "Christiam Mena Website"
+title = "Christiam Mena's Website"
 
 enableEmoji = true
 paginate = 10
