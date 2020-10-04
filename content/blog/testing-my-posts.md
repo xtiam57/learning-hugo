@@ -4,7 +4,7 @@ description: "Descripción del post de prueba..."
 image: /images/cover4.webp
 style: "cover"
 date: 2020-09-17T16:59:56-05:00
-draft: false
+draft: true
 toc: true
 tags:
   - testing
