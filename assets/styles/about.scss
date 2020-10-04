@@ -6,10 +6,6 @@
   position: relative;
   background-color: $white-color;
 
-  *:nth-child(2) {
-    margin-top: $margin-base * 2.2;
-  }
-
   &:after,
   &:before {
     display: block;
