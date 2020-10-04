@@ -32,7 +32,7 @@ Hasta el momento mi labor profesional se ha centrado en el ámbito del **diseño
 - **Frameworks**: Angular, AngularJS, Bootstrap, Next.js, ngMaterial, Apollo GraphQL (Cliente y Servidor)
 - **Librerías**: ReactJS, Redux, Storybooks, Saga, jQuery, RxJS, Highcharts, NodeJS (Express)
 - **Task runners**: Gulp, Grunt, Webpack
-- Site builders: HUGO y Wordpress
+- **Site builders**: HUGO y Wordpress
 - **Control de versiones**: GitHub, Bitbucket, GitLab
 
 Desde hace muchas lunas decidí crear cuentas con el nombre **xtiam57**, ahora puedes encontrarme en: Intagram, Facebook, Twitter y Github con ese alias.
