@@ -21,10 +21,14 @@
 
 <section role="summary" class="article-summary {{ $class }}">
   {{ if eq $style "fit" }}
-  <picture>
-    <img {{ with .Params.Image }}data-lazy="{{ . }}" {{ end }} alt="{{- .Params.Summary | default .Description -}}"
+  <figure>
+    <img {{ with .Params.Image }}data-lazy="{{ . }}" {{ end }}
+         alt="{{- .Params.Summary | default .Description | markdownify -}}"
          class="img-lazy">
-  </picture>
+    {{ with .Params.Caption }}
+    <figcaption>{{ . | markdownify }}</figcaption>
+    {{ end }}
+    </figure>
   {{ end }}
 
   <div class="summary-wrapper">
@@ -39,7 +43,7 @@
 
     <h1>{{ .Page.Title }}</h1>
     <p class="summary-description">
-      {{- .Params.Summary | default .Description -}}
+      {{- .Params.Summary | default .Description | markdownify -}}
     </p>
     <p class="summary-info">
       {{ if .Params.Author }}

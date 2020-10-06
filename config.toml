@@ -23,39 +23,23 @@ paginate = 10
     weight = 2
 
   [[menu.main]]
-    name = "Github"
-    url = "https://github.com/xtiam57"
+    name = "RSS"
+    url = "/blog/index.xml"
     weight = 3
 
-  [[menu.main]]
-    name = "Twitter"
-    url = "https://twitter.com/xtiam57"
-    weight = 4
-
-  [[menu.main]]
-    name = "Instagram"
-    url = "https://www.instagram.com/xtiam57/"
-    weight = 5
-
-  [[menu.main]]
-    name = "RSS"
-    url = "/blog/index.xml"
-    weight = 6
-
-
-  [[menu.navbar]]
-    name = "Blog"
-    url = "/blog"
+  [[menu.social]]
+    name = "Github"
+    url = "https://github.com/xtiam57"
     weight = 1
 
-  [[menu.navbar]]
-    name = "Sobre mí"
-    url = "/about"
+  [[menu.social]]
+    name = "Twitter"
+    url = "https://twitter.com/xtiam57"
     weight = 2
 
-  [[menu.navbar]]
-    name = "RSS"
-    url = "/blog/index.xml"
+  [[menu.social]]
+    name = "Instagram"
+    url = "https://www.instagram.com/xtiam57/"
     weight = 3
 
 [markup]

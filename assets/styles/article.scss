@@ -101,6 +101,10 @@ article {
       display: block;
       font-size: $font-size-sm;
       line-height: 1.5;
+
+      &:before {
+        content: '— '
+      }
     }
   }
 
@@ -120,6 +124,7 @@ article {
   display: flex;
   justify-content: space-between;
   padding: $margin-base 0;
+  background-color: $white-color;
 
   .prev-post,
   .next-post {
@@ -141,13 +146,14 @@ article {
 .article-tags {
   margin-top: $margin-base * 3;
   margin-bottom: $margin-base;
+  background-color: $white-color;
 
   a {
     background-color: $lighterGray-color;
     border-radius: $border-radius;
     padding: 3px 10px;
     margin-bottom: $margin-base * 0.3;
-    font-size: $font-size-sm;
+    font-size: $font-size-sm * 0.95;
     display: inline-block;
   }
 }

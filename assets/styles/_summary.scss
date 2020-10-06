@@ -44,10 +44,11 @@
   &.fit-cover {
     padding-top: 0;
 
-    picture {
+    figure {
       background-color: $white-color;
       text-align: center;
       display: block;
+      margin-bottom: 0;
 
       img {
         width: 100vw;
@@ -71,7 +72,7 @@
     background-repeat: no-repeat;
     height: calc(95vh - #{$navbar-height});
     min-height: 500px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, $summary-cover-opacity);
     background-blend-mode: multiply;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 

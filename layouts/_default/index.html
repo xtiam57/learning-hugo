@@ -12,16 +12,22 @@
 <body class="bare-layout">
   <main>
     <div class="content-wrapper">
-      <img class="logo-pic" src="images/logo.svg" alt="Profile Image" />
+      <div class="content-left"></div>
+      <div class="content-right">
+        <div class="container">
+          <img class="logo-pic" src="images/logo.svg" alt="Profile Image" />
 
-      <p class="links">
-        {{ range $index, $items := .Site.Menus.main }}
-        {{- if gt $index 0 }} · {{ end -}}
-        <a href="{{ .URL }}">{{ .Name }}</a>
-        {{ end }}
+          {{ .Content }}
 
-      </p>
-    </div>
+          <p class="links">
+            {{ range $index, $items := .Site.Menus.main }}
+            {{- if gt $index 0 }} · {{ end -}}
+            <a href="{{ .URL }}">{{ .Name }}</a>
+            {{ end }}
+          </p>
+        </div>
+      </div>
+      </div>
   </main>
 </body>
 
