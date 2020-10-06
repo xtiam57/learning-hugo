@@ -121,7 +121,7 @@ $navbar-color:                $primary-color !default;
 $navbar-font-size:            $font-size-base * 0.92 !default;
 
 // Share buttons
-$share-buttons-size:          1.2rem !default;
+$share-buttons-size:          1.1rem !default;
 $share-buttons-margin:        0.7rem !default;
 $share-buttons-color:         lighten($text-muted, 15%) !default;
 
@@ -130,6 +130,9 @@ $footer-height:               55px !default;
 $footer-background:           $secondary-color !default;
 $footer-color:                $white-color !default;
 $footer-font-size:            $font-size-sm * 0.9 !default;
+
+// Summary
+$summary-cover-opacity:       0.4 !default;
 
 // Theme vars
 $theme-colors: (

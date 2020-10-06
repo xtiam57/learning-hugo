@@ -7,6 +7,7 @@ draft: true
 toc: false
 image: /images/{COVER_IMAGE}
 style: "cover|fit"
+caption: Unplash
 categories:
   - cat1
 tags:

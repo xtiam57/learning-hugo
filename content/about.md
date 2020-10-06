@@ -6,11 +6,6 @@ image: /images/profile.jpg
 type: page
 ---
 
-{{< hero class="text-center margin-top-0" >}}
-{{< figure src="/images/profile.jpg" width="150px" imageClass="rounded box-shadow"  >}}
-{{< figure src="/images/logo.svg" width="230px"   >}}
-{{< /hero >}}
-
 ## Hola, extraño
 
 Mi nombre es Christiam y soy **licenciado en Ciencias de la Computación** de la Universidad Central de Venezuela (**U-U-UCV!**).

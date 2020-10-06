@@ -2,30 +2,15 @@
 @import 'hero';
 @import 'highlight';
 
+.about-eyes {
+  background-color: $primary-color;
+  background-position: center center;
+  background-size: cover;
+  background-image: url('/images/eyes.webp');
+  background-repeat: no-repeat;
+  height: 220px;
+}
+
 .container {
-  position: relative;
-  background-color: $white-color;
-
-  &:after,
-  &:before {
-    display: block;
-    content: '';
-    position: absolute;
-    top: -250px;
-    z-index: -1;
-    width: 20px;
-    height: 900px;
-    background: rgba(39, 44, 49, 0.08);
-    filter: blur(9px);
-  }
-
-  &:after {
-    right: -3px;
-    transform: rotate(1deg);
-  }
-
-  &:before {
-    left: -3px;
-    transform: rotate(-1deg);
-  }
+  margin-top: $container-gutter;
 }

@@ -29,7 +29,7 @@ main {
     color: $value !important;
   }
   .bg-#{$color} {
-    color: $value !important;
+    background-color: $value !important;
   }
 }
 
