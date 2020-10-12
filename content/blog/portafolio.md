@@ -56,6 +56,9 @@ Conceptualización y diseño de intefaces gráficas para sistema administrativo 
 
 {{< figure class="fit-width" src="/images/portfolio/therapie.jpg" >}}
 
+Además del diseño, pude participar con este juego en el **Microsoft Imagine Cup** (2013) como colaborador y presentador. En esa oprtunidad obtuvimos el título de **National Games Winner** (Campeones nacionales en la categoría de videojuegos).
+
+
 <!-- ### Widget 101
 **Tema de Wordpress**
 
@@ -100,6 +103,8 @@ Proyecto desarrollado bajo el marco del **Microsoft Imagine Cup** con el objetiv
 El juego **My2Cent** consiste en utilizar un Kinect y una pantalla de una sola salida (monitor, proyector, TV, etc) que se ejecuta en un PC. Con **My2Cents**, queremos contribuir al logro de varios objetivos, básicamente, utilizando las tecnologías de Microsoft.
 
 {{< youtube aaPVtksDaeo >}}
+
+En esta participación del **Microsoft Imagine Cup 2012**, pudimos llegar a la tercera ronda en la categoría de Game Design **entre los 100 mejores países del mundo**.
 
 ### Despliegue de terreno con nivel de detalle (LOD y GeoMipMapping)
 **OpenGL y C++**
