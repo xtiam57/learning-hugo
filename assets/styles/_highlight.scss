@@ -31,9 +31,9 @@ code {
 }
 
 :not(pre) > code {
-  background: $lightGray-color;
+  background: $lighterGray-color;
   border-radius: $highlight-radius;
-  color: #1a1a1a;
+  color: $primary-color;
   padding: 2px 4px 1px;
   white-space: normal;
 }

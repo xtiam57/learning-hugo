@@ -1,9 +1,9 @@
 ---
 title: "Mis Trabajos"
-description: "Acá podrán ver algunos de los proyectos en los que he participado desde hace algunos años."
+description: "Algunos de los proyectos en los que he participado desde hace algunos años."
 author: "Christiam Mena"
 date: 2020-10-09T11:50:28-05:00
-draft: true
+draft: false
 toc: true
 categories:
   - Portafolio Personal
@@ -13,44 +13,46 @@ tags:
   - trabajos
 ---
 
-Acá alguno de los proyectos en los que he participado desde hace algunos años:
+Siempre me he considerado una persona con **actitud proactiva, responsable y creativa**. Durante los más de **10 años de experiencia** en el desarrollo web (front-end) he podido participar un múltiples proyectos y usar diferentes tecnologías. Hasta ahora, sigo dispuesto al aprendizaje de nuevas herramientas que me permitan continuar con el desarrollo de mi perfil profesional y competencias en el área de la computación.
+
+Acá algunos de los proyectos en los que he participado en los últimos años a nivel profesional y como parte de proyectos personales.
 
 ## Diseño gráfico
 
-### Iglesia
-**Juego Web**
+### Iglesia Bautista Fundamental Monte Calvario
+**Diseño Gráfico**
 
-Juego al estilo **"¿Quien quiere ser millonario?"** utilizando conceptos y pasajes bíblicos. Fue un proyecto de caracter personal realizado en Angular y Electron (para la versión _stand-alone_). Como valor añadido el juego **cuenta con la música y efectos de sonido** del juego real.
+
 
 {{< figure class="full-width" src="/images/portfolio/iglesia.jpg" >}}
 
 ## Desarrollo web y aplicaciones de escritorio
 
 ### 3DMS
-**Juego Web**
+**Conjunto de aplicaciones web**
 
-Juego al estilo **"¿Quien quiere ser millonario?"** utilizando conceptos y pasajes bíblicos. Fue un proyecto de caracter personal realizado en Angular y Electron (para la versión _stand-alone_). Como valor añadido el juego **cuenta con la música y efectos de sonido** del juego real.
+Juego al estilo **"¿Quien quiere ser millonario?"** utilizando conceptos y pasajes bíblicos. Fue un proyecto de caracter personal realizado en ``Angular`` y ``Electron`` (para la versión _stand-alone_ de Windows). Como valor añadido el juego **cuenta con la música y efectos de sonido** del juego real.
 
 {{< figure class="fit-width" src="/images/portfolio/3dms.jpg" >}}
 
 ### Biblionaire
 **Juego Web**
 
-Juego al estilo **"¿Quien quiere ser millonario?"** utilizando conceptos y pasajes bíblicos. Fue un proyecto de caracter personal realizado en Angular y Electron (para la versión _stand-alone_). Como valor añadido el juego **cuenta con la música y efectos de sonido** del juego real.
+Juego al estilo **"¿Quien quiere ser millonario?"** utilizando conceptos y pasajes bíblicos. Fue un proyecto de caracter personal realizado en ``Angular`` y ``Electron`` (para la versión _stand-alone_ de Windows). Como valor añadido el juego **cuenta con la música y efectos de sonido** del juego real.
 
 {{< figure class="fit-width" src="/images/portfolio/biblionaire.jpg" >}}
 
 ### Inspirulina
 **Tema de Wordpress**
 
-Elaboración de tema para Wordpress, diseño e implementación de plugins y widgets adaptados a los requerimientos del cliente. Configuración base del tema (menús, paneles, modo de visualización, backgrounds, fuentes, etc.). Migración de base de datos (de Joomla a Wordpress). Apartado para registro de usuarios (Sección de Comunidad), con restricciones de seguridad y funcionalidad ([Inspirulina.com](https://www.inspirulina.com/ )).
+Elaboración de tema para ``Wordpress``, diseño e implementación de plugins y widgets adaptados a los requerimientos del cliente. Configuración base del tema (menús, paneles, modo de visualización, backgrounds, fuentes, etc.). Migración de base de datos (de ``Joomla`` a ``Wordpress``). Apartado para registro de usuarios (Sección de Comunidad), con restricciones de seguridad y funcionalidades asociadas ([Inspirulina.com](https://www.inspirulina.com/ )).
 
 {{< figure class="fit-width" src="/images/portfolio/inspirulina.jpg" >}}
 
 ### Therapie
 **Diseño y conceptualización de UI y UX**
 
-Conceptualización y diseño de intefaces gráficas para sistema administrativo de escritorio (Windows). Se diseñó todo el flujo de interacción de la aplicación y su logotipo. El sistema fue diseñado para el uso de doctores en el área de rehabilitación para niños con problema motores.
+Conceptualización y diseño de intefaces gráficas para sistema administrativo de escritorio (Windows). Se diseñó con ``Photoshop`` todo el flujo de interacción de la aplicación y su logotipo. El sistema fue diseñado para el uso de doctores en el área de rehabilitación para niños con problema motores.
 
 {{< figure class="fit-width" src="/images/portfolio/therapie.jpg" >}}
 
@@ -62,16 +64,20 @@ Conceptualización, diseño e implementación de tema para Wordpress. Diseño e 
 ### Quiniela Coca-Cola 2014
 **Sistema de quiniela de futbol**
 
-Sistema de quiniela de futbol para el mundial de la FIFA Brsil 2014. Se realizó la propuesta conceptual, diseño e implementación del sistema de juego utilizando todas las reglas de clasificación descritas por la FIFA. El sistema de quiniela contamplaba todas las fases del campeonato, poseía información sobre resultados de los partidos, listado de premios y ranking de los jugadores.
+Sistema de quiniela de futbol para el mundial de la FIFA Sudafrica 2010 y Brasil 2014. Se realizó la propuesta conceptual, diseño (``Photoshop``) e implementación (``PHP``) del sistema de juego utilizando todas las reglas de clasificación descritas por la FIFA. El sistema de quiniela contamplaba todas las fases del campeonato, poseía información sobre resultados de los partidos, listado de premios y ranking de los jugadores. **Otras tecnologías usadas:** ``Bootstrap``, ``Javascript``, ``CSS``, ``HTML``.
 
 {{< figure class="full-width" src="/images/portfolio/coca-cola.jpg" >}}
 
 ### Eposak y Destinos Eposak
 **Maquetación en HTML, CSS y JS**
 
-Conceptualización, diseño y maquetación del sitio web de Eposak y Destinos Eposak.
+Conceptualización, diseño (``Photoshop``) y maquetación del sitio web de Eposak y Destinos Eposak. **Otras tecnologías usadas:** ``Bootstrap``, ``Javascript``, ``CSS``, ``HTML``.
 
 {{< figure class="fit-width" src="/images/portfolio/eposak.jpg" >}}
+
+También se hizo la edición y animación de video explicativo del concepto de Eposak. El video fue realizado utilizando ``Adobe Flash`` y ``AS3``. Los elementos gráficos utilizados fueron diseñados en ``Adobe Photoshop``.
+
+{{< youtube BwOySf_rIk4 >}}
 
 ***
 
@@ -80,14 +86,14 @@ Conceptualización, diseño y maquetación del sitio web de Eposak y Destinos Ep
 ### Colocación Virtual del Marco Estereotáctico en la Radiocirugía Estereotáctica
 **Trabajo Especial de Grado**
 
-En el trabajo se desarrolla un sistema que provee al neurocirujano de una guía virtual y cuantitativa para la colocación óptima del Marco Estereotáctico en el cráneo, haciendo uso de las imágenes diagnósticas del paciente obtenidas antes del tratamiento. El sistema desarrollado genera una serie de marcas fiduciales y estereotácticas en los estudios imageneológicos según el posicionamiento virtual del marco, que servirán de entrada para el sistema de planificación.
+En el trabajo se desarrolla un sistema que provee al neurocirujano de una guía virtual y cuantitativa para la colocación óptima del Marco Estereotáctico en el cráneo, haciendo uso de las imágenes diagnósticas del paciente obtenidas antes del tratamiento. El sistema desarrollado genera una serie de marcas fiduciales y estereotácticas en los estudios imageneológicos según el posicionamiento virtual del marco, que servirán de entrada para el sistema de planificación. **Tecnologías usadas:** ``C#``, ``OpenGL``, ``OpenTK``, ``Forms Apps``, lectura de imágenes ``DICOM``, ``Google Sketch-up``.
 
 {{< figure class="fit-width" src="/images/portfolio/tesis.jpg" >}}
 
 ### My2Cents
 **XNA Game Studio**
 
-Proyecto desarrollado bajo el marco del **Microsoft Imagine Cup** con el objetivo de contribuir a alcanzar los Objetivos de Desarrollo del Milenio en desarrollo un juego llamado **My2Cents**. Este nombre surgió teniendo en cuenta nuestra contribución al mundo utilizando las tecnologías actuales.
+Proyecto desarrollado bajo el marco del **Microsoft Imagine Cup** con el objetivo de contribuir a alcanzar los Objetivos de Desarrollo del Milenio en desarrollo un juego llamado **My2Cents**. Este nombre surgió teniendo en cuenta nuestra contribución al mundo utilizando las tecnologías actuales. **Tecnologías usadas:** ``C#``, ``XNA``, ``OpenGL``, ``Blender``, ``Photoshop``, ``Kinect``.
 
 {{< figure class="fit-width" src="/images/portfolio/my-2-cents.jpg" >}}
 
@@ -158,13 +164,4 @@ Proyecto con fines académicos para el curso de Fundamentos y Técnicas en Compu
 
 {{< youtube NVvh9aPDsAc >}}
 
-***
 
-## Flash
-
-### Video explicativo del concepto de Eposak
-**Adobe Flash**
-
-Edición y animación de video explicativo del concepto de Eposak. el video fue realizado utilizando Adobe Flash y AS3. Los elementos gráficos utilizados fueron diseñados en Adobe Photoshop.
-
-{{< youtube BwOySf_rIk4 >}}
