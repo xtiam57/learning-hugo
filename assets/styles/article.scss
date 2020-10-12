@@ -41,6 +41,10 @@ article {
     height: auto;
   }
 
+  iframe {
+    padding-bottom: $margin-base;
+  }
+
   // Table styles
   table {
     width: 100%;

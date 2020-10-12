@@ -18,6 +18,8 @@ Hasta el momento mi labor profesional se ha centrado en el ámbito del **diseño
 - Desarrollé un conjunto de componentes web genéricos (directivas) que podrían ser reutilizados en diferentes proyectos.
 - Responsable de liderar un equipo de hasta 3 programadores, lo que me permitió desarrollar habilidades de liderazgo, enseñanza y gestión de proyectos.
 
+***
+
 ### Habilidades técnicas
 - Diseño web (HTML, CSS, JavaScript)
 - Diseño UX para web
@@ -30,9 +32,8 @@ Hasta el momento mi labor profesional se ha centrado en el ámbito del **diseño
 - **Site builders**: HUGO y Wordpress
 - **Control de versiones**: GitHub, Bitbucket, GitLab
 
-Desde hace muchas lunas decidí crear cuentas con el nombre **xtiam57**, ahora puedes encontrarme en: Intagram, Facebook, Twitter y Github con ese alias.
 
-#### Más sobre mi (_geek style_)
+<!-- #### Más sobre mi (_geek style_)
 
 ```js
 // No soy un robot, también me gustan otras cosas...
@@ -64,11 +65,17 @@ export default const xtiam57 = {
   isDad: true,
   ...about
 }
-```
+``` -->
+
+***
+
+### Información adicional
+
+Desde hace muchas lunas decidí crear cuentas con el nombre **xtiam57**, ahora puedes encontrarme en: Intagram, Facebook, Twitter y Github con ese alias.
 
 También soy experto en karate bajo el agua, apasionado lector de cajas de cereal y superheroe asintomático. Cuando no estoy haciendo algo de eso, estoy programando o aprendiendo algo nuevo.
 
-Gracias por tomarte el tiempo de leer. Si te gusta lo que hago y te gustaría trabajar conmigo, me encantaría saber de ti: christiam.mena@gmail.com
+**Si te gusta lo que hago y te gustaría trabajar conmigo, me encantaría saber de ti: christiam.mena@gmail.com**
 
-Atentamente,
-[@xtiam57](https://github.com/xtiam57)
+Gracias por tomarte el tiempo de leer,
+[@xtiam57](https://github.com/xtiam57).

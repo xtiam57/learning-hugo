@@ -46,7 +46,7 @@ h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: $font-weight-bold;
-  line-height: $line-height-base;
+  line-height: $line-height-base * 0.85;
   font-family: $font-family-headings;
 }
 
@@ -150,6 +150,18 @@ a {
 
   &:hover {
     color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+    // -webkit-text-decoration-color: $link-decoration-color;
+    // text-decoration-color: $link-decoration-color;
+  }
+}
+
+a.negative {
+  color: $link-hover-color;
+  text-decoration: $link-decoration;
+
+  &:hover {
+    color: $link-color;
     text-decoration: $link-hover-decoration;
     // -webkit-text-decoration-color: $link-decoration-color;
     // text-decoration-color: $link-decoration-color;

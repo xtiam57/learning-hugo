@@ -1,7 +1,13 @@
 <footer>
   <nav>
-    <p>
-      [2020] Christiam Mena
-    </p>
+    <div>
+      2020 Christiam Mena
+    </div>
+    <div>
+      {{ range $index, $items := .Site.Menus.social }}
+      {{- if gt $index 0 }} · {{ end -}}
+      <a href="{{ .URL }}" target="_blank">{{ .Name }}</a>
+      {{ end }}
+    </div>
   </nav>
 </footer>

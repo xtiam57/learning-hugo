@@ -4,6 +4,7 @@
 body {
   height: 100vh;
   overflow: hidden;
+  background-color: $darkGray-color;
 
   main {
     align-items: center;
@@ -13,20 +14,19 @@ body {
     width: 100%;
   }
 
-  // &:after {
-  //   content: "";
-  //   display: block;
-  //   position: absolute;
-  //   left: 0;
-  //   right: 0;
-  //   top: 0;
-  //   bottom: 0;
-  //   background-image: radial-gradient($secondary-color 1px, transparent 0);
-  //   opacity: 0.15;
-  //   background-size: 30px 30px;
-  //   background-position: -19px -19px;
-  //   z-index: -1;
-  // }
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: radial-gradient($black-color 2px, transparent 0);
+    opacity: 0.15;
+    background-size: 20px 20px;
+    z-index: -1;
+  }
 
   .content-wrapper {
     width: 100%;
@@ -36,7 +36,6 @@ body {
     align-content: stretch;
     justify-content: space-between;
 
-
     .content-left {
       flex: 1 0 30%;
       background-color: $primary-color;
@@ -44,6 +43,7 @@ body {
       background-size: cover;
       background-image: url('/images/profileX.webp');
       background-repeat: no-repeat;
+      box-shadow: inset -10px 0 21px -5px rgba(0, 0, 0, 0.6);
 
       @media (max-width: 1024px) {
         display: none;
@@ -51,35 +51,211 @@ body {
     }
 
     .content-right {
-      flex: 1 0 70%;
+      // flex: 1 0 70%;
+      flex: 1 0 100%;
       display: flex;
-      flex-direction: column;
       justify-content: center;
 
-      @media (max-width: 1024px) {
-        flex: 1 0 100%;
-      }
+      // @media (max-width: 1024px) {
+      //   flex: 1 0 100%;
+      // }
 
-      p {
-        color: $text-muted;
-      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-      .logo-pic {
-        width: 80%;
-        max-width: 35ch;
-        margin-bottom: $margin-base * 2;
-      }
+        p {
+          color: $text-muted;
+        }
 
-      .links {
-        color: $primary-color;
-        font-weight: $font-weight-bold;
-        margin-bottom: 0;
+        .profile-wrap {
+          $profile-pic-size: 200px;
 
-        a {
-          display: inline-block;
-          margin: 0 ($margin-base * 0.35);
+          position: relative;
+          margin: 0 auto $margin-base * 2;
+          text-align: center;
+          height: $profile-pic-size;
+          width: $profile-pic-size;
+          z-index: 5;
+
+          .profile-pic {
+            box-shadow: $shadow-base;
+            border-radius: 9999px;
+            height: $profile-pic-size;
+            width: $profile-pic-size;
+            z-index: 0;
+          }
+
+          .pulse1 {
+            position: absolute;
+            width: $profile-pic-size;
+            height: $profile-pic-size;
+            margin: auto;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 2;
+            opacity: 0;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            -webkit-animation: pulsejg1 4s linear infinite;
+            animation: pulsejg1 4s linear infinite;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            box-shadow: inset 0px 0px 15px 10px rgba(0, 0, 0, 0.6);
+            box-sizing: border-box;
+            transition: all ease 0.8s;
+          }
+          .pulse2 {
+            position: absolute;
+            width: $profile-pic-size;
+            height: $profile-pic-size;
+            margin: auto;
+            top: 0px;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 2;
+            opacity: 0;
+            border: 10px solid rgba(0, 0, 0, 0.4);
+            -webkit-animation: pulsejg2 4s linear infinite;
+            animation: pulsejg2 4s linear infinite;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            box-shadow: inset 0px 0px 12px 5px rgba(255, 255, 255, 0.8);
+            box-sizing: border-box;
+            transition: all ease 0.8s;
+          }
+        }
+
+        .logo-pic {
+          width: 80%;
+          max-width: 35ch;
+          margin-bottom: $margin-base * 2;
+        }
+
+        .links {
+          color: $primary-color;
+          margin-bottom: 0;
+
+          a {
+            display: inline-block;
+            margin: 0 ($margin-base * 0.45);
+          }
         }
       }
     }
+  }
+}
+
+@-webkit-keyframes pulsejg1 {
+  0% {
+    -webkit-transform: scale(0.6);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(0.6);
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: scale(0.9);
+    opacity: 0.1;
+  }
+  70% {
+    -webkit-transform: scale(1.1);
+    opacity: 0.25;
+  }
+  80% {
+    -webkit-transform: scale(1.25);
+    opacity: 0.1;
+  }
+  100% {
+    -webkit-transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+@keyframes pulsejg1 {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(0.9);
+    opacity: 0.1;
+  }
+  70% {
+    transform: scale(1.1);
+    opacity: 0.25;
+  }
+  80% {
+    transform: scale(1.25);
+    opacity: 0.1;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes pulsejg2 {
+  0% {
+    -webkit-transform: scale(0.6);
+    opacity: 0;
+  }
+  40% {
+    -webkit-transform: scale(0.8);
+    opacity: 0.05;
+  }
+  50% {
+    -webkit-transform: scale(1);
+    opacity: 0.1;
+  }
+  60% {
+    -webkit-transform: scale(1.1);
+    opacity: 0.3;
+  }
+  80% {
+    -webkit-transform: scale(1.2);
+    opacity: 0.1;
+  }
+  100% {
+    -webkit-transform: scale(1.3);
+    opacity: 0;
+  }
+}
+
+@keyframes pulsejg2 {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  40% {
+    transform: scale(0.8);
+    opacity: 0.05;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 0.1;
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 0.3;
+  }
+  80% {
+    transform: scale(1.2);
+    opacity: 0.1;
+  }
+  100% {
+    transform: scale(1.3);
+    opacity: 0;
   }
 }

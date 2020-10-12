@@ -36,6 +36,10 @@
   background-color: $white-color;
   box-shadow: $blog-card-shadow;
 
+  &:hover {
+    border-color: $secondary-color;
+  }
+
   img {
     width: 100%;
     height: auto;
@@ -50,7 +54,8 @@
       margin-bottom: $margin-base * 0.5;
 
       a {
-        font-size: $font-size-sm * 0.85;
+        font-size: $font-size-sm * 0.95;
+        // font-weight: $font-weight-bold;
         display: inline-block;
         color: $secondary-color;
       }
