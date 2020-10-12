@@ -31,8 +31,6 @@ Acá algunos de los proyectos en los que he participado en los últimos años a 
 ### 3DMS
 **Conjunto de aplicaciones web**
 
-Juego al estilo **"¿Quien quiere ser millonario?"** utilizando conceptos y pasajes bíblicos. Fue un proyecto de caracter personal realizado en ``Angular`` y ``Electron`` (para la versión _stand-alone_ de Windows). Como valor añadido el juego **cuenta con la música y efectos de sonido** del juego real.
-
 {{< figure class="fit-width" src="/images/portfolio/3dms.jpg" >}}
 
 ### Biblionaire
