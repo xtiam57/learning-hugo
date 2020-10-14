@@ -6,7 +6,7 @@ image: /images/profile.jpg
 type: page
 ---
 
-## Hola, extraño
+# Hola, extraño
 
 Mi nombre es Christiam y soy **licenciado en Ciencias de la Computación** de la Universidad Central de Venezuela (**U-U-UCV!**).
 
@@ -24,7 +24,7 @@ Mi labor profesional se ha centrado en el ámbito del **diseño y desarrollo web
 
 
 
-### Habilidades técnicas
+## Habilidades técnicas
 - Diseño web (HTML, CSS, JavaScript)
 - Diseño UX para web
 - Diseño gráfico con conocimientos básicos (Adobe PhotoShop e Illustrator)
@@ -71,7 +71,7 @@ export default const xtiam57 = {
 }
 ``` -->
 
-### Información adicional
+## Información adicional
 
 Estoy dispuesto al aprendizaje de nuevas herramientas que me permitan continuar con el desarrollo de mi perfil profesional y competencias en el área de la computación.
 

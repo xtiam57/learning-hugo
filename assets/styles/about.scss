@@ -13,4 +13,8 @@
 
 .container {
   margin-top: $container-gutter;
+
+  h1, h2 {
+    border-bottom: 1px solid $lightGray-color;
+  }
 }
