@@ -1,4 +1,4 @@
-@import "variables";
+@import 'variables';
 
 code,
 pre {
@@ -12,7 +12,6 @@ pre {
   word-break: normal;
   word-spacing: normal;
   word-wrap: normal;
-
 }
 
 pre {
@@ -31,11 +30,14 @@ code {
 }
 
 :not(pre) > code {
+  font-size: $highlight-font-size;
   background: $lighterGray-color;
   border-radius: $highlight-radius;
   color: $primary-color;
   padding: 2px 4px 1px;
   white-space: normal;
+  margin: 0 2px;
+  border: 1px solid $lightGray-color;
 }
 
 .highlight,
@@ -160,7 +162,7 @@ pre.highlight {
     user-select: none;
   }
   .ln:after {
-    content: " ";
+    content: ' ';
   }
   .hll,
   .hl {
