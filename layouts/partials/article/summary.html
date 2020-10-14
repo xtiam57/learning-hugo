@@ -3,33 +3,32 @@
 {{ $position := .Params.Position | default "bottom" }}
 
 {{ if eq $style "cover" }}
-  {{ $class = "full-cover" }}
-  {{ with .Params.Image }}
-  <style>
-    .article-summary.full-cover {
-      background-image: url({{ . }});
-    }
-  </style>
-  {{ end }}
+{{ $class = "full-cover" }}
+{{ with .Params.Image }}
+<style>
+  .article-summary.full-cover {
+    background-image: url({{ . }});
+  }
+</style>
+{{ end }}
 {{ else if eq $style "fit" }}
-  {{ $class = "fit-cover" }}
+{{ $class = "fit-cover" }}
 {{ end }}
 
 {{ if not .Params.Image }}
-  {{ $class = "" }}
-  {{ $style = "" }}
+{{ $class = "" }}
+{{ $style = "" }}
 {{ end }}
 
 <section role="summary" class="article-summary {{ $class }}">
   {{ if and (eq $style "fit") (eq $position "top") }}
-  <figure>
+  <figure class="{{ $position }}">
     <img {{ with .Params.Image }}data-lazy="{{ . }}" {{ end }}
-         alt="{{- .Params.Summary | default .Description | markdownify -}}"
-         class="img-lazy">
+         alt="{{- .Params.Summary | default .Description | markdownify -}}" class="img-lazy">
     {{ with .Params.Caption }}
     <figcaption>{{ . | markdownify }}</figcaption>
     {{ end }}
-    </figure>
+  </figure>
   {{ end }}
 
   <div class="summary-wrapper">
@@ -60,13 +59,14 @@
 
     {{ partial "article/share-buttons.html" . }}
   </div>
-{{ if and (eq $style "fit") (eq $position "bottom") }}
-<figure>
-  <img {{ with .Params.Image }}data-lazy="{{ . }}" {{ end }}
-       alt="{{- .Params.Summary | default .Description | markdownify -}}" class="img-lazy">
-  {{ with .Params.Caption }}
-  <figcaption>{{ . | markdownify }}</figcaption>
+
+  {{ if and (eq $style "fit") (eq $position "bottom") }}
+  <figure class="{{ $position }}">
+    <img {{ with .Params.Image }}data-lazy="{{ . }}" {{ end }}
+         alt="{{- .Params.Summary | default .Description | markdownify -}}" class="img-lazy">
+    {{ with .Params.Caption }}
+    <figcaption>{{ . | markdownify }}</figcaption>
+    {{ end }}
+  </figure>
   {{ end }}
-</figure>
-{{ end }}
 </section>

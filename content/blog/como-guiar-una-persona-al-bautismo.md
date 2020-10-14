@@ -7,7 +7,7 @@ draft: true
 image: /images/bautizo.webp
 style: "fit"
 caption: Unplash **imagen**
-position: "top"
+position: "bottom"
 categories:
   - Fundamentos Cristianos
 tags:
