@@ -1,5 +1,6 @@
 {{ $class := "" }}
 {{ $style := .Params.Style | default "fit" }}
+{{ $position := .Params.Position | default "bottom" }}
 
 {{ if eq $style "cover" }}
   {{ $class = "full-cover" }}
@@ -20,7 +21,7 @@
 {{ end }}
 
 <section role="summary" class="article-summary {{ $class }}">
-  {{ if eq $style "fit" }}
+  {{ if and (eq $style "fit") (eq $position "top") }}
   <figure>
     <img {{ with .Params.Image }}data-lazy="{{ . }}" {{ end }}
          alt="{{- .Params.Summary | default .Description | markdownify -}}"
@@ -42,9 +43,9 @@
     {{ end }}
 
     <h1>{{ .Page.Title }}</h1>
-    <p class="summary-description">
+    <!-- <p class="summary-description">
       {{- .Params.Summary | default .Description | markdownify -}}
-    </p>
+    </p> -->
     <p class="summary-info">
       {{ if .Params.Author }}
       Por <strong>{{ .Params.Author }}</strong> ·
@@ -59,4 +60,13 @@
 
     {{ partial "article/share-buttons.html" . }}
   </div>
+{{ if and (eq $style "fit") (eq $position "bottom") }}
+<figure>
+  <img {{ with .Params.Image }}data-lazy="{{ . }}" {{ end }}
+       alt="{{- .Params.Summary | default .Description | markdownify -}}" class="img-lazy">
+  {{ with .Params.Caption }}
+  <figcaption>{{ . | markdownify }}</figcaption>
+  {{ end }}
+</figure>
+{{ end }}
 </section>

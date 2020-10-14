@@ -27,7 +27,7 @@
     h1 {
       color: $darkGray-color;
       line-height: 1.25;
-      margin-top: 0;
+      margin: 0;
     }
 
     .summary-description {
@@ -37,7 +37,7 @@
     .summary-info {
       font-size: $font-size-sm;
       color: $text-muted;
-      margin-top: $margin-base * 0.65;
+      margin-top: $margin-base * 0.35;
       margin-bottom: $margin-base * 0.65;
     }
   }
