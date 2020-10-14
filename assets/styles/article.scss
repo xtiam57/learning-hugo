@@ -10,7 +10,7 @@ article {
   background-color: $white-color;
   padding-top: $container-gutter;
 
-  h2 {
+  h1, h2 {
     border-bottom: 1px solid $lightGray-color;
   }
 
@@ -45,8 +45,8 @@ article {
     height: auto;
   }
 
-  iframe {
-    padding-bottom: $margin-base;
+  .instagram-media {
+    border: $border-base !important;
   }
 
   // Table styles

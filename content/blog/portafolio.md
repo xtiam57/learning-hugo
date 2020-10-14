@@ -36,7 +36,7 @@ Acá algunos de los proyectos en los que he participado en los últimos años a 
 ### Biblionaire
 **Juego Web**
 
-Juego al estilo **"¿Quien quiere ser millonario?"** utilizando conceptos y pasajes bíblicos. Fue un proyecto de caracter personal realizado en ``Angular`` y ``Electron`` (para la versión _stand-alone_ de Windows). Como valor añadido el juego **cuenta con la música y efectos de sonido** del juego real.
+Juego al estilo **"¿Quien quiere ser millonario?"** utilizando conceptos y pasajes bíblicos. Fue un proyecto de caracter personal realizado en ``Angular`` y ``Electron`` (para la versión _stand-alone_ de Windows). Como valor añadido el juego **cuenta con la música y efectos de sonido** del juego real ([visitar](https://biblionaire.vercel.app/ )).
 
 {{< figure class="fit-width" src="/images/portfolio/biblionaire.jpg" >}}
 
@@ -79,8 +79,6 @@ Conceptualización, diseño (``Photoshop``) y maquetación del sitio web de Epos
 También se hizo la edición y animación de video explicativo del concepto de Eposak. El video fue realizado utilizando ``Adobe Flash`` y ``AS3``. Los elementos gráficos utilizados fueron diseñados en ``Adobe Photoshop``.
 
 {{< youtube BwOySf_rIk4 >}}
-
-***
 
 ## Computación Gráfica
 
