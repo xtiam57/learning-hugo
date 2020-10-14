@@ -4,9 +4,8 @@ description: '"Por tanto, id, y haced discípulos a todas las naciones, bautizá
 author: "Christiam Mena"
 date: 2020-10-05T12:10:24-05:00
 draft: true
-image: /images/bautizo.webp
+image: /images/bautismo.jpg
 style: "fit"
-caption: Unplash **imagen**
 position: "bottom"
 categories:
   - Fundamentos Cristianos

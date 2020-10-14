@@ -49,7 +49,7 @@
     padding: ($margin-base * 1.5) ($margin-base * 2) 0;
 
     .post-categories {
-      color: $secondary-color;
+      color: $text-muted;
       line-height: 1;
       margin-bottom: $margin-base * 0.5;
 
@@ -57,7 +57,7 @@
         font-size: $font-size-sm * 0.95;
         // font-weight: $font-weight-bold;
         display: inline-block;
-        color: $secondary-color;
+        color: $text-muted;
       }
     }
 

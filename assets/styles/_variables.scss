@@ -41,8 +41,8 @@ $highlight-margin:            $margin-base * 1.25 !default;
 $table-margin:                $margin-base * 1.25 !default;
 $hr-margin-y:                 $margin-base !default;
 $container-gutter:            $margin-base * 2 !default;
-$hero-margin-top:             $margin-base !default;
-$hero-margin-bottom:          $margin-base !default;
+$hero-margin-top:             $margin-base * 2 !default;
+$hero-margin-bottom:          $margin-base * 2 !default;
 $special-width-margin-top:    $margin-base * 2 !default;
 $special-width-margin-bottom: $margin-base * 2 !default;
 
@@ -128,8 +128,8 @@ $share-buttons-color:         lighten($text-muted, 15%) !default;
 // Footer
 $footer-height:               55px !default;
 $footer-background:           $secondary-color !default;
-$footer-color:                $white-color !default;
-$footer-font-size:            $font-size-sm * 0.9 !default;
+$footer-color:                #272d37 !default;
+$footer-font-size:            $font-size-sm!default;
 
 // Summary
 $summary-cover-opacity:       0.4 !default;

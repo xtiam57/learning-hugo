@@ -26,7 +26,7 @@ Acá algunos de los proyectos en los que he participado en los últimos años a 
 
 {{< figure class="full-width" src="/images/portfolio/iglesia.jpg" >}}
 
-## Desarrollo web y aplicaciones de escritorio
+## Desarrollo web y aplicaciones
 
 ### 3DMS
 **Conjunto de aplicaciones web**
