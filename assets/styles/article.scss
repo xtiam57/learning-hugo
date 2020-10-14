@@ -10,10 +10,10 @@ article {
   background-color: $white-color;
   padding-top: $container-gutter;
 
-  > p:first-child,
-  > .toc + p {
-    @include font-size(1.2rem);
-  }
+  // > p:first-child,
+  // > .toc + p {
+  //   @include font-size(1.2rem);
+  // }
 
   > *:first-child {
     margin-top: 0;
