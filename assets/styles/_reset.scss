@@ -43,10 +43,9 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin: 1em 0 $margin-base;
   font-weight: $font-weight-bold;
-  line-height: $line-height-base * 0.85;
+  line-height: $line-height-base;
   font-family: $font-family-headings;
 }
 
@@ -75,8 +74,7 @@ h6 {
 }
 
 p {
-  margin-top: 0;
-  margin-bottom: $paragraph-margin-bottom;
+  margin: $paragraph-margin 0;
 }
 
 abbr[title],
@@ -95,15 +93,14 @@ ul {
 ol,
 ul,
 dl {
-  margin-top: 0;
-  margin-bottom: 1rem;
+  margin: $margin-base 0;
 }
 
 ol ol,
 ul ul,
 ol ul,
 ul ol {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 dt {
@@ -116,7 +113,7 @@ dd {
 }
 
 blockquote {
-  margin: 0 0 1rem;
+  margin: $margin-base 0;
 }
 
 b,

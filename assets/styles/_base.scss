@@ -135,9 +135,9 @@ figure {
   &.full-width,
   &.fit-width {
     img {
-    width: 100%;
-    height: auto;
-  }
+      width: 100%;
+      height: auto;
+    }
   }
 
   figcaption {
@@ -173,10 +173,18 @@ figure {
   @include make-container();
 }
 
-.align-items-center { align-items: center !important; }
-.align-items-end { align-items: flex-end !important; }
-.align-items-start { align-items: flex-start !important; }
-.align-items-stretch { align-items: stretch !important; }
+.align-items-center {
+  align-items: center !important;
+}
+.align-items-end {
+  align-items: flex-end !important;
+}
+.align-items-start {
+  align-items: flex-start !important;
+}
+.align-items-stretch {
+  align-items: stretch !important;
+}
 
 .columns {
   display: flex;

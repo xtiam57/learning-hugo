@@ -10,6 +10,10 @@ article {
   background-color: $white-color;
   padding-top: $container-gutter;
 
+  h2 {
+    border-bottom: 1px solid $lightGray-color;
+  }
+
   &.cover {
     &:after,
     &:before {
@@ -48,7 +52,7 @@ article {
   // Table styles
   table {
     width: 100%;
-    margin-bottom: $table-margin-bottom;
+    margin: $table-margin 0;
     color: $table-text-color;
     vertical-align: top;
     border-color: $table-border-color;
@@ -96,6 +100,10 @@ article {
     line-height: $blockquote-line-height;
     padding: $blockquote-padding;
     position: relative;
+
+    *:first-child {
+      margin-top: 0 !important;
+    }
 
     *:last-child {
       margin-bottom: 0 !important;

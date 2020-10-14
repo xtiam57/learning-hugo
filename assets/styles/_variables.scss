@@ -28,17 +28,17 @@ $font-weight-bold:            700 !default;
 $line-height-base:            1.75 !default;
 $h1-font-size:                $font-size-base * 2.5 !default;
 $h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.6 !default;
+$h3-font-size:                $font-size-base * 1.5 !default;
 $h4-font-size:                $font-size-base * 1.25 !default;
-$h5-font-size:                $font-size-base * 1.1 !default;
+$h5-font-size:                $font-size-base * 1.15 !default;
 $h6-font-size:                $font-size-base !default;
 $text-muted:                  #86919b !default;
 
 // Margins
 $margin-base:                 1rem !default;
-$paragraph-margin-bottom:     $margin-base * 1.25 !default;
-$highlight-margin-bottom:     $margin-base * 1.25 !default;
-$table-margin-bottom:         $margin-base * 1.25 !default;
+$paragraph-margin:            $margin-base  !default;
+$highlight-margin:            $margin-base * 1.25 !default;
+$table-margin:                $margin-base * 1.25 !default;
 $hr-margin-y:                 $margin-base !default;
 $container-gutter:            $margin-base * 2 !default;
 $hero-margin-top:             $margin-base !default;

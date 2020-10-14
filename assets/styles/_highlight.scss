@@ -21,7 +21,7 @@ pre {
   margin: 0;
   overflow: auto;
   padding: $highlight-padding;
-  margin-bottom: $highlight-margin-bottom;
+  margin: $highlight-margin 0;
   box-shadow: $highlight-shadow;
 }
 
@@ -33,7 +33,6 @@ code {
   font-size: $highlight-font-size;
   background: $lighterGray-color;
   border-radius: $highlight-radius;
-  color: $primary-color;
   padding: 2px 4px 1px;
   white-space: normal;
   margin: 0 2px;
@@ -43,7 +42,7 @@ code {
 .highlight,
 pre.highlight {
   border-radius: $highlight-radius;
-  margin-bottom: $highlight-margin-bottom;
+  margin: $highlight-margin 0;
 }
 
 .highlight {
