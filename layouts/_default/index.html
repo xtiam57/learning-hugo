@@ -11,30 +11,26 @@
 
 <body class="bare-layout">
   <main>
-    <div class="content-wrapper">
-
-      <div class="container">
-        <div class="profile-wrap">
-          <div class="pulse1"></div>
-          <div class="pulse2"></div>
-          <img class="profile-pic" src="images/profile.jpg" alt="Profile Image" />
-        </div>
-
-        <img class="logo-pic" src="images/logo-negative.svg" alt="Logo" />
-
-        <div>
-          {{ .Content }}
-        </div>
-
-        <p class="links">
-          {{ range $index, $items := .Site.Menus.main }}
-          {{- if gt $index 0 }}{{ end -}}
-          <a class="" href="{{ .URL }}">{{ .Name }}</a>
-          {{ end }}
-        </p>
+    <div class="container">
+      <div class="profile-wrap">
+        <div class="pulse1"></div>
+        <div class="pulse2"></div>
+        <img class="profile-pic" src="images/profile.jpg" alt="Profile Image" />
       </div>
 
+      <img class="logo-pic" src="images/logo-negative.svg" alt="Logo" />
+
+      <div class="lead">
+        {{ .Content }}
       </div>
+
+      <p class="links">
+        {{ range $index, $items := .Site.Menus.main }}
+        {{- if gt $index 0 }}{{ end -}}
+        <a class="" href="{{ .URL }}">{{ .Name }}</a>
+        {{ end }}
+      </p>
+    </div>
   </main>
 </body>
 

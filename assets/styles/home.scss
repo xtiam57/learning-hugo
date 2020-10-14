@@ -12,26 +12,6 @@ body {
     height: 100%;
     text-align: center;
     width: 100%;
-  }
-
-  &:after {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-image: radial-gradient($black-color 2px, transparent 0);
-    opacity: 0.15;
-    background-size: 20px 20px;
-    z-index: -1;
-  }
-
-  .content-wrapper {
-    width: 100%;
-    height: 100%;
-    display: flex;
     justify-content: center;
 
     .container {
@@ -40,9 +20,13 @@ body {
       justify-content: center;
       align-items: center;
 
-      p {
-        color: $text-muted;
-        margin-top: 0;
+      .lead {
+        @include font-size(1.05rem);
+
+        *:first-child {
+          color: $text-muted;
+          margin-top: 0;
+        }
       }
 
       .profile-wrap {
@@ -123,6 +107,20 @@ body {
         }
       }
     }
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: radial-gradient($black-color 2px, transparent 0);
+    opacity: 0.15;
+    background-size: 20px 20px;
+    z-index: -1;
   }
 }
 
