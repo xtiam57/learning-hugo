@@ -12,7 +12,7 @@ tags:
   - tag1
 # Cover information
 image: /images/{COVER_IMAGE}
-style: "cover|fit"
+style: "cover|fit|none"
 caption: Unplash
 position: "bottom|top"
 ---

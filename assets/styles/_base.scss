@@ -106,34 +106,14 @@ main {
   margin-left: 0 !important;
 }
 
-// Thanks to https://css-tricks.com/full-width-containers-limited-width-parents/
-.full-width {
-  left: 50%;
-  margin: $special-width-margin-top -50vw $special-width-margin-bottom;
-  position: relative;
-  right: 50%;
-  width: 100vw;
-  display: block;
-}
-
-// Base on https://css-tricks.com/full-width-containers-limited-width-parents/
-.fit-width {
-  left: 50%;
-  margin: $special-width-margin-top -50vw $special-width-margin-bottom;
-  padding: 0 15vw;
-  position: relative;
-  right: 50%;
-  width: 100vw;
-  display: block;
-
-  @media (max-width: 1024px) {
-    padding: 0;
-  }
-}
-
 figure {
+  margin: $margin-base 0;
+
   &.full-width,
   &.fit-width {
+    margin-top: 0;
+    margin-bottom: 0;
+
     img {
       width: 100%;
       height: auto;
@@ -150,6 +130,31 @@ figure {
     p {
       margin: 0;
     }
+  }
+}
+
+// Thanks to https://css-tricks.com/full-width-containers-limited-width-parents/
+.full-width {
+  left: 50%;
+  margin: $special-width-margin-top -50vw $special-width-margin-bottom !important;
+  position: relative;
+  right: 50%;
+  width: 100vw;
+  display: block;
+}
+
+// Base on https://css-tricks.com/full-width-containers-limited-width-parents/
+.fit-width {
+  left: 50%;
+  margin: $special-width-margin-top -50vw $special-width-margin-bottom !important;
+  padding: 0 15vw;
+  position: relative;
+  right: 50%;
+  width: 100vw;
+  display: block;
+
+  @media (max-width: 1024px) {
+    padding: 0;
   }
 }
 
