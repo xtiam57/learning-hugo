@@ -156,6 +156,14 @@ figure {
   @media (max-width: 1024px) {
     padding: 0;
   }
+
+  @media (min-width: 1280px) {
+    padding: 0 20vw;
+  }
+
+  @media (min-width: 1900px) {
+    padding: 0 25vw;
+  }
 }
 
 @keyframes lazyload {
