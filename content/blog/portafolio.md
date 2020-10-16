@@ -22,8 +22,6 @@ Acá algunos de los proyectos en los que he participado en los últimos años a 
 ### Iglesia Bautista Fundamental Monte Calvario
 **Diseño Gráfico**
 
-
-
 {{< figure class="full-width" src="/images/portfolio/iglesia.jpg" >}}
 
 ## Desarrollo web y aplicaciones
