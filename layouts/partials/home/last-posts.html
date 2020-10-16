@@ -1,0 +1,34 @@
+<ul>
+  {{ $posts := where .Site.RegularPages "Type" "blog" | first 2 }}
+  {{ range $posts }}
+  <li>
+    <div class="post-info">
+      {{ if .Params.categories }}
+      <div class="post-categories">
+        {{ range $index, $categories := .Params.categories }}
+        {{- if gt $index 0 }} · {{ end -}}
+        <a href="/categories/{{ . | urlize }}">{{ . }}</a>
+        {{ end }}
+      </div>
+      {{ end }}
+      <h4>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </h4>
+      <p class="description">
+        {{- .Params.Summary | default .Description -}}
+      </p>
+    </div>
+    <p class="post-details">
+      {{ if .Params.Author }}
+      Por <strong>{{ .Params.Author }}</strong> ·
+      {{ else }}
+      Por <strong>Christiam Mena</strong> ·
+      {{ end }}
+      <time datetime="{{ .PublishDate.Format "January 2, 2006" }}">
+        {{ .PublishDate.Format "January 2, 2006" }}
+      </time> ·
+      {{.ReadingTime}} minutos de lectura
+    </p>
+  </li>
+  {{ end }}
+</ul>
