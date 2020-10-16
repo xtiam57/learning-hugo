@@ -15,7 +15,7 @@ tags:
   - computación Gráfica
   - universidad
   - c++
-  - c#
+  - c sharp
   - OpenGL
   - GLSL
 # Cover information
