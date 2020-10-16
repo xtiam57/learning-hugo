@@ -1,0 +1,40 @@
+<script>
+  const links = document.querySelectorAll('a[href^="#"]');
+
+  links.forEach((link) => {
+    const href = link.getAttribute('href');
+    if (!isNaN(href[1])) {
+      link.setAttribute('href', '#_' + href.substr(1))
+    }
+    if (href.includes(':')) {
+      link.setAttribute('href', href.replace(':', '_'))
+    }
+    link.addEventListener('click', clickHandler);
+  });
+
+  const ids = document.querySelectorAll('[id]');
+
+  ids.forEach((element) => {
+    const id = element.getAttribute('id');
+    if (!isNaN(id[0])) {
+      element.setAttribute('id', '_' + id)
+    }
+    if (id.includes(':')) {
+      element.setAttribute('id', id.replace(':', '_'))
+    }
+  });
+
+  function clickHandler(e) {
+    e.preventDefault();
+    const href = this.getAttribute('href');
+    const el = document.querySelector(href);
+    const parentOffsetTop = el.offsetParent.offsetTop;
+    const offsetTop = el.offsetTop;
+    const diff = offsetTop + parentOffsetTop - 55 - 20;
+
+    scroll({
+      top: diff,
+      behavior: 'smooth'
+    });
+  }
+</script>

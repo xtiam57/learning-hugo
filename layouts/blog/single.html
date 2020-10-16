@@ -14,7 +14,8 @@
 <main>
   {{ partial "article/summary.html" . }}
 
-  <article role="article" class="container {{ $summaryStyle }}">
+  <article role="article"
+           class="container {{ $summaryStyle }}">
     {{ partial "article/toc.html" . }}
 
     {{ .Content }}
@@ -30,5 +31,7 @@
 </main>
 
 {{ partial "lazyload-script.html" . }}
+
+{{ partial "article/smooth-scroll.html" . }}
 
 {{ end }}
