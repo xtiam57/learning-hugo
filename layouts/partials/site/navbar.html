@@ -1,11 +1,15 @@
 <header class="navbar">
   <nav role="navbar">
-    <a href="{{ "/" | relURL }}" title="Home">
-      <img src="/images/nav-logo.svg" alt="Logo" width="50px">
+    <a href="{{ "/" | relURL }}"
+       title="Home">
+      <img src="/images/nav-logo.svg"
+           alt="Logo"
+           width="50px">
     </a>
     <div class="navbar-links">
       {{ range .Site.Menus.main }}
-      <a href="{{ .URL }}" class="">{{ .Name }}</a>
+      <a href="{{ .URL | absURL }}"
+         class="">{{ .Name }}</a>
       {{ end }}
     </div>
   </nav>

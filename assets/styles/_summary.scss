@@ -61,7 +61,13 @@
         }
       }
 
+      &.bottom {
+        margin-top: 0;
+      }
+
       &.top {
+        margin-top: 0;
+
         @media (max-width: 1024px) {
           padding-top: 0;
         }

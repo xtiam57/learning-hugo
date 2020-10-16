@@ -76,8 +76,10 @@
   .post-details {
     color: $text-muted;
     font-size: $font-size-sm * 0.875;
-    margin-top: $margin-base * 1.5;
-    padding: 0 ($margin-base * 2);
+    margin-top: $margin-base;
+    margin-bottom: 0;
+    padding: 0 ($margin-base * 2) ($margin-base * 1.5);
+
   }
 
   @media screen and (min-width: $body-max-width) {

@@ -6,7 +6,8 @@
     <div>
       {{ range $index, $items := .Site.Menus.social }}
       {{- if gt $index 0 }} · {{ end -}}
-      <a href="{{ .URL }}" target="_blank">{{ .Name }}</a>
+      <a href="{{ .URL | absURL }}"
+         target="_blank">{{ .Name }}</a>
       {{ end }}
     </div>
   </nav>
