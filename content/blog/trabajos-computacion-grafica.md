@@ -14,6 +14,10 @@ tags:
   - trabajos
   - computación Gráfica
   - universidad
+  - c++
+  - c#
+  - OpenGL
+  - GLSL
 # Cover information
 image: /images/portfolio/tesis.jpg
 style: "none"
@@ -21,68 +25,84 @@ style: "none"
 
 Un viejo profesor de matemáticas siempre nos decía: **"recordar... es vivir"**.
 
-Hace poco revisando mis viejos archivos y proyectos de la universidad me di cuenta de que aquel viejo dicho era cierto. Nada más bonito que **"vivir"** al recordar: las noches sin dormir terminando un proyecto, las horas de depuración perdidas al enterarte de que sólo te faltaba una coma, el nombre **tesis-final-ahorasi.docx"**, o aquellos cubos que por alguna razón dejaban de tener 6 caras o dejaban de pintarse del color deseado.
+Hace poco revisando mis viejos archivos y proyectos de la universidad me di cuenta de que aquel viejo dicho era cierto. Nada más bonito que **"vivir"** al recordar: las noches sin dormir terminando un proyecto, las horas de depuración perdidas al enterarte de que sólo te faltaba una coma, el nombre **tesis-final-ahorasi.docx"**, o aquellos cubos que por alguna razón dejaban de tener 6 caras o simplemente desaparecían del todo.
 
-La computación gráfica es increíble y disfruté mucho esa etapa, tanto que decidí compartir algunos de los mejores proyectos de mi etapa universitaria.
+La computación gráfica es increíble y disfruté mucho esa etapa de mi carrera, tanto que decidí compartir algunos de los mejores proyectos de mi etapa universitaria.
 
 ## Trabajo Especial de Grado
 **Colocación Virtual del Marco Estereotáctico en la Radiocirugía Estereotáctica**
 
 En el trabajo se desarrolla un sistema que provee al neurocirujano de una guía virtual y cuantitativa para la colocación óptima del Marco Estereotáctico en el cráneo, haciendo uso de las imágenes diagnósticas del paciente obtenidas antes del tratamiento. El sistema desarrollado genera una serie de marcas fiduciales y estereotácticas en los estudios imageneológicos según el posicionamiento virtual del marco, que servirán de entrada para el sistema de planificación.
 
+Suena un poco confuso de entrada, pero acá les muestro algunos aspectos interesantes del sistema:
+
 ### El marco
 
-Todas las piezas que por defecto maneja la aplicación VSF fueron diseñadas con Google Sketchup 8©[^sketchup] haciendo uso de aproximaciones a las escalas reales de cada componente y fueron exportadas en formato OBJ por la misma aplicación. En la Figura 4.8 se pueden apreciar las piezas diseñadas para la aplicación VSF.
+Todas las piezas que por defecto manejaba la aplicación fueron diseñadas con **Google Sketchup 8©**[^sketchup] haciendo uso de aproximaciones a las escalas reales de cada componente y fueron exportadas en formato OBJ por la misma aplicación.
 
 [^sketchup]: [Google Sketchup](https://www.sketchup.com/es)
 
-La razón principal por la cual los modelos fueron exportados en formato OBJ es porque éste es aceptado universalmente por un gran número de visualizadores de modelos 3D y aplica-ciones tipo CAD lo cual permite la edición de las piezas usadas en cualquier momento.
+{{< figure class="fit-width" src="/images/tesis/tesis-2.jpg" caption="Marco Estereotáctico y todos sus componentes" >}}
 
-{{< figure class="fit-width" src="/images/tesis/tesis-2.jpg" caption="Marco Estereotáctico y todas sus piezas" >}}
-
-### La rotación
-
-El componente de rotación está conformado por un aro o circunferencia centrada en el ME y dos líneas indicadoras principales. La circunferencia actúa como interfaz que permite al usuario hacer clic sobre ella para realizar una rotación específica y las dos líneas funcionan de guías que indican la posición inicial de la rotación (donde se hizo clic) y la posición final de la rotación (donde se en-cuentra actualmente el cursor del ratón). Adicionalmente, se despliega una etiqueta que indica el ángulo actual expresado en grados.
-
-{{< figure class="fit-width" src="/images/tesis/tesis-3.jpg" caption="Visualización del componente de rotación" >}}
-
-### Traslación y escalamiento
-
-Otra herramienta de transformación está encapsulada en la clase MovementTool. Esta clase es la encargada de controlar el componente de traslaciones o movimientos del ME. El com-ponente está formado por tres flechas paralelas a los ejes X, Y y Z; una etiqueta para el desplie-gue de las medidas y tres selectores triangulares.
-
-Para interactuar con esta herramienta el usuario debe hacer clic sobre las flechas o los se-lectores de plano. Cada uno de los elementos tiene comportamientos distintos. Al hacer clic so-bre las flecha el usuario solo tendrá permitido trasladar el ME sobre el eje seleccionado, mientras que si selecciona los otros indicadores podrá desplazar el ME por el plano que corresponda (XY, XZ o YZ). Al iniciar el movimiento se mostrará una etiqueta que indicará la distancia desplazada en cada eje con respecto a la posición inicial. Dicha distancia está expresada en milímetros.
-
-{{< figure class="fit-width" src="/images/tesis/tesis-4.jpg" caption="Visualización de la herramienta de traslación" >}}
-
-### Clipping
-
-La clase ClipTool es la encargada de realizar cortes transversales a un elemento 3D haciendo uso del procedimiento de “recorte” (clipping, en inglés) definido en el API de OpenGL. Esta clase es utilizada en la aplicación VSF como un componente para la visualización interior del volumen des-plegado. El procedimiento de clipping se encarga de identificar una porción del volumen que se encuentra dentro o fuera de una región tridimensional definida por la intersección de tres planos perpendiculares entre sí, como se aprecia en la Figura 4.15. Luego, toda la porción dentro del área definida es mostrada en pantalla y el resto simplemente no es desplegada.
-
-{{< figure class="fit-width" src="/images/tesis/tesis-6.jpg" caption="Visualización del componente de Clipping del volumen. En (A) se muestran los planos de clipping y en (B) se muestra el componente que permite ajustar las posiciones de los planos" >}}
+La razón principal por la cual los modelos fueron exportados en formato OBJ es porque éste es aceptado universalmente por un gran número de visualizadores de modelos 3D y aplicaciones tipo CAD lo cual permite la edición de las piezas usadas en cualquier momento.
 
 ### La interfaz
 
-La interfaz gráfica de la aplicación está dividida en cinco grandes secciones. Cada una de estas secciones está agrupada en sub-elementos según sus características, funcionalidades y similitudes.
+La interfaz gráfica de la aplicación estaba dividida en cinco grandes secciones. Cada una de estas secciones estba agrupada en sub-elementos según sus características, funcionalidades y similitudes.
 
-{{< figure src="/images/tesis/tesis-7.jpg" caption="Elementos que conforman la interfaz gráfica de la aplicación Virtual Stereotactic Frame" >}}
+{{< figure src="/images/tesis/tesis-7.jpg" caption="Elementos que conformaban la interfaz gráfica de la aplicación Virtual Stereotactic Frame" >}}
 
-### El viewport
+### Los _viewports_
 
-Otros elementos visibles en el viewport son: el ViewCube, el cual permite el cambio de vista de manera rápida y sencilla, ubicado en la esquina superior derecha; las reglas que indican las medi-das del volumen, ubicada a la derecha y abajo del viewport; y la visualización de los ejes cartesia-nos tridimensionales, ubicados en la esquina inferior izquierda.
+Los cuatro _viewports_ conformaban la sección más grande de toda la aplicación y proveían diferentes maneras de visualizar todos los elementos de la escena. Cada uno de los _viewports_ era perfectamente configurable por el usuario y eran independientes entre ellos (en términos de configuración). Esta sección de la aplicación era la más importante de todas.
+
+Un _viewport_ puede definirse como una ventana pequeña en donde se despliega la escena vista desde cierta perspectiva. Los cuatro _viewports_ poseían numerosas opciones que proveían a la aplicación de diferentes maneras de visualizar la escena, por ejemplo: vista perspectiva u ortográfica (también llamada ortogonal).
 
 {{< figure src="/images/tesis/tesis-9.jpg" caption="Elementos que conforman el viewport" >}}
 
+Otros elementos visibles en el _viewport_ era: el ***ViewCube***, el cual permite el cambio de vista de manera rápida y sencilla, ubicado en la esquina superior derecha; las reglas que indican las medidas del volumen, ubicada a la derecha y abajo del _viewport_; y la visualización de los ejes cartesianos tridimensionales, ubicados en la esquina inferior izquierda.
+
+### Rotación
+
+El componente de rotación estaba conformado por un aro o circunferencia centrada en el Marco Estereotáctico y dos líneas indicadoras principales. La circunferencia actuaba como interfaz que permitía al usuario hacer clic sobre ella para realizar una rotación específica y las dos líneas funcionaban de guías que indican la posición inicial de la rotación (donde se hizo clic) y la posición final de la rotación (donde se encuentra actualmente el cursor del ratón). Adicionalmente, se desplegaba una etiqueta que indicaba el ángulo actual expresado en grados.
+
+{{< figure class="fit-width" src="/images/tesis/tesis-3.jpg" caption="Visualización del componente de rotación" >}}
+
+### Traslación
+
+El componente estba formado por tres flechas paralelas a los ejes X, Y y Z; una etiqueta para el despliegue de las medidas y tres selectores triangulares.
+
+Para interactuar con esta herramienta el usuario debía hacer clic sobre las flechas o los se-lectores de plano. Cada uno de los elementos tienía comportamientos distintos. Al hacer clic sobre las flecha el usuario solo tenía permitido trasladar el marco sobre el eje seleccionado, mientras que si seleccionaba los otros indicadores podía desplazar el marco por el plano que corresponda (XY, XZ o YZ).
+
+{{< figure class="fit-width" src="/images/tesis/tesis-4.jpg" caption="Visualización de la herramienta de traslación" >}}
+
+Al iniciar el movimiento se mostraba una etiqueta que indicaba la distancia desplazada en cada eje con respecto a la posición inicial. Dicha distancia estaba expresada en milímetros.
+
+### Clipping
+
+Este componente era el encargado de realizar cortes transversales a un elemento 3D haciendo uso del procedimiento de **“recorte”** (_clipping_, en inglés) definido en el API de **OpenGL**. Esta componente era utilizado en la aplicación como una herramienta para la visualización interior del volumen desplegado. El procedimiento de _clipping_ se encargaba de identificar una porción del volumen que se encuentra dentro o fuera de una región tridimensional definida por la intersección de tres planos perpendiculares entre sí. Luego, toda la porción dentro del área definida se mostraba en pantalla y el resto simplemente no se desplegaba.
+
+{{< figure class="fit-width" src="/images/tesis/tesis-6.jpg" caption="Visualización del componente de Clipping del volumen. En **(A)** se muestran los planos de clipping y en **(B)** se muestra el componente que permite ajustar las posiciones de los planos" >}}
+
 ### El volumen (a.k.a. el paciente)
 
-La mayoría de las veces cuando se trabaja con despliegue de volúmenes en el área de medicina es necesario visualizar tejidos o zonas específicas del cuerpo humano. Para lograr esto se utiliza una función de transferencia. Una función de transferencia se encarga de asignar pro-piedades ópticas, como color y transparencia, a las muestras del volumen desplegado. En el caso de funciones de transferencias de una dimensión, las cuales son abarcadas en este trabajo, dicho procedimiento se logra asignando valores de color (rojo, verde, azul y transparencia; o RGBA por sus siglas en inglés) a cada iso-valor del volumen utilizando alguna función de correspondencia.
+La mayoría de las veces cuando se trabaja con despliegue de volúmenes en el área de medicina es necesario visualizar tejidos o zonas específicas del cuerpo humano. Para lograr esto se utilizó una **función de transferencia**.
 
-Una función de transferencia puede ser diseñada para visualizar capas de piel, huesos u otros tejidos internos de dos maneras diferentes. La primera es definiendo de forma manual ca-da valor de correspondencia entre un iso-valor y un color RGBA, lo cual deriva en un proceso te-dioso y poco práctico, por lo que no es considerado como una solución factible en este trabajo. La segunda manera es diseñando un control interactivo que permita definir de manera rápida, práctica y lo más importante, en tiempo real, cualquier función de transferencia.
+> Una **función de transferencia** se encarga de asignar propiedades ópticas, como color y transparencia, a las muestras del volumen desplegado.
+
+En éste caso se uso una función de transferencia de una dimensión. Dicho procedimiento se logra asignando valores de color (rojo, verde, azul y transparencia; o _RGBA_ por sus siglas en inglés) a cada iso-valor del volumen utilizando alguna función de correspondencia.
+
+{{< figure src="/images/tesis/tesis-5.jpg" caption="Ventana de Función de Transferencia" >}}
+
+Una función de transferencia puede ser diseñada para visualizar capas de piel, huesos u otros tejidos internos de dos maneras diferentes:
+- La primera es definiendo de forma manual cada valor de correspondencia entre un iso-valor y un color RGBA, lo cual deriva en un proceso tedioso y poco práctico, por lo que no fue considerado como una solución factible para éste trabajo.
+- La segunda manera es diseñando un control interactivo que permita definir de manera rápida, práctica y lo más importante, en tiempo real, cualquier función de transferencia.
 
 {{< figure class="fit-width" src="/images/tesis/tesis-10.jpg" caption="Las diferentes configuraciones por defecto de la Función de Transferencia" >}}
 
 ### Detección de la lesión
 
-En esta ventana se pueden apreciar todos los detalles referentes a las imágenes DICOM cargadas en el sistema, así como la información básica del paciente, permite hacer mediciones, localizar y marcar la lesión en el cráneo y cambiar los valores en la función lineal para la visualiza-ción de los cortes (ancho y centro de la ventana).
+En esta ventana se podía apreciar todos los detalles referentes a las imágenes DICOM cargadas en el sistema, así como la información básica del paciente, permitía hacer mediciones, localizar y marcar la lesión en el cráneo y cambiar los valores en la función lineal para la visualización de los cortes (ancho y centro de la ventana).
 
 {{< figure src="/images/tesis/tesis-11.jpg" caption="Elementos que conforman la interfaz gráfica del visor DICOM" >}}
 
