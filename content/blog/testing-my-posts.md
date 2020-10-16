@@ -1,7 +1,7 @@
 ---
 title: "Aprendiendo HUGO: prueba de todo lo que puede tener un post"
 description: "Descripción del post de prueba..."
-image: /images/cover4.webp
+image:
 style: "cover"
 date: 2020-09-17T16:59:56-05:00
 draft: true
@@ -145,7 +145,7 @@ Nulla condimentum nibh ac felis molestie commodo. Curabitur eu urna feugiat, mol
 < figure src="/images/my_image.jpg" caption="My caption" class="full-width" >
 ```
 
-{{< figure src="/images/cover2.webp" caption="UIn maximus dictum turpis, vel suscipit tortor. Nam ut purus sit amet nisi tincidunt." class="full-width" >}}
+
 
 Sed tincidunt eget enim et finibus. Nam pulvinar lorem sit amet pulvinar mattis. Curabitur massa tellus, molestie et augue ac, rutrum cursus diam. Curabitur convallis dictum nibh, eget ultrices elit elementum id. Sed quis facilisis est. Curabitur tellus lorem, tempus quis enim sit amet, venenatis malesuada urna. Proin ac metus sed urna vehicula elementum. Etiam congue in lectus at elementum. Ut consequat non felis sit amet pretium.
 

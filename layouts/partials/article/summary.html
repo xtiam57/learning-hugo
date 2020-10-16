@@ -1,13 +1,21 @@
 {{ $class := "" }}
 {{ $style := .Params.Style | default "fit" }}
 {{ $position := .Params.Position | default "bottom" }}
+{{ $image := "" }}
+{{ $placeholder := "" }}
+
+{{ if .Params.Image  }}
+{{ $image = resources.Get .Params.Image }}
+{{ $placeholder = $image.Resize .Site.Params.Quality }}
+{{ $placeholder = $placeholder.Filter (images.GaussianBlur .Site.Params.Gaussian) }}
+{{ end }}
 
 {{ if eq $style "cover" }}
 {{ $class = "full-cover" }}
-{{ with .Params.Image }}
+{{ if $image }}
 <style>
   .article-summary.full-cover {
-    background-image: url({{ . }});
+    background-image: url({{ $image.Permalink }});
   }
 </style>
 {{ end }}
@@ -20,11 +28,14 @@
 {{ $style = "" }}
 {{ end }}
 
-<section role="summary" class="article-summary {{ $class }}">
+<section role="summary"
+         class="article-summary {{ $class }}">
   {{ if and (eq $style "fit") (eq $position "top") }}
   <figure class="{{ $position }}">
-    <img {{ with .Params.Image }}data-lazy="{{ . }}" {{ end }}
-         alt="{{- .Params.Summary | default .Description | markdownify -}}" class="img-lazy">
+    <img data-lazy="{{ $image.Permalink }}"
+         src="{{ $placeholder.Permalink }}"
+         alt="{{- .Params.Summary | default .Description | markdownify -}}"
+         class="img-lazy">
     {{ with .Params.Caption }}
     <figcaption>{{ . | markdownify }}</figcaption>
     {{ end }}
@@ -62,8 +73,10 @@
 
   {{ if and (eq $style "fit") (eq $position "bottom") }}
   <figure class="{{ $position }}">
-    <img {{ with .Params.Image }}data-lazy="{{ . }}" {{ end }}
-         alt="{{- .Params.Summary | default .Description | markdownify -}}" class="img-lazy">
+    <img data-lazy="{{ $image.Permalink }}"
+         src="{{ $placeholder.Permalink }}"
+         alt="{{- .Params.Summary | default .Description | markdownify -}}"
+         class="img-lazy">
     {{ with .Params.Caption }}
     <figcaption>{{ . | markdownify }}</figcaption>
     {{ end }}

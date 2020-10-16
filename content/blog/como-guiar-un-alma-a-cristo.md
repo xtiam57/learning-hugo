@@ -5,7 +5,6 @@ author: "Christiam Mena"
 date: 2020-10-05T09:44:07-05:00
 draft: true
 toc: true
-image: /images/ganando-almas.webp
 style: "cover"
 caption: Unplash
 categories:
@@ -78,7 +77,7 @@ Apocalipsis 3.20 “He aquí, yo estoy a la puerta y llamo; si alguno oye mi voz
 
 Apocalipsis 3.20 “He aquí, yo estoy a la puerta y llamo; si alguno oye mi voz y abre la puerta, entraré a él, y cenaré con él, y él conmigo.”
 
-{{< figure src="/images/ganar-almas-ninos.webp" class="fit-width" caption="Técnica para ganar almas usando colores." >}}
+{{< figure src="/images/ganar-almas-ninos.jpg" class="fit-width" caption="Técnica para ganar almas usando colores." >}}
 
 > Fue negro mi corazón <br />
 > más Cristo de Dios el don <br />

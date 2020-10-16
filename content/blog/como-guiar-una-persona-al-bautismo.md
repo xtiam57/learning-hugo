@@ -7,6 +7,7 @@ draft: true
 image: /images/bautismo.jpg
 style: "fit"
 position: "bottom"
+caption: ""
 categories:
   - Fundamentos Cristianos
 tags:

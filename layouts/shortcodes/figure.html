@@ -1,7 +1,15 @@
-<figure {{ with .Get "class" }} class="{{ . }}" {{ end }}>
-  <img {{ with .Get "caption" }}alt="{{ . | markdownify }}" {{ end }} data-lazy="{{ .Get "src" }}"
-       class="img-lazy {{ with .Get "imageClass" }}{{ . }}{{ end }}"
-       {{ with .Get "width" }}width="{{ . }}" {{ end }} />
+{{ $image := resources.Get (.Get "src") }}
+{{ $placeholder := $image.Resize .Site.Params.Quality }}
+{{ $placeholder = $placeholder.Filter (images.GaussianBlur .Site.Params.Gaussian) }}
+
+<figure {{ with .Get "class" }}
+        class="{{ . }}"
+        {{ end }}>
+  <img {{ with .Get "caption" }}alt="{{ . | markdownify }}"
+       {{ end }}
+       data-lazy="{{ $image.Permalink }}"
+       src="{{ $placeholder.Permalink }}"
+       class="img-lazy {{ with .Get "imageClass" }}{{ . }}{{ end }}" />
   {{ with .Get "caption" }}
   <figcaption>{{ . | markdownify }}</figcaption>
   {{ end }}

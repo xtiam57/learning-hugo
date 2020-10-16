@@ -10,6 +10,8 @@ paginate = 10
 
 [params]
   image = "/images/logo-small.png"
+  quality = "100x q05"
+  gaussian = 6
 
 [menu]
   [[menu.main]]
