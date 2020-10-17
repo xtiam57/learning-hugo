@@ -24,14 +24,14 @@
       }
     }
 
-    h1 {
+    .summary-title {
       color: $darkGray-color;
       line-height: 1.25;
       margin: 0;
     }
 
     .summary-description {
-      margin: 0;
+
     }
 
     .summary-info {
@@ -42,7 +42,7 @@
     }
   }
 
-  &.fit-cover {
+  &.summary-fit {
     padding-top: 0;
 
     figure {
@@ -61,11 +61,12 @@
         }
       }
 
-      &.bottom {
+      &.figure-bottom,
+      &.figure-middle {
         margin-top: 0;
       }
 
-      &.top {
+      &.figure-top {
         margin-top: 0;
 
         @media (max-width: 1024px) {
@@ -75,7 +76,7 @@
     }
   }
 
-  &.full-cover {
+  &.summary-cover {
     background-color: $white-color;
     background-position: center;
     background-size: cover;
@@ -89,6 +90,14 @@
     .summary-wrapper {
       background-color: transparent;
       padding-bottom: $container-gutter;
+
+      &.wrapper-top {
+        justify-content: flex-start;
+      }
+
+      &.wrapper-middle {
+        justify-content: center;
+      }
     }
 
     .summary-categories {
@@ -98,7 +107,7 @@
       }
     }
 
-    h1 {
+    .summary-title {
       color: $white-color;
     }
 

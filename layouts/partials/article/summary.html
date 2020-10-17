@@ -1,37 +1,32 @@
-{{ $class := "" }}
+{{ $image := .Params.Image | default "" }}
+{{ $placeholder := "" }}
 {{ $style := .Params.Style | default "fit" }}
 {{ $position := .Params.Position | default "bottom" }}
-{{ $image := "" }}
-{{ $placeholder := "" }}
 
-{{ if .Params.Image  }}
+<!-- Apply placeholder filter -->
+{{ if $image }}
 {{ $image = resources.Get .Params.Image }}
-{{ $placeholder = $image.Resize .Site.Params.Quality }}
-{{ $placeholder = $placeholder.Filter (images.GaussianBlur .Site.Params.Gaussian) }}
+{{ $placeholder = $image.Resize .Site.Params.PlaceholderQuality }}
+{{ $placeholder = $placeholder.Filter (images.GaussianBlur .Site.Params.PlaceholderGaussian) }}
 {{ end }}
 
-{{ if eq $style "cover" }}
-{{ $class = "full-cover" }}
-{{ if $image }}
+{{ if and (eq $style "cover") $image }}
 <style>
-  .article-summary.full-cover {
+  .article-summary.summary-cover {
     background-image: url({{ $image.Permalink }});
   }
 </style>
 {{ end }}
-{{ else if eq $style "fit" }}
-{{ $class = "fit-cover" }}
-{{ end }}
 
-{{ if not .Params.Image }}
-{{ $class = "" }}
-{{ $style = "" }}
+{{ if not $image }}
+{{ $style = "none" }}
 {{ end }}
 
 <section role="summary"
-         class="article-summary {{ $class }}">
+         class="article-summary summary-{{ $style }}">
+
   {{ if and (eq $style "fit") (eq $position "top") }}
-  <figure class="{{ $position }}">
+  <figure class="figure-{{ $position }}">
     <img data-lazy="{{ $image.Permalink }}"
          src="{{ $placeholder.Permalink }}"
          alt="{{- .Params.Summary | default .Description | markdownify -}}"
@@ -42,20 +37,23 @@
   </figure>
   {{ end }}
 
-  <div class="summary-wrapper">
+  <div class="summary-wrapper wrapper-{{ $position }}">
     {{ if .Params.categories }}
-    <section class="summary-categories">
+    <div class="summary-categories"
+         role="categories">
       {{ range $index, $categories := .Params.categories }}
       {{- if gt $index 0 }} · {{ end -}}
       <a href="/categories/{{ . | urlize }}">{{ . }}</a>
       {{ end }}
-    </section>
+    </div>
     {{ end }}
 
-    <h1>{{ .Page.Title }}</h1>
-    <!-- <p class="summary-description">
+    <h1 class="summary-title">{{ .Page.Title }}</h1>
+
+    <p class="summary-description">
       {{- .Params.Summary | default .Description | markdownify -}}
-    </p> -->
+    </p>
+
     <p class="summary-info">
       {{ if .Params.Author }}
       Por <strong>{{ .Params.Author }}</strong> ·
@@ -71,8 +69,8 @@
     {{ partial "article/share-buttons.html" . }}
   </div>
 
-  {{ if and (eq $style "fit") (eq $position "bottom") }}
-  <figure class="{{ $position }}">
+  {{ if and (eq $style "fit") (or (eq $position "bottom") (eq $position "middle")) }}
+  <figure class="figure-{{ $position }}">
     <img data-lazy="{{ $image.Permalink }}"
          src="{{ $placeholder.Permalink }}"
          alt="{{- .Params.Summary | default .Description | markdownify -}}"

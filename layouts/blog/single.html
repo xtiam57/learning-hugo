@@ -15,7 +15,7 @@
   {{ partial "article/summary.html" . }}
 
   <article role="article"
-           class="container {{ $summaryStyle }}">
+           class="container summary-{{ $summaryStyle }}">
     {{ partial "article/toc.html" . }}
 
     {{ .Content }}
