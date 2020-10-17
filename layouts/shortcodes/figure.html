@@ -1,6 +1,6 @@
 {{ $image := resources.Get (.Get "src") }}
-{{ $placeholder := $image.Resize .Site.Params.Quality }}
-{{ $placeholder = $placeholder.Filter (images.GaussianBlur .Site.Params.Gaussian) }}
+{{ $placeholder := $image.Resize .Site.Params.PlaceholderQuality }}
+{{ $placeholder = $placeholder.Filter (images.GaussianBlur .Site.Params.PlaceholderGaussian) }}
 
 <figure {{ with .Get "class" }}
         class="{{ . }}"

@@ -109,11 +109,10 @@ main {
 figure {
   margin: $margin-base 0;
 
-  &.full-width,
-  &.fit-width {
+  &.full,
+  &.fit {
     margin-top: 0;
     margin-bottom: 0;
-
     img {
       width: 100%;
       height: auto;
@@ -123,9 +122,8 @@ figure {
   figcaption {
     @include make-container();
     text-align: center;
-    // font-style: italic;
     font-size: $font-size-sm;
-    margin-top: $margin-base * 0.7;
+    margin-top: $margin-base;
     color: $text-muted;
 
     p {
@@ -135,7 +133,7 @@ figure {
 }
 
 // Thanks to https://css-tricks.com/full-width-containers-limited-width-parents/
-.full-width {
+.full {
   left: 50%;
   margin: $special-width-margin-top -50vw $special-width-margin-bottom !important;
   position: relative;
@@ -145,7 +143,7 @@ figure {
 }
 
 // Base on https://css-tricks.com/full-width-containers-limited-width-parents/
-.fit-width {
+.fit {
   left: 50%;
   margin: $special-width-margin-top -50vw $special-width-margin-bottom !important;
   padding: 0 15vw;

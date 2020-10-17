@@ -45,6 +45,8 @@ Or this `using *`:
 
 Ut lacinia sapien non lacus aliquet, et molestie est consequat. Vivamus et leo lacus. Mauris egestas luctus ligula, non ultricies elit efficitur quis. Vestibulum et orci nisl. Aliquam ex justo, lobortis eget lacinia vel, luctus ut arcu. Nam ut tempus est. Quisque fringilla purus ut pharetra vehicula. Phasellus eros nulla, fermentum in dictum in, eleifend ac sem. Nam rutrum ipsum ut dui finibus, id maximus diam mollis. Donec eget purus ipsum. Praesent vel rutrum diam, at rutrum eros. Nullam finibus tristique lectus, quis porta elit euismod et. In et euismod nisl, venenatis tristique tellus.
 
+{{< figure src="/images/map.png" class="full" caption="Técnica para ganar almas usando colores." >}}
+
 ## Code
 
 Inline `code`. We are going to use ``title`` as the caption.
@@ -142,7 +144,7 @@ Nulla condimentum nibh ac felis molestie commodo. Curabitur eu urna feugiat, mol
 ###### Full width figure using shortcode:
 
 ```
-< figure src="/images/my_image.jpg" caption="My caption" class="full-width" >
+< figure src="/images/my_image.jpg" caption="My caption" class="full" >
 ```
 
 
@@ -229,7 +231,7 @@ Fusce ac risus urna. Curabitur et justo eu arcu ultrices suscipit. Proin vel ull
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id orci id risus aliquet blandit. Suspendisse dapibus ligula id massa gravida, at pellentesque ex efficitur. Praesent tempus lacus eget est condimentum volutpat. Nullam sed pellentesque ipsum, ac bibendum diam. Phasellus at nulla consectetur, interdum lectus a, semper lectus. Fusce ac risus urna. Curabitur et justo eu arcu ultrices suscipit. Proin vel ullamcorper mauris. Phasellus congue lectus sit amet augue lobortis vestibulum. Curabitur est tellus, aliquet id vulputate a, tincidunt ut ante.
 
-{{< figure src="/images/1.jpg" caption="UIn maximus **dictum turpis**, vel suscipit tortor. Nam ut purus sit amet [link text](http://dev.nodeca.com) nisi tincidunt." class="fit-width" >}}
+{{< figure src="/images/1.jpg" caption="UIn maximus **dictum turpis**, vel suscipit tortor. Nam ut purus sit amet [link text](http://dev.nodeca.com) nisi tincidunt." class="fit" >}}
 
 Nulla condimentum nibh ac felis molestie commodo. Curabitur eu urna feugiat, molestie est sit amet, mollis nisl. Cras sit amet semper augue. Vivamus rutrum condimentum odio, eget pulvinar nibh posuere non. Nunc purus ipsum, tincidunt vitae metus eget, tristique sollicitudin neque. Aliquam at massa imperdiet, faucibus metus vel, eleifend mauris. Nunc pulvinar accumsan est ut sagittis. Praesent vitae justo non erat finibus condimentum. Donec finibus hendrerit nisl, sit amet laoreet est aliquet ut.
 
