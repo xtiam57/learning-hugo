@@ -28,3 +28,5 @@ Para crear un nuevo post usar el siguiente comando:
 - [x] Implementar taxonomy
 - [x] Implementar archetypes
 - [x] Post relacionados
+- [ ] Shortcode de youtube
+- [ ] Shortcode de codepen
