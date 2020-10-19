@@ -1,0 +1,12 @@
+<iframe height='{{ .Get "height" | default "400px" }}'
+        scrolling='no'
+        loading='lazy'
+        src='//codepen.io/miduga/embed/{{ .Get "id" }}/?height={{ .Get "height" | default "400px" }}&default-tab={{ .Get "tab" | default "result" }}'
+        frameborder='no'
+        allowtransparency='true'
+        allowfullscreen='true'
+        style='width: 100%;'>
+  <a href='https://codepen.io/miduga/pen/{{ .Get "id" }}/'>
+    See the Pen by @xtiam57
+  </a>
+</iframe>
