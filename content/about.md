@@ -36,9 +36,6 @@ Mi labor profesional se ha centrado en el ámbito del **diseño y desarrollo web
 - **Site builders**: HUGO y Wordpress
 - **Control de versiones**: GitHub, Bitbucket, GitLab
 
-
-<!-- #### Más sobre mi (_geek style_)
-
 ```js
 // No soy un robot, también me gustan otras cosas...
 const hobbies = [
@@ -69,7 +66,7 @@ export default const xtiam57 = {
   isDad: true,
   ...about
 }
-``` -->
+```
 
 ## Información adicional
 
