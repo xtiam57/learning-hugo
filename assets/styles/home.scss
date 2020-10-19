@@ -6,10 +6,8 @@ body {
 
 
   main {
-    align-items: center;
     display: flex;
     height: 100vh;
-    text-align: center;
     width: 100%;
     justify-content: center;
     background-color: $darkGray-color;
@@ -18,22 +16,21 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
 
       .lead {
-        @include font-size(1.05rem);
+        @include font-size(1.15rem);
 
         *:first-child {
-          color: $text-muted;
+          color: $lighterGray-color;
           margin-top: 0;
         }
       }
 
       .profile-wrap {
-        $profile-pic-size: 200px;
+        $profile-pic-size: 150px;
 
         position: relative;
-        margin: 0 auto $margin-base * 2;
+        margin: 0 0 $margin-base * 2;
         text-align: center;
         height: $profile-pic-size;
         width: $profile-pic-size;
@@ -98,7 +95,7 @@ body {
       }
 
       .links {
-        color: $primary-color;
+        color: $secondary-color;
         margin-bottom: 0;
 
         a {
@@ -109,19 +106,19 @@ body {
     }
   }
 
-  &:after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-image: radial-gradient($black-color 2px, transparent 0);
-    opacity: 0.15;
-    background-size: 20px 20px;
-    z-index: -1;
-  }
+  // &:after {
+  //   content: "";
+  //   display: block;
+  //   position: absolute;
+  //   left: 0;
+  //   right: 0;
+  //   top: 0;
+  //   bottom: 0;
+  //   background-image: radial-gradient($black-color 2px, transparent 0);
+  //   opacity: 0.15;
+  //   background-size: 20px 20px;
+  //   z-index: -1;
+  // }
 
   .last-posts {
     padding-top: $margin-base * 2;

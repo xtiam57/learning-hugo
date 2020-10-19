@@ -13,8 +13,13 @@
   {{ partial "site/navbar.html" . }}
 
   <main>
-    <div class="about-eyes"></div>
     <section class="container">
+      <div class="text-">
+        <img class="rounded grayscale"
+             width="160"
+             src="/images/profile.jpg"
+             alt="Profile Image" />
+      </div>
       {{ .Content }}
     </section>
   </main>

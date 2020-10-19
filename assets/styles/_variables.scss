@@ -1,6 +1,6 @@
 // Main Colors
-$primary-color:               #c21382 !default;
-$secondary-color:             #28CBE0 !default;
+$primary-color:               #1890ff !default;
+$secondary-color:             #c21382 !default;
 $darkGray-color:              #1f2125 !default;
 $lightGray-color:             #E2E8F0 !default;
 $lighterGray-color:             lighten($lightGray-color, 6%) !default;
@@ -130,7 +130,7 @@ $footer-height:               55px !default;
 $footer-background:           $lighterGray-color !default;
 $footer-color:                $body-text-color !default;
 $footer-link-color:           none !default;
-$footer-font-size:            $font-size-sm * 0.95 !default;
+$footer-font-size:            $font-size-sm !default;
 
 // Summary
 $summary-cover-opacity:       0.4 !default;
