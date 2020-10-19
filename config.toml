@@ -20,7 +20,7 @@ paginate = 10
     weight = 1
 
   [[menu.main]]
-    name = "Sobre mí"
+    name = "README.md"
     url = "/about"
     weight = 2
 

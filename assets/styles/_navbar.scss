@@ -21,10 +21,16 @@
     .navbar-links {
       color: $navbar-color;
       font-size: $navbar-font-size;
+      text-decoration: none;
 
       a {
         display: inline-block;
         padding: 0 $margin-base * 0.5;
+        text-decoration: none;
+
+        &:hover {
+          color: $secondary-color;
+        }
       }
     }
   }

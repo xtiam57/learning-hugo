@@ -166,20 +166,8 @@ a {
   &:hover {
     color: $link-hover-color;
     text-decoration: $link-hover-decoration;
-    // -webkit-text-decoration-color: $link-decoration-color;
-    // text-decoration-color: $link-decoration-color;
-  }
-}
-
-a.negative {
-  color: $link-hover-color;
-  text-decoration: $link-decoration;
-
-  &:hover {
-    color: $link-color;
-    text-decoration: $link-hover-decoration;
-    // -webkit-text-decoration-color: $link-decoration-color;
-    // text-decoration-color: $link-decoration-color;
+    -webkit-text-decoration-color: $link-decoration-color;
+    text-decoration-color: $link-decoration-color;
   }
 }
 
