@@ -26,7 +26,7 @@ $font-size-lg:                $font-size-base * 1.25 !default;
 $font-weight-normal:          400 !default;
 $font-weight-bold:            700 !default;
 $line-height-base:            1.75 !default;
-$h1-font-size:                $font-size-base * 2.5 !default;
+$h1-font-size:                $font-size-base * 3 !default;
 $h2-font-size:                $font-size-base * 2 !default;
 $h3-font-size:                $font-size-base * 1.5 !default;
 $h4-font-size:                $font-size-base * 1.25 !default;
@@ -53,8 +53,8 @@ $border-base:                 1px solid $lightGray-color;
 // Highlight (code)
 $highlight-background:        #2D3748 !default; // #282c34 !default;
 $highlight-before-background:   $secondary-color !default; // #282c34 !default;
-$highlight-blue:              #61afef !default;
-$highlight-pink:              #e06c75 !default;
+$highlight-blue:              #93ddfd !default;
+$highlight-pink:              #ff8383 !default;
 $highlight-orange:            #eea112 !default;
 $highlight-yellow:            #e5c07b !default;
 $highlight-green:             #98c379 !default;
@@ -127,8 +127,9 @@ $share-buttons-color:         lighten($text-muted, 15%) !default;
 
 // Footer
 $footer-height:               55px !default;
-$footer-background:           $darkGray-color !default;
-$footer-color:                $secondary-color !default;
+$footer-background:           $lighterGray-color !default;
+$footer-color:                $body-text-color !default;
+$footer-link-color:           none !default;
 $footer-font-size:            $font-size-sm * 0.95 !default;
 
 // Summary

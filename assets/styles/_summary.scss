@@ -31,13 +31,13 @@
     }
 
     .summary-description {
-
+       margin: ($margin-base * 0.65) 0;
     }
 
     .summary-info {
       font-size: $font-size-sm;
       color: $text-muted;
-      margin-top: $margin-base * 0.35;
+      margin-top: 0;
       margin-bottom: $margin-base * 0.65;
     }
   }
