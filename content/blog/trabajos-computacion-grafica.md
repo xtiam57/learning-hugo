@@ -13,7 +13,7 @@ tags:
   - portafolio
   - proyectos
   - trabajos
-  - computación Gráfica
+  - computación gráfica
   - universidad
   - c++
   - c sharp

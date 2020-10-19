@@ -127,9 +127,9 @@ $share-buttons-color:         lighten($text-muted, 15%) !default;
 
 // Footer
 $footer-height:               55px !default;
-$footer-background:           $lighterGray-color !default;
-$footer-color:                $body-text-color !default;
-$footer-link-color:           none !default;
+$footer-background:           $secondary-color !default;
+$footer-color:                $white-color !default;
+$footer-link-color:           $white-color !default;
 $footer-font-size:            $font-size-sm !default;
 
 // Summary

@@ -30,13 +30,16 @@ code {
 }
 
 :not(pre) > code {
-  font-size: $highlight-font-size;
-  background: $lighterGray-color;
-  border-radius: $highlight-radius;
-  padding: 2px 4px 1px;
+  // font-size: $highlight-font-size;
+  // background: $lighterGray-color;
+  // border-radius: $highlight-radius;
+  // padding: 2px 4px 1px;
+  // margin: 0 2px;
+  // border: 1px solid $lightGray-color;
+  // font-family: $font-family-base;
   white-space: normal;
-  margin: 0 2px;
-  border: 1px solid $lightGray-color;
+  color: $secondary-color;
+  font-size: $font-size-base * 0.95;
 }
 
 .highlight,
