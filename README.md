@@ -21,12 +21,12 @@ Para crear un nuevo post usar el siguiente comando:
 - [x] Estilos de un post
 - [x] Mejorar SEO
 - [x] Página de About
-- [ ] Página de Portafolio
+- [x] Página de Portafolio
 - [ ] Agregar Google Analytics
 - [x] Buscar mejor contraste con el primary ([Ver más](https://whocanuse.com/))
 - [x] Botones de share
 - [x] Implementar taxonomy
 - [x] Implementar archetypes
 - [x] Post relacionados
-- [ ] Shortcode de youtube
-- [ ] Shortcode de codepen
+- [x] Shortcode de youtube
+- [x] Shortcode de codepen

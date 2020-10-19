@@ -1,7 +1,7 @@
 ---
 title: "Aprendiendo HUGO: prueba de todo lo que puede tener un post"
 description: "Descripción del post de prueba..."
-image:
+image: /images/bautismo.jpg
 style: "cover"
 date: 2020-09-17T16:59:56-05:00
 draft: true
@@ -143,7 +143,7 @@ Nulla condimentum nibh ac felis molestie commodo. Curabitur eu urna feugiat, mol
 
 ***
 
-###### Full width figure using shortcode:
+### Full width figure using shortcode:
 
 ```
 < figure src="/images/my_image.jpg" caption="My caption" class="full" >
@@ -254,7 +254,7 @@ Right aligned columns
 
 Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
 
-# Table of Contents
+## Table of Contents
   * [Chapter 1](#chapter-1)
   * [Chapter 2](#chapter-2)
   * [Chapter 3](#chapter-3)
