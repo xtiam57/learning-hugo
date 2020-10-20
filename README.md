@@ -1,5 +1,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7a2eb971-cefb-451c-8e52-96b565217e61/deploy-status)](https://app.netlify.com/sites/christiam-mena/deploys)
 
+<img src="./static/images/logo.svg" alt="Logo" width="250">
+
 ## Información
 
 Una pequeña página donde muestro mis trabajos y escribo un poco sobre todo.
