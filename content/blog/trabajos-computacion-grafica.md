@@ -1,5 +1,5 @@
 ---
-title: "Trabajos de Computación Gráfica"
+title: "🧊 Trabajos de Computación Gráfica"
 description: "Trabajos realizados para los distintos cursos de computación gráfica en el periodo de pre-grado."
 author: "Christiam Mena"
 date: 2020-10-15T16:48:37-05:00
