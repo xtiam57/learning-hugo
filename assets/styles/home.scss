@@ -3,6 +3,7 @@
 
 body {
   height: 100vh;
+
   main {
     display: flex;
     height: 100vh;
@@ -14,9 +15,10 @@ body {
       flex-direction: column;
       justify-content: center;
       padding: $container-gutter;
+      flex: 1 1 auto;
 
       .lead {
-        @include font-size(1rem);
+        @include font-size(1.1rem);
         color: #646d7c;
 
         *:first-child {

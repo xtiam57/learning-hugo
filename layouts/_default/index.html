@@ -23,7 +23,6 @@
 
       <p class="links">
         {{ range $index, $items := .Site.Menus.main }}
-        {{- if gt $index 0 }}{{ end -}}
         <a class=""
            href="{{ .URL  }}">{{ .Name }}</a>
         {{ end }}
