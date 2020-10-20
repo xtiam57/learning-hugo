@@ -48,10 +48,6 @@ body {
         .terminal-cursor {
           width: 8px;
           height: 80%;
-          -webkit-animation: 1s blink ease infinite;
-          -moz-animation: 1s blink ease infinite;
-          -ms-animation: 1s blink ease infinite;
-          -o-animation: 1s blink ease infinite;
           animation: 1s blink ease infinite;
         }
       }
@@ -68,38 +64,3 @@ body {
   }
 }
 
-@-moz-keyframes blink {
-  from, to {
-    background-color: transparent;
-  }
-  50% {
-    background-color: $secondary-color;
-  }
-}
-
-@-webkit-keyframes blink {
-  from, to {
-    background-color: transparent;
-  }
-  50% {
-    background-color: $secondary-color;
-  }
-}
-
-@-ms-keyframes blink {
-  from, to {
-    background-color: transparent;
-  }
-  50% {
-    background-color: $secondary-color;
-  }
-}
-
-@-o-keyframes blink {
-  from, to {
-    background-color: transparent;
-  }
-  50% {
-    background-color: $secondary-color;
-  }
-}

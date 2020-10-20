@@ -4,7 +4,7 @@ description: "Trabajos realizados para los distintos cursos de computación grá
 author: "Christiam Mena"
 date: 2020-10-15T16:48:37-05:00
 draft: false
-
+hideDescription: true
 # Table of content
 toc: false
 categories:

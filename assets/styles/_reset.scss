@@ -104,19 +104,6 @@ ul ol {
   margin: 0;
 }
 
-// ul ul {
-//   list-style: none;
-
-//   li::before {
-//     content: "\2022";
-//     color: lighten($text-muted, 15%);
-//     font-weight: bold;
-//     display: inline-block;
-//     width: 1em;
-//     margin-left: -1em;
-//   }
-// }
-
 dt {
   font-weight: $font-weight-bold;
 }
@@ -166,7 +153,6 @@ a {
   &:hover {
     color: $link-hover-color;
     text-decoration: $link-hover-decoration;
-    -webkit-text-decoration-color: $link-decoration-color;
     text-decoration-color: $link-decoration-color;
   }
 }

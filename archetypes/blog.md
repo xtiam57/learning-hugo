@@ -13,6 +13,7 @@ tags:
 # Cover information
 image: ""
 style: "cover|fit|none"
-caption: Unplash
-position: "bottom|top"
+caption: ""
+position: "bottom|top|middle"
+hideDescription: true
 ---

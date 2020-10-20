@@ -37,7 +37,7 @@
   box-shadow: $blog-card-shadow;
 
   &:hover {
-    border-color: $secondary-color;
+    // border-color: $secondary-color;
   }
 
   img {
@@ -49,16 +49,14 @@
     padding: ($margin-base * 1.5) ($margin-base * 1.5) 0;
 
     .post-categories {
-      color: $text-muted;
+      color: $secondary-color;
       line-height: 1;
       margin-bottom: $margin-base * 0.5;
+      font-size: $font-size-sm * 0.95;
 
       a {
-        text-decoration: underline;
-        font-size: $font-size-sm * 0.95;
-        // font-weight: $font-weight-bold;
         display: inline-block;
-        color: $text-muted;
+        color: $secondary-color;
       }
     }
 

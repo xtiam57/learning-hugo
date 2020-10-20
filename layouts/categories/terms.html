@@ -1,6 +1,7 @@
 {{ define "styles" }}
+{{ $postCSSOpts := (dict "use" "autoprefixer" ) }}
 {{ $styles := resources.Get "styles/categories-tags.scss" }}
-{{ $styles = $styles | toCSS | minify | fingerprint }}
+{{ $styles = $styles | toCSS | postCSS $postCSSOpts | minify | fingerprint }}
 <style>{{ $styles.Content | safeCSS }}</style>
 {{ end }}
 

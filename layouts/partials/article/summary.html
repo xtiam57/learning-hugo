@@ -50,9 +50,11 @@
 
     <h1 class="summary-title">{{ .Page.Title }}</h1>
 
+    {{ if not .Params.HideDescription }}
     <p class="summary-description">
       {{- .Params.Summary | default .Description | markdownify -}}
     </p>
+    {{ end }}
 
     <p class="summary-info">
       {{ if .Params.Author }}

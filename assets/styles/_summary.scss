@@ -19,6 +19,7 @@
 
     .summary-categories {
       a {
+        color: $secondary-color;
         font-size: $font-size-sm;
         display: inline-block;
       }
@@ -31,13 +32,13 @@
     }
 
     .summary-description {
-      margin: ($margin-base * 0.65) 0;
+      margin: ($margin-base * 0.5) 0 0;
     }
 
     .summary-info {
       font-size: $font-size-sm;
       color: $text-muted;
-      margin-top: 0;
+      margin-top: $margin-base * 0.5;
       margin-bottom: $margin-base * 0.65;
     }
   }
@@ -104,10 +105,6 @@
       color: rgba(255, 255, 255, 0.7);
       a {
         color: rgba(255, 255, 255, 0.7);
-        &:hover {
-          -webkit-text-decoration-color: rgba(255, 255, 255, 0.7);
-          text-decoration-color: rgba(255, 255, 255, 0.7);
-        }
       }
     }
 

@@ -4,8 +4,9 @@
 <head>
   {{ partial "site/head.html" . }}
 
+  {{ $postCSSOpts := (dict "use" "autoprefixer" ) }}
   {{ $styles := resources.Get "styles/home.scss" }}
-  {{ $styles = $styles | toCSS | minify | fingerprint }}
+  {{ $styles = $styles | toCSS | postCSS $postCSSOpts | minify | fingerprint }}
   <style>{{ $styles.Content | safeCSS }}</style>
 </head>
 
