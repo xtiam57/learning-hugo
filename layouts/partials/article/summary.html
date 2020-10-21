@@ -2,8 +2,7 @@
 {{ $placeholder := "" }}
 {{ $type := .Params.SummaryType | default "fit" }}
 {{ $position := .Params.SummaryPosition | default "bottom" }}
-{{ $opacity := .Params.SummaryOpacity | default 0.4 }}
-{{ $style := .Params.SummaryStyle | default "light" }}
+{{ $gradient := "linear-gradient(0deg, rgba(0,0,0,0.75) 0%, rgba(255,255,255,0) 70%)" }}
 
 <!-- Apply placeholder filter -->
 {{ if $image }}
@@ -13,10 +12,15 @@
 {{ end }}
 
 {{ if and (eq $type "cover") $image }}
+{{ if eq $position "top" }}
+{{ $gradient = "linear-gradient(180deg, rgba(0,0,0,0.75) 0%, rgba(255,255,255,0) 70%)" }}
+{{ end }}
+{{ if eq $position "middle" }}
+{{ $gradient = "linear-gradient(0deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.35) 100%)" }}
+{{ end }}
 <style>
   .article-summary.summary-cover {
-    background-color: rgba(0, 0, 0, {{ $opacity }});
-    background-image: url({{ $image.Permalink }});
+    background-image: {{ $gradient | safeCSS }}, url({{ $image.Permalink }});
   }
 </style>
 {{ end }}
@@ -26,7 +30,7 @@
 {{ end }}
 
 <section role="summary"
-         class="article-summary summary-{{ $type }} summary-{{ $style }}">
+         class="article-summary summary-{{ $type }}">
 
   {{ if and (eq $type "fit") (eq $position "top") }}
   <figure class="figure-{{ $position }}">
@@ -55,7 +59,7 @@
       {{ .Page.Title }}<span class="terminal-cursor"></span>
     </h1>
 
-    {{ if not .Params.HideSummaryDescription }}
+    {{ if not .Params.HideDescription }}
     <p class="summary-description">
       {{- .Params.Summary | default .Description | markdownify -}}
     </p>

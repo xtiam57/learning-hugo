@@ -6,7 +6,7 @@ date: 2020-10-05T12:10:24-05:00
 draft: true
 image: /images/bautismo.jpg
 summaryType: "cover"
-summaryPosition: "middle"
+summaryPosition: "bottom"
 categories:
   - Fundamentos Cristianos
 tags:

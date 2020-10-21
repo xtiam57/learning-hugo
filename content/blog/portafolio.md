@@ -5,7 +5,7 @@ author: "Christiam Mena"
 date: 2020-10-09T11:50:28-05:00
 draft: false
 toc: false
-hideSummaryDescription: true
+hideDescription: true
 categories:
   - Portafolio Personal
 tags:
