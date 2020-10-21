@@ -12,6 +12,7 @@ $body-text-color:             #4a5568 !default;
 $body-text-align:               left !default;
 $body-bg:                     #fff !default;
 $body-max-width:                680px;
+$text-muted:                  #86919b !default;
 
 // Fonts
 $font-family-base:            'Inter', sans-serif !default;
@@ -32,7 +33,7 @@ $h3-font-size:                $font-size-base * 1.5 !default;
 $h4-font-size:                $font-size-base * 1.25 !default;
 $h5-font-size:                $font-size-base * 1.15 !default;
 $h6-font-size:                $font-size-base !default;
-$text-muted:                  #86919b !default;
+$heading-letter-spacing:      0em !default;
 
 // Margins
 $margin-base:                 1rem !default;
