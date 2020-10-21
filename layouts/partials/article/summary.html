@@ -48,7 +48,9 @@
     </div>
     {{ end }}
 
-    <h1 class="summary-title">{{ .Page.Title }}</h1>
+    <h1 class="summary-title">
+      {{ .Page.Title }}<span class="terminal-cursor"></span>
+    </h1>
 
     {{ if not .Params.HideDescription }}
     <p class="summary-description">

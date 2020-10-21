@@ -4,6 +4,17 @@
 
 .container {
   margin-top: $container-gutter;
+  margin-bottom: $container-gutter;
+
+  h1,
+  h2 {
+    border-bottom: 1px solid $lightGray-color;
+  }
+
+  h1 {
+    margin-top: 0.6em;
+    text-align: center;
+  }
 
   .profile-pic {
     $profile-pic-size: 160px;
@@ -60,16 +71,6 @@
       box-sizing: border-box;
       transition: all ease 0.8s;
     }
-  }
-
-  h1,
-  h2 {
-    border-bottom: 1px solid $lightGray-color;
-  }
-
-  h1 {
-    margin-top: 0.5em;
-    text-align: center;
   }
 }
 

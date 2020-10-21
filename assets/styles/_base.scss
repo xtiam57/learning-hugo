@@ -1,5 +1,5 @@
-@import 'variables';
-@import 'mixins';
+@import "variables";
+@import "mixins";
 
 :root {
   @each $color, $value in $theme-vars {
@@ -219,5 +219,27 @@ figure {
     .column {
       padding-right: 0;
     }
+  }
+}
+
+.terminal-cursor {
+  width: 8px;
+  height: 80%;
+  animation: 1s blink ease infinite;
+  display: inline-block;
+
+  h1 & {
+    height: 4px;
+    width: 0.45em;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: $secondary-color;
   }
 }

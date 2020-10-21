@@ -46,23 +46,7 @@ body {
             color: $secondary-color;
           }
         }
-
-        .terminal-cursor {
-          width: 8px;
-          height: 80%;
-          animation: 1s blink ease infinite;
-        }
       }
     }
   }
 }
-
-@keyframes blink {
-  from, to {
-    background-color: transparent;
-  }
-  50% {
-    background-color: $secondary-color;
-  }
-}
-

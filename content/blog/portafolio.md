@@ -1,5 +1,5 @@
 ---
-title: "💼 Mis Trabajos"
+title: "Mis Trabajos"
 description: "Algunos de los proyectos en los que he participado desde hace algunos años."
 author: "Christiam Mena"
 date: 2020-10-09T11:50:28-05:00
