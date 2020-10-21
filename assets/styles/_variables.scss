@@ -34,6 +34,7 @@ $h4-font-size:                $font-size-base * 1.25 !default;
 $h5-font-size:                $font-size-base * 1.15 !default;
 $h6-font-size:                $font-size-base !default;
 $heading-letter-spacing:      0em !default;
+$heading-word-spacing:        0em !default;
 
 // Margins
 $margin-base:                 1rem !default;
@@ -128,9 +129,9 @@ $share-buttons-color:         lighten($text-muted, 20%) !default;
 
 // Footer
 $footer-height:               55px !default;
-$footer-background:           $secondary-color !default;
-$footer-color:                $white-color !default;
-$footer-link-color:           $white-color !default;
+$footer-background:           #2D3748 !default;
+$footer-color:                lighten(#646d7c, 15%) !default;
+$footer-link-color:           $footer-color !default;
 $footer-font-size:            $font-size-sm !default;
 
 // Summary

@@ -18,7 +18,6 @@ tags:
   - OpenGL
   - GLSL
 # Cover information
-hideDescription: true
 image: /images/portfolio/tesis.jpg
 summaryType: "none"
 ---

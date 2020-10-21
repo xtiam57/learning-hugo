@@ -17,6 +17,25 @@ footer {
     line-height: 1;
   }
 
+  .footer-social {
+    display: flex;
+
+    a {
+      margin-left: $margin-base * 0.6;
+      text-decoration: none;
+
+      img {
+        height: 20px;
+        width: auto;
+        transition: 0.3s ease;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
   a,
   a:focus,
   a:visited {

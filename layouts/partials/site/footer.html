@@ -1,13 +1,14 @@
 <footer>
   <nav>
     <div>
-      2020 Christiam Mena
+      2020 <a href="{{ "/" | absURL }}">Christiam Mena</a>
     </div>
-    <div>
+    <div class="footer-social">
       {{ range $index, $items := .Site.Menus.social }}
-      {{- if gt $index 0 }} · {{ end -}}
       <a href="{{ .URL | absURL }}"
-         target="_blank">{{ .Name }}</a>
+         target="_blank">
+        <img src="/images/{{ lower .Name }}.svg" alt="{{ .Name }}" />
+      </a>
       {{ end }}
     </div>
   </nav>

@@ -48,6 +48,7 @@
     {{ if .Params.categories }}
     <div class="summary-categories"
          role="categories">
+      <code>->></code>
       {{ range $index, $categories := .Params.categories }}
       {{- if gt $index 0 }} · {{ end -}}
       <a href="/categories/{{ . | urlize }}">{{ . }}</a>
@@ -59,7 +60,7 @@
       {{ .Page.Title }}<span class="terminal-cursor"></span>
     </h1>
 
-    {{ if not .Params.HideDescription }}
+    {{ if .Params.ShowDescription }}
     <p class="summary-description">
       {{- .Params.Summary | default .Description | markdownify -}}
     </p>

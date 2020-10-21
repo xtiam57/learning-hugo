@@ -6,7 +6,7 @@ date: 2020-10-05T09:44:07-05:00
 draft: true
 toc: true
 summaryType: "cover"
-hideDescription: true
+showDescription: true
 categories:
   - Fundamentos Cristianos
 tags:

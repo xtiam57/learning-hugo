@@ -32,18 +32,27 @@ body {
         margin-bottom: $margin-base * 2;
       }
 
-      .links {
-        color: $secondary-color;
-        margin-top: 0;
+      .interest {
         margin-bottom: 0;
+        margin-top: 0;
+        color: $lighterGray-color;
         display: flex;
-        align-items: center;
+        flex-direction: column;
 
-        a {
-          margin: 0 ($margin-base * 0.5);
+        .links {
+          display: flex;
+          align-items: center;
 
-          &:nth-child(3) {
-            color: $secondary-color;
+          a {
+            margin: 0 ($margin-base * 0.5);
+
+            &:first-child {
+              margin-left: $margin-base * 2;
+            }
+
+            &:nth-child(3) {
+              color: $secondary-color;
+            }
           }
         }
       }

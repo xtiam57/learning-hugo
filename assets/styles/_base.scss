@@ -223,14 +223,17 @@ figure {
 }
 
 .terminal-cursor {
-  width: 8px;
+  width: 0.4em;
   height: 80%;
   animation: 1s blink ease infinite;
   display: inline-block;
 
   h1 & {
-    height: 0.07em;
-    width: 0.45em;
+    height: 0.95em;
+    width: 8px;
+    top: 4px;
+    position: relative;
+    margin-left: 0.5rem;
   }
 }
 

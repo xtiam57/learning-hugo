@@ -1,5 +1,5 @@
-@import 'variables';
-@import 'mixins';
+@import "variables";
+@import "mixins";
 
 .hero {
   background-color: $hero-background;
@@ -15,8 +15,15 @@
   .hero-content {
     @include make-container();
 
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       font-family: $hero-font-family;
+      word-spacing: 0;
+      letter-spacing: 0;
     }
 
     *:first-child {

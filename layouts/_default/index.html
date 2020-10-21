@@ -21,14 +21,17 @@
         {{ .Content }}
       </div>
 
-      <p class="links">
-        {{ range $index, $items := .Site.Menus.main }}
-        <a class=""
-           href="{{ .URL  }}">{{ .Name }}</a>
-        {{ end }}
-        <span class="terminal-cursor"></span>
-      </p>
-    </div>
+      <div class="interest">
+        <code class="open-code">if (interest > 5) {</code>
+        <div class="links">
+          {{ range $index, $items := .Site.Menus.main }}
+          <a class=""
+             href="{{ .URL  }}">{{ .Name }}</a>
+          {{ end }}
+          <span class="terminal-cursor"></span>
+        </div>
+        <code class="close-code">}</code>
+      </div>
   </main>
 </body>
 

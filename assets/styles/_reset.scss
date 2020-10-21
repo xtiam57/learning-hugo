@@ -48,6 +48,7 @@ h6 {
   line-height: 1.7;
   font-family: $font-family-headings;
   letter-spacing: $heading-letter-spacing;
+  word-spacing: $heading-word-spacing;
 }
 
 h1 {
@@ -116,6 +117,15 @@ dd {
 
 blockquote {
   margin: $margin-base 0;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    word-spacing: 0;
+    letter-spacing: 0;
+  }
 }
 
 b,
