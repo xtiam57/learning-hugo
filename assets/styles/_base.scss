@@ -223,26 +223,25 @@ figure {
 }
 
 .terminal-cursor {
-  width: 0.4em;
-  height: 80%;
   animation: 1s blink ease infinite;
   display: inline-block;
+  font-family: $font-family-code;
 
-  h1 & {
-    height: 0.95em;
-    width: 8px;
-    top: 4px;
-    position: relative;
-    margin-left: 0.5rem;
+  &:after {
+    content: "_";
+  }
+
+  &.cursor-block:after {
+    content: "▌"
   }
 }
 
 @keyframes blink {
   from,
   to {
-    background-color: transparent;
+    color: transparent;
   }
   50% {
-    background-color: $secondary-color;
+    color: $secondary-color;
   }
 }
