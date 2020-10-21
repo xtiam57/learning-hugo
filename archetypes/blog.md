@@ -4,16 +4,17 @@ description: "Type your description here..."
 author: "Christiam Mena"
 date: {{ .Date }}
 draft: true
-# Table of content
 toc: false
 categories:
   - cat1
 tags:
   - tag1
-# Cover information
+# Summary information
 image: ""
-style: "cover|fit|none"
-caption: ""
-position: "bottom|top|middle"
-hideDescription: true
+summaryType: "[fit]|none|cover"
+summaryPosition: "[bottom]|top|middle"
+summaryStyle: "[light]|dark"
+summaryOpacity: 0.4
+summaryCaption: ""
+hideSummaryDescription: true
 ---

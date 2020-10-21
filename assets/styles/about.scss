@@ -31,7 +31,7 @@
       height: $profile-pic-size;
       width: $profile-pic-size;
       z-index: 0;
-      filter: brightness(1.05) contrast(1.1);
+      filter: contrast(1.5) grayscale(1);
     }
 
     .pulse1 {

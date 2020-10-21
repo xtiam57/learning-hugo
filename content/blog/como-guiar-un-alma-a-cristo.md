@@ -5,8 +5,8 @@ author: "Christiam Mena"
 date: 2020-10-05T09:44:07-05:00
 draft: true
 toc: true
-style: "cover"
-caption: Unplash
+summaryType: "cover"
+hideSummaryDescription: true
 categories:
   - Fundamentos Cristianos
 tags:

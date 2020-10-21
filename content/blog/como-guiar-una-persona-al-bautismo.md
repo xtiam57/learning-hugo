@@ -5,9 +5,8 @@ author: "Christiam Mena"
 date: 2020-10-05T12:10:24-05:00
 draft: true
 image: /images/bautismo.jpg
-style: "cover"
-position: "bottom"
-caption: ""
+summaryType: "cover"
+summaryPosition: "middle"
 categories:
   - Fundamentos Cristianos
 tags:

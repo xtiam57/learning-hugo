@@ -2,7 +2,7 @@
 title: "Aprendiendo HUGO: prueba de todo lo que puede tener un post"
 description: "Descripción del post de prueba..."
 image: /images/bautismo.jpg
-style: "cover"
+summaryType: "cover"
 date: 2020-09-17T16:59:56-05:00
 draft: true
 toc: true

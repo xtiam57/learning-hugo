@@ -1,7 +1,9 @@
 {{ $image := .Params.Image | default "" }}
 {{ $placeholder := "" }}
-{{ $style := .Params.Style | default "fit" }}
-{{ $position := .Params.Position | default "bottom" }}
+{{ $type := .Params.SummaryType | default "fit" }}
+{{ $position := .Params.SummaryPosition | default "bottom" }}
+{{ $opacity := .Params.SummaryOpacity | default 0.4 }}
+{{ $style := .Params.SummaryStyle | default "light" }}
 
 <!-- Apply placeholder filter -->
 {{ if $image }}
@@ -10,22 +12,23 @@
 {{ $placeholder = $placeholder.Filter (images.GaussianBlur .Site.Params.PlaceholderGaussian) }}
 {{ end }}
 
-{{ if and (eq $style "cover") $image }}
+{{ if and (eq $type "cover") $image }}
 <style>
   .article-summary.summary-cover {
+    background-color: rgba(0, 0, 0, {{ $opacity }});
     background-image: url({{ $image.Permalink }});
   }
 </style>
 {{ end }}
 
 {{ if not $image }}
-{{ $style = "none" }}
+{{ $type = "none" }}
 {{ end }}
 
 <section role="summary"
-         class="article-summary summary-{{ $style }}">
+         class="article-summary summary-{{ $type }} summary-{{ $style }}">
 
-  {{ if and (eq $style "fit") (eq $position "top") }}
+  {{ if and (eq $type "fit") (eq $position "top") }}
   <figure class="figure-{{ $position }}">
     <img data-lazy="{{ $image.Permalink }}"
          src="{{ $placeholder.Permalink }}"
@@ -52,7 +55,7 @@
       {{ .Page.Title }}<span class="terminal-cursor"></span>
     </h1>
 
-    {{ if not .Params.HideDescription }}
+    {{ if not .Params.HideSummaryDescription }}
     <p class="summary-description">
       {{- .Params.Summary | default .Description | markdownify -}}
     </p>
@@ -73,7 +76,7 @@
     {{ partial "article/share-buttons.html" . }}
   </div>
 
-  {{ if and (eq $style "fit") (or (eq $position "bottom") (eq $position "middle")) }}
+  {{ if and (eq $type "fit") (or (eq $position "bottom") (eq $position "middle")) }}
   <figure class="figure-{{ $position }}">
     <img data-lazy="{{ $image.Permalink }}"
          src="{{ $placeholder.Permalink }}"

@@ -101,22 +101,22 @@
       }
     }
 
-    .summary-categories {
+    &.summary-light .summary-categories {
       color: rgba(255, 255, 255, 0.7);
       a {
         color: rgba(255, 255, 255, 0.7);
       }
     }
 
-    .summary-title {
+    &.summary-light .summary-title {
       color: $white-color;
     }
 
-    .summary-description {
+    &.summary-light .summary-description {
       color: $lightGray-color;
     }
 
-    .summary-info {
+    &.summary-light .summary-info {
       color: rgba(255, 255, 255, 0.7);
     }
   }
