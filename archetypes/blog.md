@@ -1,6 +1,7 @@
 ---
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
 description: "Type your description here..."
+hideDescription: true
 author: "Christiam Mena"
 date: {{ .Date }}
 draft: true
@@ -11,10 +12,7 @@ tags:
   - tag1
 # Summary information
 image: ""
-summaryType: "[fit]|none|cover"
+summaryType: "[fit]|cover|none"
 summaryPosition: "[bottom]|top|middle"
-summaryStyle: "[light]|dark"
-summaryOpacity: 0.4
 summaryCaption: ""
-hideSummaryDescription: true
 ---

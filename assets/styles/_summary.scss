@@ -82,10 +82,10 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: calc(95vh - #{$navbar-height});
+    height: calc(98vh - #{$navbar-height});
     min-height: 500px;
-    background-color: rgba(0, 0, 0, $summary-cover-opacity);
-    background-blend-mode: multiply;
+    background-color: $darkGray-color;
+    // background-blend-mode: multiply;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 
     .summary-wrapper {
@@ -101,23 +101,23 @@
       }
     }
 
-    &.summary-light .summary-categories {
-      // color: rgba(255, 255, 255, 0.7);
+    .summary-categories {
+      // color: rgba(255, 255, 255, 0.8);
       // a {
-      //   color: rgba(255, 255, 255, 0.7);
+      //   color: rgba(255, 255, 255, 0.8);
       // }
     }
 
-    &.summary-light .summary-title {
+    .summary-title {
       color: $white-color;
     }
 
-    &.summary-light .summary-description {
-      color: $lightGray-color;
+    .summary-description {
+      color: rgba(255, 255, 255, .9);
     }
 
-    &.summary-light .summary-info {
-      color: rgba(255, 255, 255, 0.7);
+    .summary-info {
+      color: rgba(255, 255, 255, .8);
     }
   }
 }
