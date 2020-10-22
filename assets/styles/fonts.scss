@@ -1,10 +1,11 @@
 @font-face {
   font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
   src: local('FiraCode'), local('FiraCode Regular'), local('FiraCode-Regular'),
     url('/fonts/FiraCode-Regular.woff2') format('woff2'),
     url('/fonts/FiraCode-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
 }
 
 @font-face {
@@ -25,16 +26,15 @@
     url('/fonts/Inter-SemiBold.woff') format('woff');
 }
 
-.wf-inter-n4-loading body,
-.wf-inter-n7-loading body,
-.wf-firacode-n4-loading body,
-.wf-loading body {
-  visibility: hidden;
-}
+body {
+  .wf-inter-n4-loading &,
+  .wf-inter-n7-loading &,
+  .wf-firacode-n4-loading &,
+  .wf-loading & {
+    visibility: hidden;
+  }
 
-.wf-inter-n4-active body,
-.wf-inter-n7-active body,
-.wf-firacode-n4-active body,
-.wf-active body {
-  visibility: visible;
+  .wf-inter-n4-active.wf-inter-n7-active.wf-firacode-n4-active.wf-active & {
+    visibility: visible;
+  }
 }
