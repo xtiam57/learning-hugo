@@ -151,9 +151,12 @@ article {
   .next-post {
     max-width: 48%;
     line-height: 1.6;
-    font-size: $font-size-sm * 0.85;
     text-transform: uppercase;
     color: $text-muted;
+
+    small {
+      font-size: $font-size-sm * 0.85;
+    }
 
     div {
       font-size: $font-size-base;

@@ -2,7 +2,7 @@
 {{ $placeholder := "" }}
 {{ $type := .Params.SummaryType | default "fit" }}
 {{ $position := .Params.SummaryPosition | default "bottom" }}
-{{ $gradient := "linear-gradient(0deg, rgba(0,0,0,0.75) 0%, rgba(255,255,255,0) 70%)" }}
+{{ $gradient := "linear-gradient(0deg, rgba(0,0,0,0.85) 0%, rgba(255,255,255,0) 80%)" }}
 
 <!-- Apply placeholder filter -->
 {{ if $image }}
@@ -13,7 +13,7 @@
 
 {{ if and (eq $type "cover") $image }}
 {{ if eq $position "top" }}
-{{ $gradient = "linear-gradient(180deg, rgba(0,0,0,0.75) 0%, rgba(255,255,255,0) 70%)" }}
+{{ $gradient = "linear-gradient(180deg, rgba(0,0,0,0.85) 0%, rgba(255,255,255,0) 80%)" }}
 {{ end }}
 {{ if eq $position "middle" }}
 {{ $gradient = "linear-gradient(0deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.35) 100%)" }}
@@ -48,7 +48,7 @@
     {{ if .Params.categories }}
     <div class="summary-categories"
          role="categories">
-      <code>>=</code>
+      <code>//</code>
       {{ range $index, $categories := .Params.categories }}
       {{- if gt $index 0 }} · {{ end -}}
       <a href="/categories/{{ . | urlize }}">{{ . }}</a>

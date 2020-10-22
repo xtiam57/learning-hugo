@@ -9,9 +9,7 @@
 <main>
   <section class="container">
     <h2 class="margin-top-0">
-      Etiqueta <code class="text-muted"> {</code>
-      <span class="text-secondary">{{ .Title }}</span>
-      <code class="text-muted"> }</code>
+      <code class="text-primary">&lt;</code><span class="text-secondary">{{ .Title }}</span><code class="text-primary">/&gt;</code>
     </h2>
 
     {{ partial "blog/list.html" . }}
