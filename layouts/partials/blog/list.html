@@ -4,7 +4,7 @@
     <div class="post-info">
       {{ if .Params.categories }}
       <div class="post-categories">
-        <code>//</code>
+        <code>•<span class="text-primary">•</span></code>
         {{ range $index, $categories := .Params.categories }}
         {{- if gt $index 0 }} · {{ end -}}
         <a href="/categories/{{ . | urlize }}">{{ . }}</a>

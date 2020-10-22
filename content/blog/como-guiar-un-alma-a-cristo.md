@@ -1,11 +1,13 @@
 ---
 title: "Cómo guiar un alma a Cristo"
-description: "Type your description here..."
+description: "Y les dijo: Id por todo el mundo y predicad el evangelio a toda criatura. Marcos 16:15"
 author: "Christiam Mena"
 date: 2020-10-05T09:44:07-05:00
 draft: true
 toc: true
+image: /images/soulwinning.jpg
 summaryType: "cover"
+summaryPosition: "bottom"
 showDescription: true
 categories:
   - Fundamentos Cristianos
@@ -18,9 +20,9 @@ tags:
   - biblia
 ---
 
-Y les dijo: Id por todo el mundo y predicad el evangelio a toda criatura. Marcos 16:15
 
-## Nuestra condición
+
+## 🖤 Nuestra condición
 
 El camino al cielo y a Dios está cerrado por el pecado:
 
@@ -29,7 +31,7 @@ El camino al cielo y a Dios está cerrado por el pecado:
 - Romanos 3.23 “por cuanto **todos pecaron**, y están **destituidos** de la gloria de Dios”
 
 
-## La consecuencia
+## 🔥 La consecuencia
 
 El pecado nos lleva a otro destino
 
@@ -37,7 +39,7 @@ El pecado nos lleva a otro destino
 - Apocalipsis 21.8 “Pero los cobardes e incrédulos, los abominables y homicidas, los fornicarios y hechiceros, los idólatras y todos los mentirosos tendrán su parte en **el lago que arde con fuego y azufre**, que es la muerte segunda.”
 
 
-## La Solución
+## 💡 "La Solución"
 
 Jesucristo es la puerta y el camino al cielo
 
@@ -52,7 +54,7 @@ Recibe a Jesús como tu Salvador
 
 Muchas personas creen falsamente que sus obras pueden lograr llevarlo al cielo.
 
-## Oración de Salvación
+## 🙏 Oración de Salvación
 
 Dios nos pide, como vimos en el apartado anterior, que pidamos perdón por nuestros pecados y que aceptemos el regalo de vida eterna que el nos da. Esto lo hacemos a través de la oración y es muy sencillo: simplemente cierra tus ojos y habla con Dios.
 
@@ -67,13 +69,13 @@ Hazlo con tus propias palabras pero recuerda repasar estos puntos claves:
 - Pedir perdón por ello, y
 - Aceptar y recibir sinceramente a Jesús como tu Salvador
 
-## Seguridad de Salvación
+## 🦺 Seguridad de Salvación
 
 Luego de haber orado con la persona es recomendable que te asegures de que haya comprendido el plan de salvación y lo que hizo. Esto puedes hacerlo
 
 Apocalipsis 3.20 “He aquí, yo estoy a la puerta y llamo; si alguno oye mi voz y abre la puerta, entraré a él, y cenaré con él, y él conmigo.”
 
-## Técnicas para niños
+## 👶 Técnicas para niños
 
 Apocalipsis 3.20 “He aquí, yo estoy a la puerta y llamo; si alguno oye mi voz y abre la puerta, entraré a él, y cenaré con él, y él conmigo.”
 

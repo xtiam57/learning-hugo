@@ -45,8 +45,8 @@ const hobbies = [
 
 const about = {
   God: 1,
-  getCountry(from = 'Venezuela') {
-    return 'Perú';
+  getCountry(from = 'Venezuela 🇻🇪') {
+    return 'Perú 🇵🇪';
   },
   // Si deseas invitarme un almuerzo:
   food: {

@@ -27,12 +27,14 @@
 
 .wf-inter-n4-loading body,
 .wf-inter-n7-loading body,
+.wf-firacode-n4-loading body,
 .wf-loading body {
   visibility: hidden;
 }
 
 .wf-inter-n4-active body,
 .wf-inter-n7-active body,
+.wf-firacode-n4-active body,
 .wf-active body {
   visibility: visible;
 }
