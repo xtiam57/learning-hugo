@@ -116,7 +116,7 @@ Proyecto desarrollado bajo el marco del **Microsoft Imagine Cup** con el objetiv
 
 El juego **My2Cent** consiste en utilizar un Kinect y una pantalla de una sola salida (monitor, proyector, TV, etc) que se ejecuta en un PC. Con **My2Cents**, queremos contribuir al logro de varios objetivos, básicamente, utilizando las tecnologías de Microsoft.
 
-{{< youtube aaPVtksDaeo >}}
+{{< youtube-lite aaPVtksDaeo >}}
 
 **Tecnologías usadas:** C#, XNA, OpenGL, Blender, Photoshop, Kinect.
 
@@ -127,7 +127,7 @@ El juego **My2Cent** consiste en utilizar un Kinect y una pantalla de una sola s
 
 Proyecto con fines académicos para el curso de Tópicos en Computación Gráfica. El proyecto consistía en generar un terreno de forma **procedural** utilizando el algoritmo de **Perlin Noise** y desplegarlo utilizando la técnica de **GeoMipMapping** con 3 niveles de detalle (LOD).
 
-{{< youtube YBqaOQzYEfA >}}
+{{< youtube-lite YBqaOQzYEfA >}}
 
 Entre las características extras cabe mencionar el despliegue de **billboards**, **nubes procedurales** animadas, **generación procedural de la textura** del terreno con diferentes niveles (agua, lodo, tierra, grama, roca y hielo) y la **generación de sombras** usando la técnica de **"Fast computation of terrain shadow maps"**.
 
@@ -152,7 +152,7 @@ Desarrollado para el curso de Tópicos en Computación Gráfica. Dentro de las c
 - Atenuación ambiental.
 - Animación de modelos.
 
-{{< youtube 8Ts8h8gEUIU >}}
+{{< youtube-lite 8Ts8h8gEUIU >}}
 
 **Tecnologías usadas:** C++, OpenGL, GLSL.
 
@@ -161,7 +161,7 @@ Desarrollado para el curso de Tópicos en Computación Gráfica. Dentro de las c
 
 Desarrollado para el curso de Tópicos en Computación Gráfica con fines académcos. El objetivo del proyecto era desplegar una escena con la técnica estereoscópica de anaglifos (para lentes rojo/azul) utilizando dos y tres despliegues de la misma. Entre de las funcionalidades cabe destacar que la aplicación permite cambiar la posición del ZPS y la apertura de los ojos.
 
-{{< youtube qXxM7akDA90 >}}
+{{< youtube-lite qXxM7akDA90 >}}
 
 **Tecnologías usadas:** C++, OpenGL, GLSL.
 
@@ -170,7 +170,7 @@ Desarrollado para el curso de Tópicos en Computación Gráfica con fines acadé
 
 Proyecto con fines académicos para el curso de Fundamentos y Técnicas en Computación Gráfica. El objetivo del proyecto era cargar un mapa BSP y desplegarlo utilizando una técnica de aceleración. En este caso se utilizó el **Frutum Culling** para descartar ramas del **árbol BSP** al momento de hacer el despliegue. Entre las características adicionales están el uso de multitextura haciendo uso del lightmap que viene contenido en el archivo BSP.
 
-{{< youtube WDk4we8bk0Q >}}
+{{< youtube-lite WDk4we8bk0Q >}}
 
 **Tecnologías usadas:** C++, OpenGL, GLSL.
 
@@ -179,7 +179,7 @@ Proyecto con fines académicos para el curso de Fundamentos y Técnicas en Compu
 
 Desarrollado para el curso de Fundamentos y Técnicas en Computación Gráfica con fines académcos. Se implementaron las técnicas de Parallax Mapping, Normal Mapping, Phong Shading, mapeo de textura esférico y planar con GLSL, interacción con el mouse (rotar, escalar y trasladar) y carga de archivos OFF.
 
-{{< youtube Ng9DQNaipoc >}}
+{{< youtube-lite Ng9DQNaipoc >}}
 
 **Tecnologías usadas:** C++, OpenGL, GLSL.
 
@@ -188,7 +188,7 @@ Desarrollado para el curso de Fundamentos y Técnicas en Computación Gráfica c
 
 Desarrollado para el curso de Tópicos en Computación Gráfica. El objetivo del proyecto era cargar y desplegar volúmenes utilizando la ténica de **Marching Tetracubes** (Tetracubos Marchantes) y permitir al usuario seleccionar el umbral que deseaba. Se debían calcular las normales de cada triángulo con el fin de generar Gouraud Shading en el mallado además de poder visualizar el volúmen de manera estereoscópica.
 
-{{< youtube pa9XC05TC8c >}}
+{{< youtube-lite pa9XC05TC8c >}}
 
 **Tecnologías usadas:** C++, OpenGL, GLSL.
 
@@ -197,7 +197,7 @@ Desarrollado para el curso de Tópicos en Computación Gráfica. El objetivo del
 
 Desarrollado para el curso de Fundamentos y Técnicas en Computación Gráfica con fines académcos. Se utilizo la técnica de despliegue de volumenes llamada Planos Alineados al Objeto (una técnica de textura 2D).
 
-{{< youtube nmdlGlJ-2G0 >}}
+{{< youtube-lite nmdlGlJ-2G0 >}}
 
 **Tecnologías usadas:** C++, OpenGL, GLSL.
 
@@ -206,7 +206,7 @@ Desarrollado para el curso de Fundamentos y Técnicas en Computación Gráfica c
 
 Video juego desarrollado en mes y medio con propósitos académicos para el curso de Introducción a la Computación Gráfica. El objetivo del juego es recolectar los tres diamantes azules repartidos a lo largo de tres niveles en donde se deberán utilizar las habilidades de los tres personajes de la historia.
 
-{{< youtube 7cEKSXrrxMU >}}
+{{< youtube-lite 7cEKSXrrxMU >}}
 
 **Tecnologías usadas:** C++, OpenGL, GLSL, efectos de sonido y sonido ambiental.
 
@@ -215,7 +215,7 @@ Video juego desarrollado en mes y medio con propósitos académicos para el curs
 
 Proyecto con fines académicos para el curso de Fundamentos y Técnicas en Computación Gráfica. El proyecto consistía en recrear una escena en donde se puduera apreciar las sombras volumétricas generadas por una fuente de luz y la reflección de ciertos elementos sobre una superficie pulida. El proyecto fue realizado haciendo uso del Stencil Buffer. Como caracerística adicional cabe destacar que se aplico la técnica de Nomal Mapping a las paredes, el techo y el piso del escenario y la detección de colisiones.
 
-{{< youtube NVvh9aPDsAc >}}
+{{< youtube-lite NVvh9aPDsAc >}}
 
 **Tecnologías usadas:** C++, OpenGL, GLSL.
 
