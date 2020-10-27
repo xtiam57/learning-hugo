@@ -53,11 +53,12 @@
       {{- if gt $index 0 }} · {{ end -}}
       <a href="/categories/{{ . | urlize }}">{{ . }}</a>
       {{ end }}
+      <span class="terminal-cursor cursor-block"></span>
     </div>
     {{ end }}
 
     <h1 class="summary-title">
-      {{ .Page.Title }}<span class="terminal-cursor"></span>
+      {{ .Page.Title }}
     </h1>
 
     {{ if .Params.ShowDescription }}

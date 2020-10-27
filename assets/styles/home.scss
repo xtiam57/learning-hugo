@@ -18,9 +18,7 @@ body {
       flex: 1 1 auto;
 
       .lead {
-        @include font-size(1.1rem);
         color: #646d7c;
-
         *:first-child {
           margin-top: 0;
         }

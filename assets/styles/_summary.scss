@@ -18,10 +18,22 @@
     height: 100%;
 
     .summary-categories {
+      font-size: $font-size-sm;
+
       a {
         color: $secondary-color;
-        font-size: $font-size-sm;
         display: inline-block;
+      }
+
+      code {
+        background: none;
+        border-radius: $highlight-radius;
+        padding: 0;
+        margin: 0;
+        border: none;
+        white-space: normal;
+        color: $secondary-color;
+        letter-spacing: -0.125rem;
       }
     }
 

@@ -1,9 +1,9 @@
-@import 'variables';
-@import 'mixins';
-@import 'highlight';
-@import 'summary';
-@import 'toc';
-@import 'hero';
+@import "variables";
+@import "mixins";
+@import "highlight";
+@import "summary";
+@import "toc";
+@import "hero";
 
 article {
   position: relative;
@@ -12,14 +12,24 @@ article {
 
   // > p:first-child,
   // > .toc + p {
-  //   @include font-size(1.2rem);
+  //   &::first-letter {
+  //     font-weight: bold;
+  //     float: left;
+  //     font-size: 3rem;
+  //     margin-right: 0.8rem;
+  //     margin-top: 0.4rem;
+  //     line-height: 1;
+  //     font-family: $font-family-code;
+  //     color: $text-muted;
+  //   }
   // }
 
   > *:first-child {
     margin-top: 0;
   }
 
-  h1, h2 {
+  h1,
+  h2 {
     border-bottom: 1px solid $lightGray-color;
   }
 
@@ -124,14 +134,13 @@ article {
       line-height: 1.5;
 
       &:before {
-        content: '— '
+        content: "— ";
       }
     }
   }
 
   .footnotes {
     font-size: $font-size-sm;
-    font-family: $font-family-footnotes !important;
 
     p {
       margin: 0;

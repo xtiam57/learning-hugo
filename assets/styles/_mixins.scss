@@ -58,9 +58,21 @@
         display: inline-block;
         color: $secondary-color;
       }
+
+      code {
+        background: none;
+        border-radius: $highlight-radius;
+        padding: 0;
+        margin: 0;
+        border: none;
+        white-space: normal;
+        color: $secondary-color;
+        letter-spacing: -0.125rem;
+      }
     }
 
-    h4 {
+    h1 {
+      @include font-size($h4-font-size);
       margin-top: 0;
       margin-bottom: $margin-base * 0.5;
       line-height: 1.45;
