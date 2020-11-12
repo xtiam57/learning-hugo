@@ -1,5 +1,5 @@
-@import 'variables';
-@import 'mixins';
+@import "variables";
+@import "mixins";
 
 .container {
   padding-top: $container-gutter;
@@ -11,9 +11,16 @@
   text-align: center;
 
   h1 {
-    color: $primary-color;
-    @include font-size($font-size-base * 20);
+    color: $secondary-color;
     line-height: 1;
+    margin: 0;
+    @include font-size($font-size-base * 20);
+    font-family: $font-family-code;
+  }
+
+  h4 {
+    margin-top: 0;
+    margin-bottom: $margin-base * 0.5;
   }
 
   p {
@@ -25,4 +32,3 @@
     }
   }
 }
-

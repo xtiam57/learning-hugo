@@ -57,7 +57,7 @@
 
   WebFont.load({
     custom: {
-      families: ['Inter:n4,n7', 'Fira Code:n4']
+      families: ['Playfair Display:n7,i7', 'Fira Code:n4']
     }
   });
 </script>
@@ -65,3 +65,5 @@
 {{ $fontStyles := resources.Get "styles/fonts.scss" }}
 {{ $fontStyles = $fontStyles | toCSS | minify | fingerprint }}
 <style>{{ $fontStyles.Content | safeCSS }}</style>
+
+

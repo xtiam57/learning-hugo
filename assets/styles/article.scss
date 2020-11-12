@@ -13,14 +13,16 @@ article {
   // > p:first-child,
   // > .toc + p {
   //   &::first-letter {
-  //     font-weight: bold;
   //     float: left;
-  //     font-size: 3rem;
+  //     font-size: 4rem;
   //     margin-right: 0.8rem;
   //     margin-top: 0.4rem;
-  //     line-height: 1;
-  //     font-family: $font-family-code;
+  //     margin-bottom: 0.4rem;
+  //     letter-spacing: 0;
+  //     line-height: 0.84;
+  //     font-family: $font-family-headings;
   //     color: $text-muted;
+  //     text-transform: uppercase;
   //   }
   // }
 
@@ -30,33 +32,33 @@ article {
 
   h1,
   h2 {
-    border-bottom: 1px solid $lightGray-color;
+    border-bottom: 1px solid $body-text-color;
   }
 
-  &.cover {
-    // &:after,
-    // &:before {
-    //   display: block;
-    //   content: '';
-    //   position: absolute;
-    //   top: -500px;
-    //   z-index: -1;
-    //   width: 20px;
-    //   height: 900px;
-    //   background: rgba(39, 44, 49, 0.08);
-    //   filter: blur(9px);
-    // }
+  // &.cover {
+  //   &:after,
+  //   &:before {
+  //     display: block;
+  //     content: '';
+  //     position: absolute;
+  //     top: -500px;
+  //     z-index: -1;
+  //     width: 20px;
+  //     height: 900px;
+  //     background: rgba(39, 44, 49, 0.08);
+  //     filter: blur(9px);
+  //   }
 
-    // &:after {
-    //   right: -3px;
-    //   transform: rotate(1deg);
-    // }
+  //   &:after {
+  //     right: -3px;
+  //     transform: rotate(1deg);
+  //   }
 
-    // &:before {
-    //   left: -3px;
-    //   transform: rotate(-1deg);
-    // }
-  }
+  //   &:before {
+  //     left: -3px;
+  //     transform: rotate(-1deg);
+  //   }
+  // }
 
   img {
     vertical-align: middle;
@@ -145,6 +147,17 @@ article {
     p {
       margin: 0;
     }
+
+    hr {
+      margin: $hr-margin-y 0;
+      color: $lightGray-color;
+      background-color: currentColor;
+      border: 0;
+    }
+
+    hr:not([size]) {
+      height: 1px;
+    }
   }
 }
 
@@ -155,6 +168,7 @@ article {
   justify-content: space-between;
   padding: $margin-base 0;
   background-color: $white-color;
+  font-family: $font-family-sans-serif;
 
   .prev-post,
   .next-post {
@@ -167,10 +181,11 @@ article {
       font-size: $font-size-sm * 0.85;
     }
 
-    div {
+    a {
       font-size: $font-size-base;
       text-transform: initial;
       text-transform: initial;
+      display: block;
     }
   }
 
@@ -183,6 +198,7 @@ article {
   margin-top: $margin-base * 3;
   margin-bottom: $margin-base;
   background-color: $white-color;
+  font-family: $font-family-sans-serif;
 
   a {
     background-color: $lighterGray-color;

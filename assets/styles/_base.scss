@@ -231,7 +231,11 @@ figure {
   }
 
   &.cursor-block:after {
-    content: "▌"
+    content: "▌";
+  }
+
+  &.cursor-line:after {
+    content: "|";
   }
 }
 

@@ -15,17 +15,6 @@
   .hero-content {
     @include make-container();
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: $hero-font-family;
-      word-spacing: 0;
-      letter-spacing: 0;
-    }
-
     *:first-child {
       margin-top: 0;
     }

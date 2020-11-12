@@ -1,6 +1,6 @@
 ---
 title: "Cómo guiar una persona al Bautismo"
-description: '"Por tanto, id, y haced discípulos a todas las naciones, bautizándolos en el nombre del Padre, y del Hijo, y del Espíritu Sant" — RVR1960 Mateo 28:19'
+description: '"Por tanto, id, y haced discípulos a todas las naciones, bautizándolos en el nombre del Padre, y del Hijo, y del Espíritu Sant" —  Mateo 28:19'
 author: "Christiam Mena"
 date: 2020-10-05T12:10:24-05:00
 draft: true
@@ -24,7 +24,7 @@ Ahora que aceptaste a Cristo como tu salvador, por gratitud y en obediencia a É
 
 > Por tanto, id, y haced discípulos a todas las naciones, **bautizándolos** en el nombre del Padre, y del Hijo, y del Espíritu Santo.
 >
-> <cite>RVR1960 Mateo 28:19</cite>
+> <cite> Mateo 28:19</cite>
 
 Nuestro Señor Jesucristo nos mandó a bautizarnos después de creer en Él.
 
@@ -34,7 +34,7 @@ La palabra bautizo (***“bapto”*** o ***“baptizo”***) significa sumergido
 
 > Porque somos **sepultados** juntamente con él para **muerte** por el bautismo, a fin de que como Cristo **resucitó** de los muertos por la gloria del Padre, así también nosotros andemos en vida nueva.
 >
-> <cite>RVR1960 Romanos 6:4</cite>
+> <cite> Romanos 6:4</cite>
 
 El bautizo representa la **muerte, sepultura y resurrección** de nuestro Señor Jesucristo.
 
@@ -46,7 +46,7 @@ En la biblia enseña varios ejemplos de personas que creyeron e **INMEDIATAMENTE
 - Hechos 8:35-38 En este pasaje Felipe le anuncio el Evangelio a un etíope y este cuando creyó pidió ser bautizado inmediatamente.
 - Hechos 16:33 “Y él, tomándolos en aquella misma hora de la noche, les lavó las heridas; y en seguida se bautizó él con todos los suyos”. El carcelero fue bautizado la misma noche en la que fue salvo.
 
-**IMPORTANTE**: La Biblia enseña que **NO** necesitas un curso, ni una preparación previa para bautizarte, en todos los casos vistos, el bautizo era **inmediato** y el **único requisito era haber creído en Jesucristo como tu Salvador**.
+<mark>**IMPORTANTE**</mark>: La Biblia enseña que **NO** necesitas un curso, ni una preparación previa para bautizarte, en todos los casos vistos, el bautizo era **inmediato** y el **único requisito era haber creído en Jesucristo como tu Salvador**.
 
 ## Mito vs. Realidad
 
@@ -81,7 +81,7 @@ La Biblia enseña que debes ser bautizado siendo consciente de lo que haces y po
 >
 > Y habiéndoles impuesto Pablo las manos, vino sobre ellos el Espíritu Santo; y hablaban en lenguas, y profetizaban.
 >
-> <cite>RVR1960 Hechos 19:1-6</cite>
+> <cite> Hechos 19:1-6</cite>
 
 
 Vemos la historia de los discípulos de Juan el Bautista (quien bautizó a Jesús) que fueron bautizados sin comprender lo que hacían. Ese mismo día fueron re-bautizados por Pablo luego de haber sido salvos.

@@ -6,7 +6,7 @@ image: /images/profile.jpg
 type: page
 ---
 
-# Hola, extraño<span class="terminal-cursor"></span>
+# Hola, extraño
 
 Mi nombre es Christiam y soy **licenciado en Ciencias de la Computación** de la Universidad Central de Venezuela (**U-U-UCV!**).
 

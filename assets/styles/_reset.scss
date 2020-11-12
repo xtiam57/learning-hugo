@@ -13,7 +13,7 @@ body {
   font-size: $font-size-base;
   font-weight: $font-weight-normal;
   letter-spacing: $letter-spacing-base;
-  font-feature-settings: 'kern' 1, 'liga' 1, 'calt' 1, 'case' 1;
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "case" 1;
   line-height: $line-height-base;
   color: $body-text-color;
   text-align: $body-text-align;
@@ -31,12 +31,15 @@ body {
 hr {
   margin: $hr-margin-y 0;
   color: $lightGray-color;
-  background-color: currentColor;
+  color: $secondary-color;
   border: 0;
-}
+  font-family: $font-family-code;
 
-hr:not([size]) {
-  height: 1px;
+  &:before {
+    content: "* * *";
+    display: block;
+    text-align: center;
+  }
 }
 
 h1,

@@ -1,4 +1,4 @@
-@import 'variables';
+@import "variables";
 
 code,
 pre {
@@ -164,7 +164,7 @@ pre.highlight {
     user-select: none;
   }
   .ln:after {
-    content: ' ';
+    content: " ";
   }
   .hll,
   .hl {

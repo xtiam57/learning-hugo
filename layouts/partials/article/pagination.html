@@ -4,9 +4,7 @@
     {{ with .PrevInSection }}
     <small>Anterior</small>
     <a href="{{ .Permalink }}">
-      <div>
-        {{ .Title }}
-      </div>
+      {{ .Title }}
     </a>
     {{ end }}
   </div>
@@ -15,9 +13,7 @@
     {{ with .NextInSection }}
     <small>Siguiente</small>
     <a href="{{ .Permalink }}">
-      <div>
-        {{ .Title }}
-      </div>
+      {{ .Title }}
     </a>
     {{ end }}
   </div>

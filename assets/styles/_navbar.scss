@@ -1,5 +1,5 @@
-@import 'variables';
-@import 'mixins';
+@import "variables";
+@import "mixins";
 
 .navbar {
   position: sticky;
@@ -10,6 +10,7 @@
   color: $navbar-color;
   z-index: 2;
   box-shadow: $navbar-shadow;
+  font-family: $font-family-code;
 
   > nav {
     @include make-container($container-gutter * 0.6);
@@ -21,7 +22,6 @@
     .navbar-links {
       color: $navbar-color;
       font-size: $navbar-font-size;
-      text-decoration: none;
 
       a {
         display: inline-block;

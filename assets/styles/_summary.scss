@@ -18,22 +18,14 @@
     height: 100%;
 
     .summary-categories {
-      font-size: $font-size-sm;
+      font-size: $font-size-sm * 0.95;
+      font-family: $font-family-code;
+      margin-bottom: $margin-base * 0.25;
 
       a {
+        font-weight: $font-weight-bold;
         color: $secondary-color;
         display: inline-block;
-      }
-
-      code {
-        background: none;
-        border-radius: $highlight-radius;
-        padding: 0;
-        margin: 0;
-        border: none;
-        white-space: normal;
-        color: $secondary-color;
-        letter-spacing: -0.125rem;
       }
     }
 
@@ -52,6 +44,7 @@
       color: $text-muted;
       margin-top: $margin-base * 0.5;
       margin-bottom: $margin-base * 0.65;
+      font-family: $font-family-sans-serif;
     }
   }
 
@@ -113,23 +106,16 @@
       }
     }
 
-    .summary-categories {
-      // color: rgba(255, 255, 255, 0.8);
-      // a {
-      //   color: rgba(255, 255, 255, 0.8);
-      // }
-    }
-
     .summary-title {
       color: $white-color;
     }
 
     .summary-description {
-      color: rgba(255, 255, 255, .9);
+      color: rgba(255, 255, 255, 0.9);
     }
 
     .summary-info {
-      color: rgba(255, 255, 255, .8);
+      color: rgba(255, 255, 255, 0.8);
     }
   }
 }
