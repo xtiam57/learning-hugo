@@ -26,8 +26,6 @@ Un viejo profesor de matemáticas siempre nos decía: **"recordar... es vivir"**
 
 Hace poco revisando mis viejos archivos y proyectos de la universidad me di cuenta de que aquel viejo dicho era cierto. Nada más bonito que **"vivir"** al recordar: las noches sin dormir terminando un proyecto, las horas de depuración perdidas al enterarte de que sólo te faltaba una coma, el nombre **tesis-final-ahorasi.docx"**, o aquellos cubos que por alguna razón dejaban de tener 6 caras o simplemente desaparecían del todo.
 
-***
-
 La computación gráfica es increíble y disfruté mucho esa etapa de mi carrera, tanto que decidí compartir algunos de los mejores proyectos de mi etapa universitaria.
 
 ## Trabajo Especial de Grado

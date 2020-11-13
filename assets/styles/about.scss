@@ -16,20 +16,11 @@
     text-align: center;
   }
 
-  // > h1 + p {
-  //   &::first-letter {
-  //     float: left;
-  //     font-size: 4rem;
-  //     margin-right: 0.8rem;
-  //     margin-top: 0.4rem;
-  //     margin-bottom: 0.4rem;
-  //     letter-spacing: 0;
-  //     line-height: 0.84;
-  //     font-family: $font-family-headings;
-  //     color: $text-muted;
-  //     text-transform: uppercase;
-  //   }
-  // }
+  > h1 + p {
+    &::first-letter {
+      @include make-capital();
+    }
+  }
 
   .profile-pic {
     $profile-pic-size: 160px;
