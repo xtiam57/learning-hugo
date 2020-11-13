@@ -44,7 +44,7 @@ $margin-base: 1.05rem !default;
 $paragraph-margin: $margin-base !default;
 $highlight-margin: $margin-base * 1.25 !default;
 $table-margin: $margin-base * 1.25 !default;
-$hr-margin-y: $margin-base !default;
+$hr-margin-y: $margin-base * 2 !default;
 $container-gutter: $margin-base * 2 !default;
 $hero-margin-top: $margin-base * 2 !default;
 $hero-margin-bottom: $margin-base * 2 !default;
