@@ -10,9 +10,7 @@
 <main>
   <section class="container">
     <h2 class="margin-top-0">
-      <code class="text-primary"> {</code>
-      <span class="text-secondary">{{ .Title }}</span>
-      <code class="text-primary"> }</code>
+      <code class="text-primary">{<span class="text-secondary">{{ .Title }}</span>}</code>
     </h2>
 
     {{ partial "blog/list.html" . }}
