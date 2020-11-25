@@ -4,7 +4,6 @@ description: "Descripción del post de prueba..."
 image: /images/map.png
 summaryType: "wide"
 caption: Publicado en **Unplash**
-summaryPosition: "bottom"
 date: 2020-09-17T16:59:56-05:00
 draft: true
 toc: false

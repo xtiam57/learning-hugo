@@ -5,19 +5,34 @@ body {
   height: 100vh;
 
   main {
+    background-image: url(/images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: $container-gutter;
     display: flex;
-    width: 100%;
-    background-color: $primary-color;
+    justify-content: center;
+    align-items: center;
+    border-radius: $border-radius;
 
     .container {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: $container-gutter;
+      padding: $container-gutter * 3;
       flex: 1 1 auto;
+      background-color: $white-color;
+      border-radius: $border-radius;
+      text-align: center;
+
+      @media (max-width: $body-max-width) {
+        border-radius: 0;
+
+      }
 
       .lead {
         color: #646d7c;
+        font-size: $font-size-lg;
+
         *:first-child {
           margin-top: 0;
         }
@@ -26,33 +41,33 @@ body {
       .logo-pic {
         width: 90%;
         max-width: 40ch;
-        margin-bottom: $margin-base * 2;
+        margin: 0 auto $margin-base * 2;
+      }
+
+      .links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: $font-family-code;
+
+        a {
+          margin: 0 ($margin-base * 0.5);
+
+          &:first-child {
+            margin-left: $margin-base * 2;
+          }
+
+          &:nth-child(3) {
+            color: $secondary-color;
+          }
+        }
       }
 
       .interest {
         margin-bottom: 0;
         margin-top: 0;
-        color: $white-color;
         display: flex;
         flex-direction: column;
-
-        .links {
-          display: flex;
-          align-items: center;
-          font-family: $font-family-code;
-
-          a {
-            margin: 0 ($margin-base * 0.5);
-
-            &:first-child {
-              margin-left: $margin-base * 2;
-            }
-
-            &:nth-child(3) {
-              color: $secondary-color;
-            }
-          }
-        }
       }
     }
   }
