@@ -26,7 +26,7 @@ body {
 
       @media (max-width: $body-max-width) {
         border-radius: 0;
-
+        padding: ($container-gutter * 2) $container-gutter;
       }
 
       .lead {
