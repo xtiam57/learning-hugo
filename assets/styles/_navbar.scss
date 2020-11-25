@@ -9,11 +9,12 @@
   background-color: $navbar-background;
   color: $navbar-color;
   z-index: 2;
-  box-shadow: $navbar-shadow;
+  // box-shadow: $navbar-shadow;
+  border-bottom: $border-base;
   font-family: $font-family-code;
 
   > nav {
-    @include make-container($container-gutter * 0.6);
+    @include make-container($container-gutter * 0.8);
     align-items: center;
     display: flex;
     height: 100%;
@@ -24,12 +25,14 @@
       font-size: $navbar-font-size;
 
       a {
-        display: inline-block;
-        padding: 0 $margin-base * 0.5;
-        text-decoration: none;
+        color: $navbar-link-color;
+        text-decoration: $navbar-link-decoration;
+        transition: all 0.2s;
 
         &:hover {
-          color: $secondary-color;
+          color: $navbar-link-hover-color;
+          text-decoration: none;
+          text-decoration: $navbar-link-hover-decoration;
         }
       }
     }

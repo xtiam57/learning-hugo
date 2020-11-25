@@ -110,13 +110,19 @@ figure {
   margin: $margin-base 0;
 
   &.full,
-  &.fit {
-    margin-top: 0;
-    margin-bottom: 0;
+  &.wide {
     img {
       width: 100%;
       height: auto;
     }
+  }
+
+  img {
+    border-radius: $border-radius;
+  }
+
+  &.full img {
+    border-radius: 0;
   }
 
   figcaption {
@@ -124,6 +130,7 @@ figure {
     text-align: center;
     font-size: $font-size-sm;
     margin-top: $margin-base;
+    color: $text-muted;
 
     p {
       margin: 0;
@@ -141,26 +148,21 @@ figure {
   display: block;
 }
 
-// Base on https://css-tricks.com/full-width-containers-limited-width-parents/
-.fit {
-  left: 50%;
-  margin: $special-width-margin-top -50vw $special-width-margin-bottom !important;
-  padding: 0 15vw;
-  position: relative;
-  right: 50%;
-  width: 100vw;
-  display: block;
+.wide {
+  margin: $special-width-margin-top 0 $special-width-margin-bottom 0;
+  width: calc(100% + (100vw - 100%) / 2);
+  margin-left: calc((100% - 100vw) / 4);
 
-  @media (max-width: 1024px) {
-    padding: 0;
+  @media (max-width: $body-max-width) {
+    width: 100%;
+    margin-left: 0;
   }
 
-  @media (min-width: 1280px) {
-    padding: 0 20vw;
-  }
-
-  @media (min-width: 1900px) {
-    padding: 0 25vw;
+  @media (min-width: 1171px) {
+    $max-width: rem(1138px);
+    $body-width: rem($body-max-width) - ($container-gutter * 2);
+    width: $max-width;
+    margin-left: ($max-width - $body-width) * -0.5;
   }
 }
 
@@ -201,7 +203,7 @@ figure {
   display: flex;
 
   .column {
-    padding-right: $margin-base;
+    padding-right: $margin-base * 1.5;
     display: block;
     flex-basis: 0;
     flex-grow: 1;
@@ -247,4 +249,12 @@ figure {
   50% {
     color: $secondary-color;
   }
+}
+
+.medium-zoom-overlay {
+  z-index: 3;
+}
+
+.medium-zoom-image--opened {
+  z-index: 4;
 }

@@ -18,8 +18,8 @@ tags:
   - OpenGL
   - GLSL
 # Cover information
-image: /images/portfolio/tesis.jpg
-summaryType: "none"
+image: /images/test.jpg
+summaryType: "cover"
 ---
 
 Un viejo profesor de matemáticas siempre nos decía: **"recordar... es vivir"**.
@@ -41,7 +41,7 @@ Todas las piezas que por defecto manejaba la aplicación fueron diseñadas con *
 
 [^sketchup]: [Google Sketchup](https://www.sketchup.com/es)
 
-{{< figure class="fit" src="/images/tesis/tesis-2.jpg" caption="Marco Estereotáctico y todos sus componentes" >}}
+{{< figure class="wide" src="/images/tesis/tesis-2.jpg" caption="Marco Estereotáctico y todos sus componentes" >}}
 
 La razón principal por la cual los modelos fueron exportados en formato OBJ es porque éste es aceptado universalmente por un gran número de visualizadores de modelos 3D y aplicaciones tipo CAD lo cual permite la edición de las piezas usadas en cualquier momento.
 
@@ -65,7 +65,7 @@ Otros elementos visibles en el _viewport_ era: el ***ViewCube***, el cual permit
 
 El componente de rotación estaba conformado por un aro o circunferencia centrada en el Marco Estereotáctico y dos líneas indicadoras principales. La circunferencia actuaba como interfaz que permitía al usuario hacer clic sobre ella para realizar una rotación específica y las dos líneas funcionaban de guías que indican la posición inicial de la rotación (donde se hizo clic) y la posición final de la rotación (donde se encuentra actualmente el cursor del ratón). Adicionalmente, se desplegaba una etiqueta que indicaba el ángulo actual expresado en grados.
 
-{{< figure class="fit" src="/images/tesis/tesis-3.jpg" caption="Visualización del componente de rotación" >}}
+{{< figure class="wide" src="/images/tesis/tesis-3.jpg" caption="Visualización del componente de rotación" >}}
 
 ### Traslación
 
@@ -73,7 +73,7 @@ El componente estba formado por tres flechas paralelas a los ejes X, Y y Z; una 
 
 Para interactuar con esta herramienta el usuario debía hacer clic sobre las flechas o los se-lectores de plano. Cada uno de los elementos tienía comportamientos distintos. Al hacer clic sobre las flecha el usuario solo tenía permitido trasladar el marco sobre el eje seleccionado, mientras que si seleccionaba los otros indicadores podía desplazar el marco por el plano que corresponda (XY, XZ o YZ).
 
-{{< figure class="fit" src="/images/tesis/tesis-4.jpg" caption="Visualización de la herramienta de traslación" >}}
+{{< figure class="wide" src="/images/tesis/tesis-4.jpg" caption="Visualización de la herramienta de traslación" >}}
 
 Al iniciar el movimiento se mostraba una etiqueta que indicaba la distancia desplazada en cada eje con respecto a la posición inicial. Dicha distancia estaba expresada en milímetros.
 
@@ -81,7 +81,7 @@ Al iniciar el movimiento se mostraba una etiqueta que indicaba la distancia desp
 
 Este componente era el encargado de realizar cortes transversales a un elemento 3D haciendo uso del procedimiento de **“recorte”** (_clipping_, en inglés) definido en el API de **OpenGL**. Esta componente era utilizado en la aplicación como una herramienta para la visualización interior del volumen desplegado. El procedimiento de _clipping_ se encargaba de identificar una porción del volumen que se encuentra dentro o fuera de una región tridimensional definida por la intersección de tres planos perpendiculares entre sí. Luego, toda la porción dentro del área definida se mostraba en pantalla y el resto simplemente no se desplegaba.
 
-{{< figure class="fit" src="/images/tesis/tesis-6.jpg" caption="Visualización del componente de Clipping del volumen. En **(A)** se muestran los planos de clipping y en **(B)** se muestra el componente que permite ajustar las posiciones de los planos" >}}
+{{< figure class="wide" src="/images/tesis/tesis-6.jpg" caption="Visualización del componente de Clipping del volumen. En **(A)** se muestran los planos de clipping y en **(B)** se muestra el componente que permite ajustar las posiciones de los planos" >}}
 
 ### El volumen (a.k.a. el paciente)
 
@@ -97,7 +97,7 @@ Una función de transferencia puede ser diseñada para visualizar capas de piel,
 - La primera es definiendo de forma manual cada valor de correspondencia entre un iso-valor y un color RGBA, lo cual deriva en un proceso tedioso y poco práctico, por lo que no fue considerado como una solución factible para éste trabajo.
 - La segunda manera es diseñando un control interactivo que permita definir de manera rápida, práctica y lo más importante, en tiempo real, cualquier función de transferencia.
 
-{{< figure class="fit" src="/images/tesis/tesis-10.jpg" caption="Las diferentes configuraciones por defecto de la Función de Transferencia" >}}
+{{< figure class="wide" src="/images/tesis/tesis-10.jpg" caption="Las diferentes configuraciones por defecto de la Función de Transferencia" >}}
 
 ### Detección de la lesión
 

@@ -7,6 +7,7 @@
         {{ end }}>
   <img {{ with .Get "caption" }}alt="{{ . | markdownify }}"
        {{ end }}
+       data-zoomable
        data-lazy="{{ $image.Permalink }}"
        src="{{ $placeholder.Permalink }}"
        class="img-lazy {{ with .Get "imageClass" }}{{ . }}{{ end }}" />

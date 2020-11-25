@@ -3,119 +3,54 @@
 @import "share-buttons";
 
 .article-summary {
-  picture {
-    margin-bottom: 0;
-  }
-
   .summary-wrapper {
-    @include make-container();
-    background-color: $white-color;
-    padding-top: $container-gutter;
-    padding-bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 100%;
+    @include make-container($container-gutter * 0);
+    text-align: center;
+    padding: ($margin-base * 2) ($margin-base);
+    position: relative;
 
     .summary-categories {
-      font-size: $font-size-sm * 0.95;
-      font-family: $font-family-code;
-      margin-bottom: 0;
-
-      a {
-        font-weight: $font-weight-bold;
-        color: $secondary-color;
-        display: inline-block;
-      }
+      font-size: $font-size-sm;
+      border-radius: $border-radius;
     }
 
     .summary-title {
       color: $darkGray-color;
       line-height: 1.25;
-      margin: 0;
-    }
-
-    .summary-description {
-      margin: ($margin-base * 0.5) 0 0;
+      margin: ($margin-base * 0.5) 0 ($margin-base);
     }
 
     .summary-info {
       font-size: $font-size-sm;
       color: $text-muted;
-      margin-top: $margin-base * 0.5;
-      margin-bottom: $margin-base * 0.65;
-      font-family: $font-family-sans-serif;
+      margin: 0;
     }
   }
 
-  &.summary-fit {
-    padding-top: 0;
-
-    figure {
-      background-color: $white-color;
-      text-align: center;
-      display: block;
-      margin-bottom: 0;
-      padding-top: $container-gutter;
-
-      img {
-        width: 100vw;
-        height: auto;
-
-        @media (min-width: 1024px) {
-          width: 70vw;
-        }
-      }
-
-      &.figure-bottom,
-      &.figure-middle {
-        margin-top: 0;
-      }
-
-      &.figure-top {
-        margin-top: 0;
-
-        @media (max-width: 1024px) {
-          padding-top: 0;
-        }
-      }
-    }
+  &.summary-wide {
+    margin-bottom: $container-gutter;
   }
 
   &.summary-cover {
+    padding: ($margin-base * 6) 0;
     background-color: $white-color;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-    height: calc(98vh - #{$navbar-height});
-    min-height: 500px;
-    background-color: $darkGray-color;
-    // background-blend-mode: multiply;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    position: relative;
+    margin-bottom: $container-gutter * 2;
 
-    .summary-wrapper {
-      background-color: transparent;
-      padding-bottom: $container-gutter;
-
-      &.wrapper-top {
-        justify-content: flex-start;
-      }
-
-      &.wrapper-middle {
-        justify-content: center;
-      }
+    &::before {
+      content: "";
+      background: rgba(0, 0, 0, 0.4);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
-
     .summary-title {
       color: $white-color;
-    }
-
-    .summary-description {
-      color: rgba(255, 255, 255, 0.9);
-    }
-
-    .summary-info {
-      color: rgba(255, 255, 255, 0.8);
+      text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     }
   }
 }

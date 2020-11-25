@@ -6,7 +6,7 @@ image: /images/profile.jpg
 type: page
 ---
 
-# Hola, extraño
+***
 
 Mi nombre es Christiam y soy **licenciado en Ciencias de la Computación** de la Universidad Central de Venezuela (**U-U-UCV!**). Siempre me he considerado una persona con actitud **proactiva, responsable y creativa**. Durante los más de **10 años de experiencia** en el desarrollo web (front-end) he podido participar un múltiples proyectos y usar diferentes tecnologías.
 

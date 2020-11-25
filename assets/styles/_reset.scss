@@ -31,15 +31,12 @@ body {
 hr {
   margin: $hr-margin-y 0;
   color: $lightGray-color;
-  color: $secondary-color;
+  background-color: currentColor;
   border: 0;
-  font-family: $font-family-code;
+}
 
-  &:before {
-    content: "* * *";
-    display: block;
-    text-align: center;
-  }
+hr:not([size]) {
+  height: 1px;
 }
 
 h1,
@@ -48,7 +45,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 1.5em 0 $margin-base;
+  margin: 1.8em 0 $margin-base;
   font-weight: $font-weight-bold;
   line-height: 1.7;
   font-family: $font-family-headings;
@@ -165,6 +162,7 @@ sup {
 a {
   color: $link-color;
   text-decoration: $link-decoration;
+  transition: all 0.2s;
 
   &:hover {
     color: $link-hover-color;

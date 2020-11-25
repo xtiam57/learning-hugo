@@ -12,7 +12,7 @@ tags:
   - tag1
 # Summary information
 image: ""
-summaryType: "[fit]|cover|none"
+summaryType: "[wide]|cover|none"
 summaryPosition: "[bottom]|top|middle"
 summaryCaption: ""
 ---

@@ -12,25 +12,25 @@ $body-text-color: #4a5568 !default;
 $body-text-align: left !default;
 $body-bg: #fff !default;
 $body-max-width: 680px;
-$text-muted: #86919b !default;
+$text-muted: #a1a6b1 !default;
 
 // Fonts
-$font-family-base: Georgia, Times, "Times New Roman", serif !default;
+$font-family-base: 'Open Sans', Times, "Times New Roman", serif !default;
 $font-family-sans-serif: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !default;
 $font-family-serif: Georgia, Times, "Times New Roman", serif !default;
 $font-family-code: "Fira Code", Consolas, Menlo, Monaco, source-code-pro, monospace !default;
 $font-family-quotes: $font-family-serif !default;
 $font-family-footnotes: $font-family-serif !default;
-$font-family-headings: "Playfair Display", Georgia, Times, "Times New Roman", serif !default;
+$font-family-headings: 'Open Sans' !default;
 
-$font-size-base: 1.1rem !default; // Assumes the browser default, typically `16px`
-$font-size-sm: $font-size-base * 0.875 !default;
+$font-size-base: 16px !default; // Assumes the browser default, typically `16px`
+$font-size-sm: $font-size-base * 0.8 !default;
 $font-size-lg: $font-size-base * 1.15 !default;
-$letter-spacing-base: 0.2px !default;
+$letter-spacing-base: 0 !default;
 $font-weight-normal: 400 !default;
 $font-weight-bold: 700 !default;
 $line-height-base: 1.75 !default;
-$h1-font-size: $font-size-base * 3 !default;
+$h1-font-size: $font-size-base * 2.5 !default;
 $h2-font-size: $font-size-base * 1.85 !default;
 $h3-font-size: $font-size-base * 1.5 !default;
 $h4-font-size: $font-size-base * 1.25 !default;
@@ -45,11 +45,11 @@ $paragraph-margin: $margin-base !default;
 $highlight-margin: $margin-base * 1.25 !default;
 $table-margin: $margin-base * 1.25 !default;
 $hr-margin-y: $margin-base * 2 !default;
-$container-gutter: $margin-base * 2 !default;
+$container-gutter: $margin-base * 1.5 !default;
 $hero-margin-top: $margin-base * 2 !default;
 $hero-margin-bottom: $margin-base * 2 !default;
-$special-width-margin-top: $margin-base * 2 !default;
-$special-width-margin-bottom: $margin-base * 2 !default;
+$special-width-margin-top: $margin-base * 3 !default;
+$special-width-margin-bottom: $margin-base * 3 !default;
 
 // Borders
 $border-radius: 0.25rem !default;
@@ -77,7 +77,7 @@ $highlight-padding: 20px !default;
 // Links
 $link-color: $primary-color !default;
 $link-decoration: none !default;
-$link-hover-color: $secondary-color !default;
+$link-hover-color: $primary-color !default;
 $link-hover-decoration: underline !default;
 $link-decoration-color: none !default;
 
@@ -97,7 +97,7 @@ $hero-line-height: $line-height-base !default;
 $hero-padding: 2em 0 !default;
 
 // Selection
-$selection-background: $primary-color !default;
+$selection-background: $secondary-color !default;
 $selection-color: $white-color !default;
 
 // Blockquote
@@ -115,15 +115,19 @@ $lazyload-time: 1s !default;
 
 // Shadows
 $shadow-base: 0 11px 21px -5px rgba(0, 0, 0, 0.44) !default;
-$blog-card-shadow: none !default; // 0 11px 21px -5px rgba(0, 0, 0, 0.1) !default;
+$blog-card-shadow: none !default;
 $highlight-shadow: none !default;
 $navbar-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05) !default;
 
 // Navbar
 $navbar-height: 55px !default;
 $navbar-background: $white-color !default;
-$navbar-color: $primary-color !default;
+$navbar-color: $text-muted !default;
 $navbar-font-size: $font-size-base * 0.85 !default;
+$navbar-link-color: $primary-color !default;
+$navbar-link-decoration: none !default;
+$navbar-link-hover-color: $secondary-color !default;
+$navbar-link-hover-decoration: none !default;
 
 // Share buttons
 $share-buttons-size: 1.1rem !default;
@@ -132,7 +136,7 @@ $share-buttons-color: lighten($text-muted, 20%) !default;
 
 // Footer
 $footer-height: 55px !default;
-$footer-background: #2d3748 !default;
+$footer-background: $white-color !default;
 $footer-color: lighten(#646d7c, 15%) !default;
 $footer-link-color: $footer-color !default;
 $footer-font-size: $font-size-base * 0.85 !default;

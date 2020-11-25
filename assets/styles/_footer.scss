@@ -7,6 +7,7 @@ footer {
   min-height: $footer-height;
   color: $footer-color;
   font-size: $footer-font-size;
+   border-top: $border-base;
   font-family: $font-family-code;
 
   > nav {

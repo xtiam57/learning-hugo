@@ -1,6 +1,10 @@
 @import "variables";
 @import "rfs";
 
+@function rem($size) {
+  @return $size / 16px * 1rem;
+}
+
 @mixin make-container($gutter: $container-gutter) {
   max-width: $body-max-width;
   margin: 0 auto;
@@ -21,7 +25,8 @@
 @mixin make-bare-layout() {
   body.bare-layout {
     grid-template-rows: auto;
-    grid-template-areas: "main";
+    grid-template-areas:
+      "main";
   }
 }
 
@@ -49,74 +54,54 @@
   background-color: $white-color;
   box-shadow: $blog-card-shadow;
   border: $border-base;
-
-  &:hover {
-    // border-color: $secondary-color;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-  }
+  overflow: hidden;
+  border-radius: $border-radius;
 
   .post-info {
-    padding: ($margin-base * 2) ($margin-base * 1.5) 0;
+    padding: $margin-base * 1.5;
+    height: 100%;
+
 
     .post-categories {
       color: $secondary-color;
       line-height: 1;
-      margin-bottom: $margin-base * 0.25;
-      font-size: $font-size-sm * 0.85;
-      font-family: $font-family-code;
-      font-weight: $font-weight-bold;
+      font-size: $font-size-sm;
+      margin-bottom: $margin-base * 0.5;
+      position: relative;
 
       a {
-        display: inline-block;
-        color: $secondary-color;
-      }
-
-      code {
-        background: none;
-        border-radius: $highlight-radius;
-        padding: 0;
-        margin: 0;
-        border: none;
-        white-space: normal;
-        color: $secondary-color;
-        letter-spacing: -0.125rem;
+        color: $body-text-color;
       }
     }
 
     h1 {
-      @include font-size($h3-font-size);
-      margin-top: 0;
-      margin-bottom: $margin-base * 0.5;
+      @include font-size($h4-font-size);
+      margin: 0;
       line-height: 1.35;
+      position: relative;
     }
 
     .description {
       font-size: $font-size-sm;
-      margin: 0;
+      margin: ($margin-base) 0 0;
+      position: relative;
     }
   }
 
   .post-details {
     color: $text-muted;
-    font-size: $font-size-sm * 0.875;
-    margin-top: $margin-base;
-    margin-bottom: 0;
-    padding: 0 ($margin-base * 1.5) ($margin-base * 1.5);
-    font-family: $font-family-sans-serif;
+    font-size: $font-size-sm * 0.9;
+    margin: 0;
+    padding: ($margin-base * 0.5) 0;
+    margin: 0 ($margin-base);
+    border-top: $border-base;
   }
 
   @media screen and (min-width: $body-max-width) {
     width: 49%;
 
     .post-info {
-      padding: ($margin-base * 2) ($margin-base * 2) 0;
-    }
-    .post-details {
-      padding: 0 ($margin-base * 2) ($margin-base * 1.5);
+     min-height: 200px;
     }
   }
 }

@@ -5,6 +5,7 @@ author: "Christiam Mena"
 date: 2020-10-09T11:50:28-05:00
 draft: false
 toc: false
+image: /images/map.png
 categories:
   - Portafolio Personal
 tags:
@@ -22,35 +23,35 @@ Acá algunos de los proyectos en los que he participado en los últimos años a 
 ### Iglesia Bautista Fundamental Monte Calvario
 **Diseño Gráfico**
 
-{{< figure class="full" src="/images/portfolio/iglesia.jpg" >}}
+{{< figure class="wide" src="/images/portfolio/iglesia.jpg" >}}
 
 ## Desarrollo web y aplicaciones
 
 ### 3DMS
 **Conjunto de aplicaciones web**
 
-{{< figure class="fit" src="/images/portfolio/3dms.jpg" >}}
+{{< figure class="wide" src="/images/portfolio/3dms.jpg" >}}
 
 ### Biblionaire
 **Juego Web**
 
 Juego al estilo **"¿Quien quiere ser millonario?"** utilizando conceptos y pasajes bíblicos. Fue un proyecto de caracter personal realizado en **Angular** y **Electron** (para la versión _stand-alone_ de Windows). Como valor añadido el juego **cuenta con la música y efectos de sonido** del juego real ([visitar](https://biblionaire.vercel.app/ )).
 
-{{< figure class="fit" src="/images/portfolio/biblionaire.jpg" >}}
+{{< figure class="wide" src="/images/portfolio/biblionaire.jpg" >}}
 
 ### Inspirulina
 **Tema de Wordpress**
 
 Elaboración de tema para **Wordpress**, diseño e implementación de plugins y widgets adaptados a los requerimientos del cliente. Configuración base del tema (menús, paneles, modo de visualización, backgrounds, fuentes, etc.). Migración de base de datos (de **Joomla** a **Wordpress**). Apartado para registro de usuarios (Sección de Comunidad), con restricciones de seguridad y funcionalidades asociadas ([Inspirulina.com](https://www.inspirulina.com/ )).
 
-{{< figure class="fit" src="/images/portfolio/inspirulina.jpg" >}}
+{{< figure class="wide" src="/images/portfolio/inspirulina.jpg" >}}
 
 ### Therapie
 **Diseño y conceptualización de UI y UX**
 
 Conceptualización y diseño de intefaces gráficas para sistema administrativo de escritorio (Windows). Se diseñó con **Photoshop** todo el flujo de interacción de la aplicación y su logotipo. El sistema fue diseñado para el uso de doctores en el área de rehabilitación para niños con problema motores.
 
-{{< figure class="fit" src="/images/portfolio/therapie.jpg" >}}
+{{< figure class="wide" src="/images/portfolio/therapie.jpg" >}}
 
 Además del diseño, pude participar con este juego en el **Microsoft Imagine Cup** (2013) como colaborador y presentador. En esa oprtunidad obtuvimos el título de **National Games Winner** (Campeones nacionales en la categoría de videojuegos).
 
@@ -72,7 +73,7 @@ Sistema de quiniela de futbol para el mundial de la FIFA Sudafrica 2010 y Brasil
 
 Conceptualización, diseño (**Photoshop**) y maquetación del sitio web de Eposak y Destinos Eposak. **Otras tecnologías usadas:** **Bootstrap**, **Javascript**, **CSS**, **HTML**.
 
-{{< figure class="fit" src="/images/portfolio/eposak.jpg" >}}
+{{< figure class="wide" src="/images/portfolio/eposak.jpg" >}}
 
 También se hizo la edición y animación de video explicativo del concepto de Eposak. El video fue realizado utilizando **Adobe Flash** y **AS3**. Los elementos gráficos utilizados fueron diseñados en **Adobe Photoshop**.
 

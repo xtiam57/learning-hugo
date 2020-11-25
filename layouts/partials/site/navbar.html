@@ -7,9 +7,10 @@
            width="50px">
     </a>
     <ul class="navbar-links">
-      {{ range .Site.Menus.main }}
-      <a href="{{ .URL | absURL }}"
-         class="">{{ .Name }}</a>
+      {{ range $index, $element := .Site.Menus.main }}
+      {{ if (gt $index 0) }}/{{ end }}
+      <a href="{{ $element.URL | absURL }}"
+         class="">{{ $element.Name }}</a>
       {{ end }}
     </ul>
   </nav>
