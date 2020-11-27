@@ -1,8 +1,8 @@
 <ul>
-  {{ $posts := where .Site.RegularPages "Type" "blog" | first 2 }}
+  {{ $posts := where .Site.RegularPages "Type" "blog" | first 4 }}
   {{ range $posts }}
   <li>
-    <div class="post-info">
+    <article class="post-info">
       {{ if .Params.categories }}
       <div class="post-categories">
         {{ range $index, $categories := .Params.categories }}
@@ -11,24 +11,23 @@
         {{ end }}
       </div>
       {{ end }}
-      <h4>
+      <h1>
         <a href="{{ .Permalink }}">{{ .Title }}</a>
-      </h4>
+      </h1>
+      <p class="post-details">
+        {{ if .Params.Author }}
+        Por <strong>{{ .Params.Author }}</strong> /
+        {{ else }}
+        Por <strong>Christiam Mena</strong> /
+        {{ end }}
+        <time datetime="{{ .PublishDate.Format "January 2, 2006" }}">
+          {{ .PublishDate.Format "January 2, 2006" }}
+        </time> / {{.ReadingTime}} min
+      </p>
       <p class="description">
         {{- .Params.Summary | default .Description -}}
       </p>
-    </div>
-    <p class="post-details">
-      {{ if .Params.Author }}
-      Por <strong>{{ .Params.Author }}</strong> ·
-      {{ else }}
-      Por <strong>Christiam Mena</strong> ·
-      {{ end }}
-      <time datetime="{{ .PublishDate.Format "January 2, 2006" }}">
-        {{ .PublishDate.Format "January 2, 2006" }}
-      </time> ·
-      {{.ReadingTime}} minutos de lectura
-    </p>
+    </article>
   </li>
   {{ end }}
 </ul>

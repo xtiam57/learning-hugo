@@ -1,7 +1,7 @@
 <ul class="blog-list">
   {{ range (.Paginate .RegularPagesRecursive).Pages }}
   <li>
-    <div class="post-info" >
+    <article class="post-info">
       {{ if .Params.categories }}
       <div class="post-categories">
         {{ range $index, $categories := .Params.categories }}
@@ -25,7 +25,7 @@
       <p class="description">
         {{- .Params.Summary | default .Description -}}
       </p>
-    </div>
+    </article>
   </li>
   {{ end }}
 </ul>

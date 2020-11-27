@@ -1,64 +1,83 @@
 // Main Colors
-$primary-color: #c21382 !default;
-$secondary-color: #1890ff !default;
-$darkGray-color: #111 !default;
-$lightGray-color: #e2e8f0 !default;
-$lighterGray-color: lighten($lightGray-color, 6%) !default;
+$primary-color: #1890ff !default;
+$secondary-color: #c21382 !default;
+$gray-medium-color: #E2E8F0 !default;
+$gray-light-color: lighten($gray-medium-color, 6%) !default;
 $black-color: #111111 !default;
-$white-color: #ffffff !default;
+$white-color: #FFFFFF !default;
 
 // Body
-$body-text-color: #666 !default;
+$body-text-color: #666666 !default;
 $body-text-align: left !default;
-$body-bg: #fff !default;
-$body-max-width: 680px;
-$text-muted: #a1a6b1 !default;
+$body-bg: #FFFFFF !default;
+$body-max-width: 680px !default;
+$text-muted: #A1A6B1 !default;
 
 // Fonts
 $font-family-sans-serif: "Montserrat", sans-serif !default;
 $font-family-serif: Georgia, Times, "Times New Roman", serif !default;
-$font-family-base: $font-family-serif !default;
 $font-family-code: "Fira Code", Consolas, Menlo, Monaco, source-code-pro, monospace !default;
+$font-family-base: $font-family-serif !default;
 
-$font-family-quotes: $font-family-serif !default;
-$font-family-footnotes: $font-family-serif !default;
-$font-family-headings: $font-family-sans-serif !default;
-
-$font-size-base: 18px !default; // Assumes the browser default, typically `16px`
+$font-size-base: 18px !default;
 $font-size-sm: $font-size-base * 0.75 !default;
 $font-size-lg: $font-size-base * 1.15 !default;
+
 $letter-spacing-base: 0 !default;
 $font-weight-normal: 400 !default;
 $font-weight-bold: 700 !default;
 $line-height-base: 1.66667 !default;
+
+// Headings
 $h1-font-size: $font-size-base * 2.5 !default;
 $h2-font-size: $font-size-base * 1.85 !default;
 $h3-font-size: $font-size-base * 1.5 !default;
 $h4-font-size: $font-size-base * 1.25 !default;
 $h5-font-size: $font-size-base * 1.15 !default;
 $h6-font-size: $font-size-base !default;
+
+$heading-font-family: $font-family-sans-serif !default;
 $heading-letter-spacing: normal !default;
 $heading-word-spacing: normal !default;
 
 // Margins
-$margin-base: 1.05rem !default;
+$margin-base: 1rem !default;
+$margin-sm: $margin-base * 0.5 !default;
+$margin-md: $margin-base * 1.25 !default;
+$margin-lg:  $margin-base * 2 !default;
+$margin-xl:  $margin-base * 3 !default;
+
 $paragraph-margin: $margin-base !default;
-$highlight-margin: $margin-base * 1.25 !default;
-$table-margin: $margin-base * 1.25 !default;
-$hr-margin-y: $margin-base * 2 !default;
-$container-gutter: $margin-base * 1.5 !default;
-$hero-margin-top: $margin-base * 2 !default;
-$hero-margin-bottom: $margin-base * 2 !default;
-$special-width-margin-top: $margin-base * 3 !default;
-$special-width-margin-bottom: $margin-base * 3 !default;
+$highlight-margin: $margin-md !default;
+$table-margin: $margin-md !default;
+$hr-margin-y: $margin-md !default;
+
+$full-width-margin: $margin-xl -50vw $margin-xl !default;
+$wide-width-margin: $margin-xl 0 $margin-xl !default;
+
+// Grid
+$container-gutter: $margin-md !default;
+
+// Hero
+$hero-margin-y: $margin-lg !default;
+$hero-background: $gray-light-color !default;
+$hero-color: $black-color !default;
+$hero-font-family: $font-family-serif !default;
+$hero-font-size: $font-size-lg !default;
+$hero-line-height: $line-height-base !default;
+$hero-padding: 2em 0 !default;
+
+// Links
+$link-color: $black-color !default;
+$link-hover-color: $primary-color !default;
 
 // Borders
 $border-radius: 0.25rem !default;
-$border-base: 1px solid $lightGray-color;
+$border-base: 1px solid $gray-medium-color;
 
 // Highlight (code)
-$highlight-background: #2d3748 !default; // #282c34 !default;
-$highlight-before-background: $secondary-color !default; // #282c34 !default;
+$highlight-background: #2d3748 !default;
+$highlight-before-background: $secondary-color !default;
 $highlight-blue: #93ddfd !default;
 $highlight-pink: #ff8383 !default;
 $highlight-orange: #eea112 !default;
@@ -75,27 +94,12 @@ $highlight-font-size: $font-size-sm !default;
 $highlight-radius: $border-radius !default;
 $highlight-padding: 20px !default;
 
-// Links
-$link-color: $black-color !default;
-$link-decoration: none !default;
-$link-hover-color: $primary-color !default;
-$link-hover-decoration: underline !default;
-$link-decoration-color: none !default;
-
 // Tables
 $table-cell-padding-y: 0.5rem !default;
 $table-cell-padding-x: 0.5rem !default;
 $table-text-color: $body-text-color !default;
-$table-border-color: $lightGray-color !default;
+$table-border-color: $gray-medium-color !default;
 $table-border-width: 1px !default;
-
-// Hero
-$hero-background: $lighterGray-color !default;
-$hero-color: $darkGray-color !default;
-$hero-font-family: $font-family-quotes !default;
-$hero-font-size: $font-size-lg !default;
-$hero-line-height: $line-height-base !default;
-$hero-padding: 2em 0 !default;
 
 // Selection
 $selection-background: $secondary-color !default;
@@ -103,9 +107,9 @@ $selection-color: $white-color !default;
 
 // Blockquote
 $blockquote-border: 5px solid $secondary-color !default;
-$blockquote-background: $lighterGray-color !default;
+$blockquote-background: $gray-light-color !default;
 $blockquote-color: $black-color !default;
-$blockquote-font-family: $font-family-quotes !default;
+$blockquote-font-family: $font-family-serif !default;
 $blockquote-font-size: $font-size-lg !default;
 $blockquote-font-style: italic !default;
 $blockquote-line-height: 1.8em !default;
@@ -114,44 +118,50 @@ $blockquote-padding: 1.5em !default;
 // Lazyload
 $lazyload-time: 1s !default;
 
-// Shadows
-$shadow-base: 0 11px 21px -5px rgba(0, 0, 0, 0.44) !default;
-$blog-card-shadow: none !default;
-$highlight-shadow: none !default;
-$navbar-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05) !default;
-
 // Navbar
 $navbar-height: 55px !default;
 $navbar-background: $white-color !default;
-$navbar-color: $text-muted !default;
+$navbar-color: $primary-color !default;
 $navbar-font-size: $font-size-base * 0.85 !default;
 $navbar-link-color: $primary-color !default;
-$navbar-link-decoration: none !default;
 $navbar-link-hover-color: $secondary-color !default;
-$navbar-link-hover-decoration: none !default;
+$navbar-font-family: $font-family-sans-serif !default;
+
+// Footer
+$footer-height: 55px !default;
+$footer-background: $white-color !default;
+$footer-color: inherit !default;
+$footer-link-color: $footer-color !default;
+$footer-font-size: $font-size-base * 0.85 !default;
+$footer-font-family: $font-family-sans-serif !default;
 
 // Share buttons
 $share-buttons-size: 1.1rem !default;
 $share-buttons-margin: 0.7rem !default;
 $share-buttons-color: lighten($text-muted, 20%) !default;
 
-// Footer
-$footer-height: 55px !default;
-$footer-background: $white-color !default;
-$footer-color: lighten(#646d7c, 15%) !default;
-$footer-link-color: $footer-color !default;
-$footer-font-size: $font-size-base * 0.85 !default;
-
 // Summary
+$summary-category-bg: $secondary-color !default;
+$summary-category-color: $white-color !default;
+$summary-category-hover-bg: transparent !default;
+$summary-category-hover-color: $secondary-color !default;
+
 $summary-cover-opacity: 0.4 !default;
+$summary-cover-heading-color: $white-color !default;
+$summary-cover-meta-color:  #ccc !default;
+
+// Blog
+$blog-category-bg: $summary-category-bg !default;
+$blog-category-color: $summary-category-color !default;
+$blog-category-hover-bg: $summary-category-hover-bg !default;
+$blog-category-hover-color: $summary-category-hover-color !default;
 
 // Theme vars
 $theme-colors: (
   "primary": $primary-color,
   "secondary": $secondary-color,
-  "darkGray": $darkGray-color,
-  "lightGray": $lightGray-color,
-  "lighterGray": $lighterGray-color,
+  "lightGray": $gray-medium-color,
+  "lighterGray": $gray-light-color,
   "black": $black-color,
   "white": $white-color,
   "muted": $text-muted,
@@ -160,9 +170,8 @@ $theme-colors: (
 $theme-vars: (
   "primary": $primary-color,
   "secondary": $secondary-color,
-  "darkGray": $darkGray-color,
-  "lightGray": $lightGray-color,
-  "lighterGray": $lighterGray-color,
+  "lightGray": $gray-medium-color,
+  "lighterGray": $gray-light-color,
   "black": $black-color,
   "white": $white-color,
   "muted": $text-muted,

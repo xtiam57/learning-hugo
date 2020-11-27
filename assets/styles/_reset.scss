@@ -30,7 +30,7 @@ body {
 
 hr {
   margin: $hr-margin-y 0;
-  color: $lightGray-color;
+  color: $gray-medium-color;
   background-color: currentColor;
   border: 0;
 }
@@ -48,7 +48,7 @@ h6 {
   margin: 1.8em 0 $margin-base;
   font-weight: $font-weight-bold;
   line-height: 1.7;
-  font-family: $font-family-headings;
+  font-family: $heading-font-family;
   letter-spacing: $heading-letter-spacing;
   word-spacing: $heading-word-spacing;
   color: $black-color;
@@ -158,7 +158,7 @@ a {
   transition: all 0.2s;
 
   &:hover {
-    // text-decoration: $link-hover-decoration;
+    text-decoration: none;
     border-color: $link-hover-color;
   }
 }
@@ -201,7 +201,7 @@ table {
 caption {
   padding-top: $table-cell-padding-y;
   padding-bottom: $table-cell-padding-y;
-  color: $lightGray-color;
+  color: $gray-medium-color;
   text-align: left;
 }
 

@@ -12,11 +12,12 @@
     position: relative;
     vertical-align: middle;
     width: 100%;
+    font-family: $font-family-sans-serif;
 
     .summary-inner {
       @include make-container();
-      padding-bottom: 30px;
-      padding-top: 60px;
+      padding-bottom: $container-gutter;
+      padding-top: $container-gutter * 2;
 
       .summary-categories {
         font-size: $font-size-sm * 0.85;
@@ -25,38 +26,34 @@
         text-transform: uppercase;
         font-weight: $font-weight-bold;
         margin-bottom: 15px;
-        font-family: $font-family-sans-serif;
 
         a {
-          background-color: $secondary-color;
+          background-color: $summary-category-bg;
           border: 1px solid transparent;
-          color: $white-color;
+          color: $summary-category-color;
           display: inline-block;
           margin-bottom: 5px;
           margin-right: 5px;
           padding: 3px 10px 2px;
 
           &:hover {
-            background-color: transparent;
-            border-color: $secondary-color;
-            color: $secondary-color;
+            background-color: $summary-category-hover-bg;
+            border-color: $summary-category-hover-color;
+            color: $summary-category-hover-color;
             text-decoration: none;
           }
         }
       }
 
       .summary-title {
-        color: $black-color;
         margin: 0 0 10px;
         line-height: 1.25;
-        font-family: $font-family-sans-serif;
       }
 
       .summary-meta {
         font-size: $font-size-sm;
         text-transform: uppercase;
         color: $text-muted;
-        font-family: $font-family-sans-serif;
 
         .reading-time {
           width: 100%;
@@ -66,7 +63,6 @@
   }
 
   &.summary-wide {
-
     .summary-inner {
       padding-bottom: 0;
 
@@ -79,7 +75,6 @@
   &.summary-cover {
     text-align: center;
     background-color: $black-color;
-    color: $white-color;
     background-position: center;
     background-size: cover;
     position: relative;
@@ -88,7 +83,7 @@
 
     &::before {
       content: "";
-      background: rgba(0, 0, 0, 0.4);
+      background: rgba(0, 0, 0, $summary-cover-opacity);
       position: absolute;
       top: 0;
       left: 0;
@@ -97,24 +92,15 @@
     }
 
     .summary-inner {
+      padding-top: 60px;
+      padding-bottom: 30px;
+
       .summary-title {
-        color: $white-color;
-      }
-
-      .summary-categories {
-        a {
-          background-color: $secondary-color;
-          color: $white-color;
-
-          &:hover {
-            border-color: $white-color;
-            color: $white-color;
-          }
-        }
+        color: $summary-cover-heading-color;
       }
 
       .summary-meta {
-        color: #ccc;
+        color: $summary-cover-meta-color;
 
         .reading-time {
           display: block;

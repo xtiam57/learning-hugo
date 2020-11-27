@@ -9,6 +9,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  font-family: $font-family-sans-serif;
 
   h1 {
     color: $secondary-color;
@@ -24,11 +25,8 @@
   }
 
   p {
+
     color: $text-muted;
     margin: 0;
-
-    a {
-      display: block;
-    }
   }
 }

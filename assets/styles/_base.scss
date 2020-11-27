@@ -49,11 +49,6 @@ main {
 .float-right {
   float: right !important;
 }
-
-.box-shadow {
-  box-shadow: $shadow-base !important;
-}
-
 .rounded {
   border-radius: 9999px !important;
 }
@@ -142,7 +137,7 @@ figure {
 // Thanks to https://css-tricks.com/full-width-containers-limited-width-parents/
 .full {
   left: 50%;
-  margin: $special-width-margin-top -50vw $special-width-margin-bottom !important;
+  margin: $full-width-margin;
   position: relative;
   right: 50%;
   width: 100vw;
@@ -150,7 +145,7 @@ figure {
 }
 
 .wide {
-  margin: $special-width-margin-top 0 $special-width-margin-bottom 0;
+  margin: $wide-width-margin;
   width: calc(100% + (100vw - 100%) / 2);
   margin-left: calc((100% - 100vw) / 4);
 
@@ -181,7 +176,6 @@ figure {
 }
 
 @include make-regular-layout();
-@include make-bare-layout();
 
 .container {
   @include make-container();

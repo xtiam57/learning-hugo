@@ -22,13 +22,6 @@
   }
 }
 
-@mixin make-bare-layout() {
-  body.bare-layout {
-    grid-template-rows: auto;
-    grid-template-areas: "main";
-  }
-}
-
 @mixin make-capital() {
   // border: 3px solid $secondary-color;
   // float: left;
@@ -50,8 +43,6 @@
   justify-content: space-between;
   margin: 0 0 ($margin-base * 3);
   width: 100%;
-  background-color: $white-color;
-  box-shadow: $blog-card-shadow;
   overflow: hidden;
 
   .post-info {
@@ -68,7 +59,7 @@
       font-family: $font-family-sans-serif;
 
       a {
-        background-color: $secondary-color;
+        background-color: $blog-category-bg;
         border: 1px solid transparent;
         color: $white-color;
         display: inline-block;
@@ -77,9 +68,9 @@
         padding: 3px 10px 2px;
 
         &:hover {
-          background-color: transparent;
-          border-color: $secondary-color;
-          color: $secondary-color;
+          background-color: $blog-category-hover-bg;
+          border-color: $blog-category-hover-color;
+          color: $blog-category-hover-color;
           text-decoration: none;
         }
       }

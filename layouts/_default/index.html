@@ -10,11 +10,11 @@
   <style>{{ $styles.Content | safeCSS }}</style>
 </head>
 
-<body class="bare-layout">
-  <main>
-    <div class="container">
+<body>
+  <section class="main">
+    <div class="main-wrapper">
       <img class="logo-pic"
-           src="images/logo.svg"
+           src="images/logo-negative.svg"
            alt="Logo" />
 
       <div class="lead">
@@ -26,19 +26,17 @@
         <a class=""
            href="{{ .URL  }}">{{ .Name }}</a>
         {{ end }}
-        <span class="terminal-cursor cursor-block"></span>
-      </div>
-  </main>
-
-    <div class="last-posts">
-      <div class="container">
-        {{ partial "home/last-posts.html" . }}
-        <p class="text-center">
-          <a class=""
-             href="{{ "/blog" | absURL }}">Ir al blog &rarr;</a>
-        </p>
       </div>
     </div>
+  </section>
+
+  <section class="lastest-posts">
+    {{ partial "home/last-posts.html" . }}
+    <p class="text-center margin-bottom-0">
+      <a class=""
+         href="{{ "/blog" | absURL }}">Ir al blog &rarr;</a>
+    </p>
+  </section>
 </body>
 
 </html>

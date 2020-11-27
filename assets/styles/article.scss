@@ -83,7 +83,7 @@ article {
 
     > thead {
       vertical-align: bottom;
-      background-color: $lighterGray-color;
+      background-color: $gray-light-color;
     }
 
     // Highlight border color between thead, tbody and tfoot.
@@ -190,7 +190,7 @@ article {
   font-family: $font-family-sans-serif;
 
   a {
-    background-color: $lighterGray-color;
+    background-color: $gray-light-color;
     border-radius: $border-radius;
     padding: 3px 10px;
     margin-bottom: $margin-base * 0.3;

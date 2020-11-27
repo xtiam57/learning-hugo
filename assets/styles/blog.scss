@@ -48,7 +48,6 @@ main {
   }
 
   .container {
-    $scale-padding: 0.6;
     @include make-container();
     padding-top: $container-gutter;
     padding-bottom: $container-gutter - $margin-base;

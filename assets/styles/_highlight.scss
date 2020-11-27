@@ -23,7 +23,6 @@ pre {
   overflow: auto;
   padding: $highlight-padding;
   margin: $highlight-margin 0;
-  box-shadow: $highlight-shadow;
 }
 
 code {
@@ -32,11 +31,11 @@ code {
 
 :not(pre) > code {
   font-size: $highlight-font-size;
-  background: $lighterGray-color;
+  background: $gray-light-color;
   border-radius: $highlight-radius;
   padding: 2px 4px 1px;
   margin: 0 2px;
-  border: 1px solid $lightGray-color;
+  border: 1px solid $gray-medium-color;
   white-space: normal;
   color: $secondary-color;
   letter-spacing: 0;
@@ -50,7 +49,6 @@ pre.highlight {
 
 .highlight {
   position: relative;
-  box-shadow: $highlight-shadow;
 
   .ge {
     font-style: italic;

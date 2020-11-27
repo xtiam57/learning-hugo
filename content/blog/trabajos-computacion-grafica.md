@@ -17,9 +17,6 @@ tags:
   - c sharp
   - OpenGL
   - GLSL
-# Cover information
-image: /images/test.jpg
-summaryType: "cover"
 ---
 
 Un viejo profesor de matemáticas siempre nos decía: **"recordar... es vivir"**.

@@ -6,8 +6,6 @@ image: /images/profile.jpg
 type: page
 ---
 
-***
-
 Mi nombre es Christiam y soy **licenciado en Ciencias de la Computación** de la Universidad Central de Venezuela (**U-U-UCV!**). Siempre me he considerado una persona con actitud **proactiva, responsable y creativa**. Durante los más de **10 años de experiencia** en el desarrollo web (front-end) he podido participar un múltiples proyectos y usar diferentes tecnologías.
 
 Mi labor profesional se ha centrado en el ámbito del **diseño y desarrollo web** trabajando mayormente para la industria de perforación petrolera. En los últimos años he sido **lider de equipo de Front-End** y estás son algunos de mis aportes:
