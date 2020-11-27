@@ -32,12 +32,9 @@
 </main>
 
 {{ partial "lazyload-script.html" . }}
-
 {{ partial "article/smooth-scroll.html" . }}
 
+{{ if .HasShortcode "figure" }}{{ partial "article/zoom.html" . }}{{ end }}
+{{ if .HasShortcode "gallery" }}{{ partial "article/lightbox.html" . }}{{ end }}
 
-{{ $script := resources.Get "scripts/medium-zoom.js" }}
-{{ $script = $script | minify | fingerprint }}
-<script src="{{ $script.Permalink }}"></script>
-<script>mediumZoom('[data-zoomable]');</script>
 {{ end }}

@@ -2,11 +2,56 @@
 @import "mixins";
 
 main {
+  .taxonomy-cover {
+    display: table;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background-color: $black-color;
+    color: $white-color;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 250px;
+    margin-bottom: $container-gutter;
+    font-family: $font-family-sans-serif;
+
+    &::before {
+      content: "";
+      background: rgba(0, 0, 0, 0.4);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .taxonomy-wrapper {
+      display: table-cell;
+      position: relative;
+      vertical-align: middle;
+      width: 100%;
+
+      .taxonomy-inner {
+        @include make-container();
+
+        small {
+          text-transform: uppercase;
+          color: #ccc;
+        }
+
+        h2 {
+          color: $white-color;
+        }
+      }
+    }
+  }
+
   .container {
     $scale-padding: 0.6;
-    @include make-container($container-gutter * $scale-padding);
-    padding-top: $container-gutter * $scale-padding;
-    padding-bottom: $container-gutter * $scale-padding - $margin-base;
+    @include make-container();
+    padding-top: $container-gutter;
+    padding-bottom: $container-gutter - $margin-base;
 
     ul.blog-list {
       display: flex;
@@ -21,25 +66,11 @@ main {
       }
     }
 
-    ul.blog-categories-list {
-      display: flex;
-      list-style: none;
-      margin-bottom: $margin-base;
-      margin: 0;
-      padding: 0;
-
-      a {
-        background-color: $lighterGray-color;
-        border-radius: $border-radius;
-        display: inline-block;
-        margin-right: $margin-base * 0.5;
-        padding: 5px 15px;
-      }
-    }
-
     .blog-pagination {
       border-top: $border-base;
       padding: $margin-base 0;
+      font-family: $font-family-sans-serif;
+      font-size: $font-size-sm;
 
       ul {
         list-style: none;

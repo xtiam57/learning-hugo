@@ -1,7 +1,7 @@
 {{ $related := (where (.Site.RegularPages.Related .) "Type" "blog") | first 2 }}
 {{ if $related }}
 <section class="article-related">
-  <small>Relacionados</small>
+  <small>tambén te puede interesar</small>
   <ul>
     {{ range $related }}
     <li>
@@ -17,20 +17,20 @@
         <h1>
           <a href="{{ .Permalink }}">{{ .Title }}</a>
         </h1>
+        <p class="post-details">
+          {{ if .Params.Author }}
+          Por <strong>{{ .Params.Author }}</strong> /
+          {{ else }}
+          Por <strong>Christiam Mena</strong> /
+          {{ end }}
+          <time datetime="{{ .PublishDate.Format "January 2, 2006" }}">
+            {{ .PublishDate.Format "January 2, 2006" }}
+          </time> / {{.ReadingTime}} min
+        </p>
         <p class="description">
           {{- .Params.Summary | default .Description -}}
         </p>
       </div>
-      <p class="post-details">
-        {{ if .Params.Author }}
-        Por <strong>{{ .Params.Author }}</strong> /
-        {{ else }}
-        Por <strong>Christiam Mena</strong> /
-        {{ end }}
-        <time datetime="{{ .PublishDate.Format "January 2, 2006" }}">
-          {{ .PublishDate.Format "January 2, 2006" }}
-        </time> / {{.ReadingTime}} min
-      </p>
     </li>
     {{ end }}
   </ul>

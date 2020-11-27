@@ -1,0 +1,31 @@
+{{ $content := trim .Inner "\n" }}
+{{ $content = split $content "\n" }}
+{{ $columns := .Get "columns" | default 3 }}
+
+<div class="gallery-container wide">
+  {{ range $index, $src := $content }}
+    {{ $image := resources.Get $src }}
+    {{ $thumbnail := $image.Fill "1024x1024 q80 jpg Center" }}
+    {{ $placeholder := $thumbnail.Resize "100x q05" }}
+    {{ $placeholder = $placeholder.Filter (images.GaussianBlur 6) }}
+
+    {{ if and (modBool $index $columns) (gt $index 0) }}
+    </div>
+    {{ end }}
+
+    {{ if modBool $index $columns }}
+    <div class="gallery-row">
+    {{ end }}
+
+      <div class="gallery-img" style="flex: 1.66667 1 0%">
+        <a href="{{ $image.Permalink }}">
+          <img src="{{ $placeholder.Permalink }}" alt="" data-lazy="{{ $thumbnail.Permalink }}" class="img-lazy" />
+        </a>
+      </div>
+
+    {{ if eq $index (sub (len $content) 1)  }}
+    </div>
+    {{ end }}
+  {{ end }}
+</div>
+

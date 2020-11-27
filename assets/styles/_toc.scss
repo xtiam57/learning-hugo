@@ -6,9 +6,18 @@
   margin-bottom: $margin-base;
   padding: 20px;
   z-index: 1;
+  font-family: $font-family-sans-serif;
 
   ul:last-child {
     margin-bottom: 0;
+
+    a {
+      border: none;
+
+      &:hover {
+      color: $link-hover-color;
+    }
+    }
   }
 
   summary {

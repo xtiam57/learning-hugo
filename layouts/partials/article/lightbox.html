@@ -1,0 +1,7 @@
+{{ $lightbox := resources.Get "scripts/simple-lightbox.js" }}
+{{ $lightbox = $lightbox | minify | fingerprint }}
+<script src="{{ $lightbox.Permalink }}"></script>
+
+<script>
+  new SimpleLightbox('.gallery-container a');
+</script>

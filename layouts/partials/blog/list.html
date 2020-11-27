@@ -1,17 +1,10 @@
 <ul class="blog-list">
   {{ range (.Paginate .RegularPagesRecursive).Pages }}
-
-  {{ $image := .Params.Image | default "" }}
-  {{ $placeholder := "" }}
-
   <li>
-
-
     <div class="post-info" >
       {{ if .Params.categories }}
       <div class="post-categories">
         {{ range $index, $categories := .Params.categories }}
-        {{- if gt $index 0 }}, {{ end -}}
         <a href="/categories/{{ . | urlize }}">{{ . }}</a>
         {{ end }}
       </div>
@@ -19,20 +12,20 @@
       <h1>
         <a href="{{ .Permalink }}">{{ .Title }}</a>
       </h1>
+      <p class="post-details">
+        {{ if .Params.Author }}
+        Por <strong>{{ .Params.Author }}</strong> /
+        {{ else }}
+        Por <strong>Christiam Mena</strong> /
+        {{ end }}
+        <time datetime="{{ .PublishDate.Format "January 2, 2006" }}">
+          {{ .PublishDate.Format "January 2, 2006" }}
+        </time> / {{.ReadingTime}} min
+      </p>
       <p class="description">
         {{- .Params.Summary | default .Description -}}
       </p>
     </div>
-    <p class="post-details">
-      {{ if .Params.Author }}
-      Por <strong>{{ .Params.Author }}</strong> /
-      {{ else }}
-      Por <strong>Christiam Mena</strong> /
-      {{ end }}
-      <time datetime="{{ .PublishDate.Format "January 2, 2006" }}">
-        {{ .PublishDate.Format "January 2, 2006" }}
-      </time> / {{.ReadingTime}} min
-    </p>
   </li>
   {{ end }}
 </ul>

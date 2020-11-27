@@ -4,6 +4,7 @@
 @import "summary";
 @import "toc";
 @import "hero";
+@import "lightbox";
 
 article {
   position: relative;
@@ -20,30 +21,38 @@ article {
     margin-top: 0;
   }
 
-  // &.cover {
-  //   &:after,
-  //   &:before {
-  //     display: block;
-  //     content: '';
-  //     position: absolute;
-  //     top: -500px;
-  //     z-index: -1;
-  //     width: 20px;
-  //     height: 900px;
-  //     background: rgba(39, 44, 49, 0.08);
-  //     filter: blur(9px);
-  //   }
+  .gallery-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 
-  //   &:after {
-  //     right: -3px;
-  //     transform: rotate(1deg);
-  //   }
+    .gallery-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      overflow: hidden;
+      margin-bottom: $margin-base * 0.5;
 
-  //   &:before {
-  //     left: -3px;
-  //     transform: rotate(-1deg);
-  //   }
-  // }
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .gallery-img {
+        overflow: hidden;
+        border-radius: $border-radius;
+        position: relative;
+        margin-right: $margin-base * 0.5;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        img {
+          cursor: zoom-in;
+        }
+      }
+    }
+  }
 
   img {
     vertical-align: middle;
@@ -95,8 +104,6 @@ article {
   // Blockquotes
   // Blockquote CSS
   blockquote {
-    border-top-right-radius: $border-radius;
-    border-bottom-right-radius: $border-radius;
     border-left: $blockquote-border;
     background-color: $blockquote-background;
     color: $blockquote-color;
@@ -118,6 +125,7 @@ article {
     cite {
       display: block;
       font-size: $font-size-sm;
+      color: $text-muted;
       line-height: 1.5;
 
       &:before {
@@ -128,20 +136,10 @@ article {
 
   .footnotes {
     font-size: $font-size-sm;
+    font-family: $font-family-sans-serif;
 
     p {
       margin: 0;
-    }
-
-    hr {
-      margin: $hr-margin-y 0;
-      color: $lightGray-color;
-      background-color: currentColor;
-      border: 0;
-    }
-
-    hr:not([size]) {
-      height: 1px;
     }
   }
 }
@@ -153,6 +151,7 @@ article {
   justify-content: space-between;
   padding: $margin-base 0;
   background-color: $white-color;
+  font-family: $font-family-sans-serif;
 
   .prev-post,
   .next-post {
@@ -163,13 +162,18 @@ article {
 
     small {
       font-size: $font-size-sm;
+      display: block;
     }
 
     a {
       font-size: $font-size-base;
       text-transform: initial;
       text-transform: initial;
-      display: block;
+      border-color: transparent;
+
+      &:hover {
+        border-color: $link-hover-color;
+      }
     }
   }
 
@@ -183,6 +187,8 @@ article {
   margin-bottom: $margin-base;
   background-color: $white-color;
 
+  font-family: $font-family-sans-serif;
+
   a {
     background-color: $lighterGray-color;
     border-radius: $border-radius;
@@ -191,6 +197,11 @@ article {
     font-size: $font-size-sm;
     display: inline-block;
     text-decoration: none;
+    border: none;
+
+    &:hover {
+      color: $link-hover-color;
+    }
   }
 }
 
@@ -204,8 +215,9 @@ article {
     font-size: $font-size-sm;
     text-transform: uppercase;
     color: $text-muted;
-    margin: $margin-base 0 $margin-base;
+    margin: $margin-base 0 ($margin-base * 2);
     display: block;
+    font-family: $font-family-sans-serif;
   }
 
   ul {
@@ -218,8 +230,6 @@ article {
 
     li {
       @include make-blog-post();
-
-
     }
   }
 }

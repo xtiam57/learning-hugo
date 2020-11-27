@@ -1,7 +1,7 @@
 ---
 title: "Aprendiendo HUGO: prueba de todo lo que puede tener un post"
 description: "Descripción del post de prueba..."
-image: /images/map.png
+image: /images/asset-6.jpeg
 summaryType: "wide"
 caption: Publicado en **Unplash**
 date: 2020-09-17T16:59:56-05:00
@@ -13,9 +13,20 @@ tags:
   - draft
 categories:
   - Post de prueba
+  - Otra categoría
 ---
 
 In maximus dictum turpis, vel suscipit tortor. Nam ut purus sit amet nisi tincidunt pharetra id vitae nunc. Donec blandit ipsum turpis, in ultricies libero ullamcorper eget. Pellentesque blandit aliquam maximus.
+
+{{< gallery columns="4" >}}
+/images/asset-3.jpeg
+/images/asset-0.jpeg
+/images/asset-1.jpeg
+/images/asset-2.jpeg
+/images/asset-4.jpeg
+/images/asset-5.jpeg
+/images/asset-6.jpeg
+{{< /gallery >}}
 
 In molestie nisl at est facilisis, sit amet egestas neque volutpat. Cras ut iaculis dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus.
 

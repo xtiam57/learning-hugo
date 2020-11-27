@@ -1,35 +1,36 @@
 // Main Colors
-$primary-color: #1890ff !default;
-$secondary-color: #c21382 !default;
-$darkGray-color: #1f2125 !default;
+$primary-color: #c21382 !default;
+$secondary-color: #1890ff !default;
+$darkGray-color: #111 !default;
 $lightGray-color: #e2e8f0 !default;
 $lighterGray-color: lighten($lightGray-color, 6%) !default;
-$black-color: #000000 !default;
+$black-color: #111111 !default;
 $white-color: #ffffff !default;
 
 // Body
-$body-text-color: #4a5568 !default;
+$body-text-color: #666 !default;
 $body-text-align: left !default;
 $body-bg: #fff !default;
 $body-max-width: 680px;
 $text-muted: #a1a6b1 !default;
 
 // Fonts
-$font-family-base: 'Open Sans', Times, "Times New Roman", serif !default;
-$font-family-sans-serif: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !default;
+$font-family-sans-serif: "Montserrat", sans-serif !default;
 $font-family-serif: Georgia, Times, "Times New Roman", serif !default;
+$font-family-base: $font-family-serif !default;
 $font-family-code: "Fira Code", Consolas, Menlo, Monaco, source-code-pro, monospace !default;
+
 $font-family-quotes: $font-family-serif !default;
 $font-family-footnotes: $font-family-serif !default;
-$font-family-headings: 'Open Sans' !default;
+$font-family-headings: $font-family-sans-serif !default;
 
-$font-size-base: 16px !default; // Assumes the browser default, typically `16px`
-$font-size-sm: $font-size-base * 0.8 !default;
+$font-size-base: 18px !default; // Assumes the browser default, typically `16px`
+$font-size-sm: $font-size-base * 0.75 !default;
 $font-size-lg: $font-size-base * 1.15 !default;
 $letter-spacing-base: 0 !default;
 $font-weight-normal: 400 !default;
 $font-weight-bold: 700 !default;
-$line-height-base: 1.75 !default;
+$line-height-base: 1.66667 !default;
 $h1-font-size: $font-size-base * 2.5 !default;
 $h2-font-size: $font-size-base * 1.85 !default;
 $h3-font-size: $font-size-base * 1.5 !default;
@@ -75,7 +76,7 @@ $highlight-radius: $border-radius !default;
 $highlight-padding: 20px !default;
 
 // Links
-$link-color: $primary-color !default;
+$link-color: $black-color !default;
 $link-decoration: none !default;
 $link-hover-color: $primary-color !default;
 $link-hover-decoration: underline !default;
@@ -103,12 +104,12 @@ $selection-color: $white-color !default;
 // Blockquote
 $blockquote-border: 5px solid $secondary-color !default;
 $blockquote-background: $lighterGray-color !default;
-$blockquote-color: $darkGray-color !default;
+$blockquote-color: $black-color !default;
 $blockquote-font-family: $font-family-quotes !default;
 $blockquote-font-size: $font-size-lg !default;
 $blockquote-font-style: italic !default;
 $blockquote-line-height: 1.8em !default;
-$blockquote-padding: 1em 1.5em !default;
+$blockquote-padding: 1.5em !default;
 
 // Lazyload
 $lazyload-time: 1s !default;

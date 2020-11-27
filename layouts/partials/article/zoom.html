@@ -1,0 +1,7 @@
+{{ $zoom := resources.Get "scripts/medium-zoom.js" }}
+{{ $zoom = $zoom | minify | fingerprint }}
+<script src="{{ $zoom.Permalink }}"></script>
+
+<script>
+  const zoom = mediumZoom('[data-zoomable]');
+</script>

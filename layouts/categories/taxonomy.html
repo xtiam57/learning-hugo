@@ -7,12 +7,35 @@
 
 {{ define "content" }}
 
-<main>
-  <section class="container">
-    <h2 class="margin-top-0">
-      {{ .Title }}
-    </h2>
+{{ $image := .Params.Image | default "" }}
 
+<main>
+  {{ $firstChild := index .RegularPagesRecursive 0 }}
+  {{ with $firstChild.Params.Image }}
+    {{ $image = $firstChild.Params.Image }}
+  {{ end }}
+
+  <header class="taxonomy-cover"
+          {{ if $image }}
+          {{ $image = resources.Get $image }}
+          {{ $resized := $image.Resize "1920x q60 jpg" }}
+          style="background-image: url({{ $resized.Permalink }});"
+          {{ end }}>
+    <div class="taxonomy-wrapper">
+      <div class="taxonomy-inner">
+        <small>categoría</small>
+        <h2 class="margin-0">
+          {{ .Title }}
+        </h2>
+        <small>
+          {{ $pageCount := len .Pages }}
+          {{ $pageCount }} entrada{{ if ne $pageCount 1 }}s{{ end }}
+        </small>
+      </div>
+    </div>
+  </header>
+
+  <section class="container">
     {{ partial "blog/list.html" . }}
 
     {{ partial "blog/pagination.html" . }}

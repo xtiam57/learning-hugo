@@ -9,9 +9,8 @@
   background-color: $navbar-background;
   color: $navbar-color;
   z-index: 2;
-  // box-shadow: $navbar-shadow;
   border-bottom: $border-base;
-  font-family: $font-family-code;
+  font-family: $font-family-sans-serif;
 
   > nav {
     @include make-container($container-gutter * 0.8);
@@ -20,21 +19,18 @@
     height: 100%;
     justify-content: space-between;
 
+    a {
+      color: $navbar-link-color;
+      border: none;
+
+      &:hover {
+        color: $navbar-link-hover-color;
+      }
+    }
+
     .navbar-links {
       color: $navbar-color;
       font-size: $navbar-font-size;
-
-      a {
-        color: $navbar-link-color;
-        text-decoration: $navbar-link-decoration;
-        transition: all 0.2s;
-
-        &:hover {
-          color: $navbar-link-hover-color;
-          text-decoration: none;
-          text-decoration: $navbar-link-hover-decoration;
-        }
-      }
     }
   }
 }

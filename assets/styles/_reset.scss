@@ -51,6 +51,7 @@ h6 {
   font-family: $font-family-headings;
   letter-spacing: $heading-letter-spacing;
   word-spacing: $heading-word-spacing;
+  color: $black-color;
 }
 
 h1 {
@@ -119,15 +120,6 @@ dd {
 
 blockquote {
   margin: $margin-base 0;
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    word-spacing: 0;
-    letter-spacing: 0;
-  }
 }
 
 b,
@@ -161,13 +153,13 @@ sup {
 
 a {
   color: $link-color;
-  text-decoration: $link-decoration;
+  border-bottom: solid 1px $link-color;
+  text-decoration: none;
   transition: all 0.2s;
 
   &:hover {
-    color: $link-hover-color;
-    text-decoration: $link-hover-decoration;
-    text-decoration-color: $link-decoration-color;
+    // text-decoration: $link-hover-decoration;
+    border-color: $link-hover-color;
   }
 }
 

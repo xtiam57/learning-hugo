@@ -29,6 +29,16 @@
         <span class="terminal-cursor cursor-block"></span>
       </div>
   </main>
+
+    <div class="last-posts">
+      <div class="container">
+        {{ partial "home/last-posts.html" . }}
+        <p class="text-center">
+          <a class=""
+             href="{{ "/blog" | absURL }}">Ir al blog &rarr;</a>
+        </p>
+      </div>
+    </div>
 </body>
 
 </html>

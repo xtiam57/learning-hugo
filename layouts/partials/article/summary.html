@@ -1,52 +1,57 @@
 {{ $image := .Params.Image | default "" }}
 {{ $type := .Params.SummaryType | default "none" }}
 
-<div role="summary"
+<header role="summary"
      class="article-summary summary-{{ $type }}"
      {{ if and (eq $type "cover") $image }}
         {{ $image = resources.Get .Params.Image }}
-        {{ $blurred := $image.Resize "1920x q60 jpg" }}
-        {{ $blurred = $image.Filter (images.GaussianBlur 1.5) }}
-        style="background-image: url({{ $blurred.Permalink }});"
+        {{ $resized := $image.Resize "1920x q60 jpg" }}
+        style="background-image: url({{ $resized.Permalink }});"
      {{ end }}>
 
   <div class="summary-wrapper">
-    {{ if .Params.categories }}
-    <span class="summary-categories"
-         role="categories">
-      {{ range $index, $categories := .Params.categories }}
-      {{- if gt $index 0 }}, {{ end -}}
-      <a href="/categories/{{ . | urlize }}">{{ . }}</a>
+    <div class="summary-inner">
+      {{ if .Params.categories }}
+      <div class="summary-categories"
+            role="categories">
+        {{ range $index, $categories := .Params.categories }}
+        <a href="/categories/{{ . | urlize }}">{{ . }}</a>
+        {{ end }}
+      </div>
       {{ end }}
-    </span>
-    {{ end }}
 
-    <h1 class="summary-title">
-      {{ .Page.Title }}
-    </h1>
+      <h1 class="summary-title">
+        {{ .Page.Title }}
+      </h1>
 
-    <p class="summary-info">
-      <time datetime="{{ .PublishDate.Format "January 2, 2006" }}">
-        {{ .PublishDate.Format "January 2, 2006" }}
-      </time> /
-      {{.ReadingTime}} min
-    </p>
+      <p class="summary-meta">
+        {{ if .Params.Author }}
+        Por <strong>{{ .Params.Author }}</strong> /
+        {{ else }}
+        Por <strong>Christiam Mena</strong> /
+        {{ end }}
+        <time datetime="{{ .PublishDate.Format "January 2, 2006" }}">
+          {{ .PublishDate.Format "January 2, 2006" }}
+        </time>{{ if not (eq $type "cover") }} /{{ end }}
+        <span class="reading-time">{{.ReadingTime}} min</span>
+      </p>
 
-    {{ if and (eq $type "wide") $image }}
-    {{ $image = resources.Get .Params.Image }}
-    {{ $placeholder := $image.Resize .Site.Params.PlaceholderQuality }}
-    {{ $placeholder = $placeholder.Filter (images.GaussianBlur .Site.Params.PlaceholderGaussian) }}
+      {{ if and (eq $type "wide") $image }}
+      {{ $image = resources.Get .Params.Image }}
+      {{ $placeholder := $image.Resize .Site.Params.PlaceholderQuality }}
+      {{ $placeholder = $placeholder.Filter (images.GaussianBlur .Site.Params.PlaceholderGaussian) }}
 
-    <figure class="wide margin-bottom-0">
-      <img data-lazy="{{ $image.Permalink }}"
-           src="{{ $placeholder.Permalink }}"
-           alt="{{- .Params.Summary | default .Description | markdownify -}}"
-           class="img-lazy"
-           data-zoomable>
-      {{ with .Params.Caption }}
-      <figcaption>{{ . | markdownify }}</figcaption>
+      <figure class="wide">
+        <img data-lazy="{{ $image.Permalink }}"
+              src="{{ $placeholder.Permalink }}"
+              alt="{{- .Params.Summary | default .Description | markdownify -}}"
+              class="img-lazy"
+              data-zoomable>
+        {{ with .Params.Caption }}
+        <figcaption>{{ . | markdownify }}</figcaption>
+        {{ end }}
+      </figure>
       {{ end }}
-    </figure>
-    {{ end }}
+    </div>
   </div>
-</div>
+</header>
