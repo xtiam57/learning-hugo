@@ -4,4 +4,8 @@
 
 .container {
   margin-bottom: $container-gutter * 2;
+
+  h1 {
+    margin-top: $margin-lg;
+  }
 }

@@ -6,7 +6,11 @@ image: /images/profile.jpg
 type: page
 ---
 
+# Hola, extraño
+
 Mi nombre es Christiam y soy **licenciado en Ciencias de la Computación** de la Universidad Central de Venezuela (**U-U-UCV!**). Siempre me he considerado una persona con actitud **proactiva, responsable y creativa**. Durante los más de **10 años de experiencia** en el desarrollo web (front-end) he podido participar un múltiples proyectos y usar diferentes tecnologías.
+
+{{< figure src="/images/about.jpg" class="wide" caption="El Valle Sagrado de los Incas, Urubamba en Cusco." >}}
 
 Mi labor profesional se ha centrado en el ámbito del **diseño y desarrollo web** trabajando mayormente para la industria de perforación petrolera. En los últimos años he sido **lider de equipo de Front-End** y estás son algunos de mis aportes:
 
@@ -17,6 +21,11 @@ Mi labor profesional se ha centrado en el ámbito del **diseño y desarrollo web
 - Responsable de liderar un equipo de hasta 3 desarrolladores web, lo que me permitió desarrollar habilidades de liderazgo, enseñanza y gestión de proyectos.
 
 **Nota:** En los últimos meses he estado ampliando mis habilidades usando **React** y **Express**, además de aprender tecnologías diferentes como **GraphQL** y **HUGO**.
+
+## Mi trabajo
+
+- [Portafolio](/blog/portafolio/)
+- [Computación Gráfica](blog/trabajos-computacion-grafica/)
 
 ## Habilidades técnicas
 - Diseño web (HTML, CSS, JavaScript)
