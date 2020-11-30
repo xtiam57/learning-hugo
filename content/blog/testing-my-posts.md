@@ -1,5 +1,5 @@
 ---
-title: "Aprendiendo HUGO: prueba de todo lo que puede tener un post"
+title: Guía de estilos del Blog
 description: "Descripción del post de prueba..."
 image: /images/asset-6.jpeg
 summaryType: "wide"
@@ -11,14 +11,19 @@ tags:
   - testing
   - hugo
   - draft
+  - style guide
 categories:
   - Post de prueba
-  - Otra categoría
+  - Categoría de prueba
 ---
 
 In maximus dictum turpis, vel suscipit tortor. Nam ut purus sit amet nisi tincidunt pharetra id vitae nunc. Donec blandit ipsum turpis, in ultricies libero ullamcorper eget. Pellentesque blandit aliquam maximus.
 
-{{< gallery columns="4" >}}
+## Image Gallery
+
+In maximus dictum turpis, vel suscipit tortor. Nam ut purus sit amet nisi tincidunt pharetra id vitae nunc. Donec blandit ipsum turpis, in ultricies libero ullamcorper eget. Pellentesque blandit aliquam maximus.
+
+{{< gallery columns="4" caption="UIn maximus **dictum turpis**, vel suscipit tortor. Nam ut purus sit amet [link text](http://dev.nodeca.com) nisi tincidunt." >}}
 /images/asset-3.jpeg
 /images/asset-0.jpeg
 /images/asset-1.jpeg
@@ -27,6 +32,10 @@ In maximus dictum turpis, vel suscipit tortor. Nam ut purus sit amet nisi tincid
 /images/asset-5.jpeg
 /images/asset-6.jpeg
 {{< /gallery >}}
+
+In molestie nisl at est facilisis, sit amet egestas neque volutpat. Cras ut iaculis dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. In maximus dictum turpis, vel suscipit tortor. Nam ut purus sit amet nisi tincidunt pharetra id vitae nunc. Donec blandit ipsum turpis, in ultricies libero ullamcorper eget. Pellentesque blandit aliquam maximus.
+
+## Columns
 
 In molestie nisl at est facilisis, sit amet egestas neque volutpat. Cras ut iaculis dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus.
 
@@ -37,13 +46,19 @@ tempor incididunt ut labore et dolore magna aliqua.
 ***
 ### 2nd column
 Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non.
 {{< /columns >}}
 
+#### With alignment
+
+We can use class ``class="align-items-start"``, ``class="align-items-center"`` or ``class="align-items-end"``.
+
+In molestie nisl at est facilisis, sit amet egestas neque volutpat. Cras ut iaculis dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus.
 
 {{< columns class="align-items-end" >}}
 {{< figure src="/images/test.jpg" >}}
+Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non.
 ***
 ### 2nd column
 Nulla condimentum nibh ac felis molestie commodo. Curabitur eu urna feugiat, molestie est sit amet, mollis nisl. Cras sit amet semper augue. Vivamus rutrum condimentum odio, eget pulvinar nibh posuere non. Nunc purus ipsum, tincidunt vitae metus eget, tristique sollicitudin neque. Aliquam at massa imperdiet, faucibus metus vel, eleifend mauris. Nunc pulvinar accumsan est ut sa
@@ -61,11 +76,10 @@ Or this `using -`:
 ---
 
 Or this `using *`:
+
 ***
 
 Ut lacinia sapien non lacus aliquet, et molestie est consequat. Vivamus et leo lacus. Mauris egestas luctus ligula, non ultricies elit efficitur quis. Vestibulum et orci nisl. Aliquam ex justo, lobortis eget lacinia vel, luctus ut arcu. Nam ut tempus est. Quisque fringilla purus ut pharetra vehicula. Phasellus eros nulla, fermentum in dictum in, eleifend ac sem. Nam rutrum ipsum ut dui finibus, id maximus diam mollis. Donec eget purus ipsum. Praesent vel rutrum diam, at rutrum eros. Nullam finibus tristique lectus, quis porta elit euismod et. In et euismod nisl, venenatis tristique tellus.
-
-{{< figure src="/images/map.png" class="full" caption="Técnica para ganar almas usando colores." >}}
 
 ## Code
 
@@ -161,24 +175,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id orci id risus
 
 Nulla condimentum nibh ac felis molestie commodo. Curabitur eu urna feugiat, molestie est sit amet, mollis nisl. Cras sit amet semper augue. Vivamus rutrum condimentum odio, eget pulvinar nibh posuere non. Nunc purus ipsum, tincidunt vitae metus eget, tristique sollicitudin neque. Aliquam at massa imperdiet, faucibus metus vel, eleifend mauris. Nunc pulvinar accumsan est ut sagittis. Praesent vitae justo non erat finibus condimentum. Donec finibus hendrerit nisl, sit amet laoreet est aliquet ut.
 
-***
-
-### Full width figure using shortcode:
-
-```
-< figure src="/images/my_image.jpg" caption="My caption" class="full" >
-```
-
-
-
-Sed tincidunt eget enim et finibus. Nam pulvinar lorem sit amet pulvinar mattis. Curabitur massa tellus, molestie et augue ac, rutrum cursus diam. Curabitur convallis dictum nibh, eget ultrices elit elementum id. Sed quis facilisis est. Curabitur tellus lorem, tempus quis enim sit amet, venenatis malesuada urna. Proin ac metus sed urna vehicula elementum. Etiam congue in lectus at elementum. Ut consequat non felis sit amet pretium.
-
-***
-
-## Instagram?
-
-
-Sed tincidunt eget enim et finibus. Nam pulvinar lorem sit amet pulvinar mattis. Curabitur massa tellus, molestie et augue ac, rutrum cursus diam. Curabitur convallis dictum nibh, eget ultrices elit elementum id. Sed quis facilisis est. Curabitur tellus lorem, tempus quis enim sit amet, venenatis malesuada urna. Proin ac metus sed urna vehicula elementum. Etiam congue in lectus at elementum. Ut consequat non felis sit amet pretium.
 
 ## Emphasis
 
@@ -231,10 +227,6 @@ Start numbering with offset:
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id orci id risus aliquet blandit. Suspendisse dapibus ligula id massa gravida, at pellentesque ex efficitur. Praesent tempus lacus eget est condimentum volutpat. Nullam sed pellentesque ipsum, ac bibendum diam. Phasellus at nulla consectetur, interdum lectus a, semper lectus.
 
-```
-< hero >Text width markdown< /hero >
-```
-
 {{< hero >}}
 ## A title for a great hero
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. **Aenean id orci id risus aliquet blandit**. Suspendisse dapibus ligula id massa gravida, at pellentesque ex efficitur. Praesent tempus lacus eget est condimentum volutpat. Nullam sed pellentesque ipsum, ac bibendum diam. _Phasellus at nulla consectetur, interdum lectus a, semper lectus_.
@@ -252,15 +244,19 @@ Fusce ac risus urna. Curabitur et justo eu arcu ultrices suscipit. Proin vel ull
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id orci id risus aliquet blandit. Suspendisse dapibus ligula id massa gravida, at pellentesque ex efficitur. Praesent tempus lacus eget est condimentum volutpat. Nullam sed pellentesque ipsum, ac bibendum diam. Phasellus at nulla consectetur, interdum lectus a, semper lectus. Fusce ac risus urna. Curabitur et justo eu arcu ultrices suscipit. Proin vel ullamcorper mauris. Phasellus congue lectus sit amet augue lobortis vestibulum. Curabitur est tellus, aliquet id vulputate a, tincidunt ut ante.
 
-{{< figure src="/images/test.jpg" caption="UIn maximus **dictum turpis**, vel suscipit tortor. Nam ut purus sit amet [link text](http://dev.nodeca.com) nisi tincidunt." class="full" >}}
+## Images
+
+Curabitur et justo eu arcu ultrices suscipit. Proin vel ullamcorper mauris. Phasellus congue lectus sit amet augue lobortis vestibulum. Curabitur est tellus, aliquet id vulputate a, tincidunt ut ante.
+
+{{< figure src="/images/full.jpg" class="full" caption="UIn maximus **dictum turpis**, vel suscipit tortor. Nam ut purus sit amet [link text](http://dev.nodeca.com) nisi tincidunt." >}}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id orci id risus aliquet blandit. Suspendisse dapibus ligula id massa gravida, at pellentesque ex efficitur. Praesent tempus lacus eget est condimentum volutpat. Nullam sed pellentesque ipsum, ac bibendum diam. Phasellus at nulla
 
-{{< figure src="/images/test.jpg" caption="UIn maximus **dictum turpis**, vel suscipit tortor. Nam ut purus sit amet [link text](http://dev.nodeca.com) nisi tincidunt." class="wide" >}}
+{{< figure src="/images/wide.jpg" caption="UIn maximus **dictum turpis**, vel suscipit tortor. Nam ut purus sit amet [link text](http://dev.nodeca.com) nisi tincidunt." class="wide" >}}
 
 Praesent tempus lacus eget est condimentum volutpat. Nullam sed pellentesque ipsum, ac bibendum diam. Phasellus at nulla
 
-{{< figure src="/images/test.jpg" caption="UIn maximus **dictum turpis**, vel suscipit tortor. Nam ut purus sit amet [link text](http://dev.nodeca.com) nisi tincidunt."  >}}
+{{< figure src="/images/map.png" caption="UIn maximus **dictum turpis**, vel suscipit tortor. Nam ut purus sit amet [link text](http://dev.nodeca.com) nisi tincidunt."  >}}
 
 Nulla condimentum nibh ac felis molestie commodo. Curabitur eu urna feugiat, molestie est sit amet, mollis nisl. Cras sit amet semper augue. Vivamus rutrum condimentum odio, eget pulvinar nibh posuere non. Nunc purus ipsum, tincidunt vitae metus eget, tristique sollicitudin neque. Aliquam at massa imperdiet, faucibus metus vel, eleifend mauris. Nunc pulvinar accumsan est ut sagittis. Praesent vitae justo non erat finibus condimentum. Donec finibus hendrerit nisl, sit amet laoreet est aliquet ut.
 
