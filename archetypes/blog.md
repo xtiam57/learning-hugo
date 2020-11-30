@@ -13,6 +13,5 @@ tags:
 # Summary information
 image: ""
 summaryType: "[wide]|cover|none"
-summaryPosition: "[bottom]|top|middle"
 summaryCaption: ""
 ---

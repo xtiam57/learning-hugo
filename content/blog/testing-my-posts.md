@@ -35,6 +35,15 @@ In maximus dictum turpis, vel suscipit tortor. Nam ut purus sit amet nisi tincid
 
 In molestie nisl at est facilisis, sit amet egestas neque volutpat. Cras ut iaculis dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. In maximus dictum turpis, vel suscipit tortor. Nam ut purus sit amet nisi tincidunt pharetra id vitae nunc. Donec blandit ipsum turpis, in ultricies libero ullamcorper eget. Pellentesque blandit aliquam maximus.
 
+### Another gallery
+
+Donec blandit ipsum turpis, in ultricies libero ullamcorper eget. Pellentesque blandit aliquam maximus.
+
+{{< gallery columns="2" caption="UIn maximus **dictum turpis**, vel suscipit tortor. Nam ut purus sit amet [link text](http://dev.nodeca.com) nisi tincidunt." >}}
+/images/align-left.jpg
+/images/align-right.jpg
+{{< /gallery >}}
+
 ## Columns
 
 In molestie nisl at est facilisis, sit amet egestas neque volutpat. Cras ut iaculis dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus.
@@ -191,6 +200,16 @@ _This is italic text_
 ## Alignment
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis.
+
+{{< align "left" >}}
+> The first thing to do is to look at the table of components for MDX, and here we can see that images are represented by img. By following the link we can see the markdown
+>
+> <cite>Benjamin Franklin</cite>
+{{< /align >}}
+
+Sed tincidunt eget enim et finibus. Nam pulvinar lorem sit amet pulvinar mattis. Curabitur massa tellus, molestie et augue ac, rutrum cursus diam. Curabitur convallis dictum nibh, eget ultrices elit elementum id. Sed quis facilisis est. Curabitur tellus lorem, tempus quis enim sit amet, venenatis malesuada urna. Proin ac metus sed urna vehicula elementum. Etiam congue in lectus at elementum. Ut consequat non felis sit amet pretium.
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis.
 
 {{< align "left" >}}
 {{< figure src="/images/align-left.jpg" >}}

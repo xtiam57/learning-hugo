@@ -3,5 +3,11 @@
 <script src="{{ $lightbox.Permalink }}"></script>
 
 <script>
-  new SimpleLightbox('.gallery-container a');
+  const galleries = document.getElementsByClassName('gallery-container');
+
+  [...galleries].forEach((gallery, index) => {
+    const selector = `gallery-${index}`;
+    gallery.classList.add(selector);
+    new SimpleLightbox(`.${selector} .gallery-img a`);
+  })
 </script>
