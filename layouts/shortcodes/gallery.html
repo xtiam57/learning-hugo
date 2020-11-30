@@ -27,5 +27,9 @@
     </div>
     {{ end }}
   {{ end }}
+
+  {{ with .Get "caption" }}
+  <div class="gallery-caption">{{ . | markdownify }}</div>
+  {{ end }}
 </div>
 

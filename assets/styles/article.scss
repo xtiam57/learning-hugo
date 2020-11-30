@@ -26,6 +26,15 @@ article {
     flex-direction: column;
     overflow: hidden;
 
+    .gallery-caption {
+      @include make-container();
+      text-align: center;
+      font-size: $font-size-sm;
+      margin-top: $margin-base - $margin-base * 0.5;
+      color: $text-muted;
+      font-family: $font-family-sans-serif;
+    }
+
     .gallery-row {
       display: flex;
       flex-direction: row;
