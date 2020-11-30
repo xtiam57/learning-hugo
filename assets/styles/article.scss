@@ -63,6 +63,57 @@ article {
     }
   }
 
+  .align-left {
+    max-width: 50%;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: $margin-sm;
+    margin-right: $margin-md;
+    margin-left: -$container-gutter * 6;
+    float: left;
+    clear: both;
+
+    *:first-child {
+      margin-top: 0;
+    }
+
+    @media (max-width: $body-max-width) {
+      max-width: 100%;
+      float: none;
+      margin-right: 0;
+    }
+
+    @media (max-width: 1024px) {
+      margin-left: 0;
+    }
+  }
+
+  .align-right {
+    max-width: 50%;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: $margin-sm;
+    margin-left: $margin-md;
+    margin-right: -$container-gutter * 6;
+    float: right;
+    clear: both;
+
+    *:first-child {
+      margin-top: 0;
+    }
+
+    @media (max-width: $body-max-width) {
+      max-width: 100%;
+      float: none;
+      margin-left: 0;
+    }
+
+    @media (max-width: 1024px) {
+     margin-right: 0;
+
+    }
+  }
+
   img {
     vertical-align: middle;
     width: 100%;
