@@ -14,17 +14,14 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
     text-align: center;
     position: relative;
-    font-family: $font-family-sans-serif;
     overflow: hidden;
     flex: 1 1 auto;
 
-
     .main-wrapper {
       position: relative;
-      padding: ($container-gutter * 6) ($container-gutter * 3);
+      padding: ($container-gutter * 8) ($container-gutter * 3);
       border-radius: $border-radius;
       color: $white-color;
       border-radius: $border-radius;
@@ -32,6 +29,7 @@ body {
       .lead {
         font-size: $font-size-lg;
         position: relative;
+        font-family: $font-family-sans-serif;
 
         *:first-child {
           margin-top: 0;
@@ -54,18 +52,12 @@ body {
           margin: 0 $margin-sm;
           color: $white-color;
           border-color: $white-color;
+          font-family: $font-family-sans-serif;
 
           &:hover {
             border-color: $primary-color;
           }
         }
-      }
-
-      .interest {
-        margin-bottom: 0;
-        margin-top: 0;
-        display: flex;
-        flex-direction: column;
       }
     }
 
@@ -90,7 +82,9 @@ body {
       overflow-y: auto;
     }
 
-    p {
+    .go-to-blog {
+      text-align: center;
+      margin: 0;
       font-family: $font-family-sans-serif;
     }
 
@@ -101,7 +95,6 @@ body {
 
       li {
         @include make-blog-post();
-
 
         @media screen and (min-width: 1024px) {
           width: 100%;
