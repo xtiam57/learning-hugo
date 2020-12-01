@@ -2,7 +2,7 @@
 @import "mixins";
 
 body {
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: $body-ipad-width) {
     display: flex;
     flex-direction: row;
   }
@@ -76,7 +76,7 @@ body {
   .lastest-posts {
     padding: $container-gutter * 2;
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $body-ipad-width) {
       max-width: 400px;
       height: 100vh;
       overflow-y: auto;
@@ -96,12 +96,12 @@ body {
       li {
         @include make-blog-post();
 
-        @media screen and (min-width: 1024px) {
+        @media screen and (min-width: $body-ipad-width) {
           width: 100%;
         }
       }
 
-      @media screen and (min-width: $body-max-width) and (max-width: 1024px) {
+      @media screen and (min-width: $body-max-width) and (max-width: $body-ipad-width) {
         display: flex;
         flex-direction: row;
         justify-content: space-between;

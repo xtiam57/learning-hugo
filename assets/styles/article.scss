@@ -26,6 +26,10 @@ article {
     flex-direction: column;
     overflow: hidden;
 
+    &.fit {
+      margin: $wide-width-margin;
+    }
+
     &.full {
       .gallery-row {
         .gallery-img:first-child {
@@ -100,7 +104,7 @@ article {
       margin-right: 0;
     }
 
-    @media (max-width: 1024px) {
+    @media (max-width: $body-ipad-width) {
       margin-left: 0;
     }
   }
@@ -127,7 +131,7 @@ article {
       margin-left: 0;
     }
 
-    @media (max-width: 1024px) {
+    @media (max-width: $body-ipad-width) {
       margin-right: 0;
     }
   }

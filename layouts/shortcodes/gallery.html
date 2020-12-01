@@ -2,7 +2,7 @@
 {{ $content = split $content "\n" }}
 {{ $len := len $content }}
 
-{{ $columns := .Get "columns" | default "4" }}
+{{ $columns := .Get "columns" | default "3" }}
 {{ $heights := .Get "heights" | default "1" }}
 {{ $class := .Get "class" | default "wide" }}
 
@@ -21,7 +21,7 @@
     {{ $aux = $aux | append $h }}
   {{ end }}
 {{ end }}
-{{ $heights_splitted = $aux}}
+{{ $heights_splitted = $aux }}
 
 {{ $DEFAULT_COLUMNS := index $columns_splitted 0 }}
 {{ $DEFAULT_HEIGHTS := index $heights_splitted 0 }}
