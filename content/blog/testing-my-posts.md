@@ -23,7 +23,7 @@ In maximus dictum turpis, vel suscipit tortor. Nam ut purus sit amet nisi tincid
 
 In maximus dictum turpis, vel suscipit tortor. Nam ut purus sit amet nisi tincidunt pharetra id vitae nunc. Donec blandit ipsum turpis, in ultricies libero ullamcorper eget. Pellentesque blandit aliquam maximus.
 
-{{< gallery columns="4" caption="UIn maximus **dictum turpis**, vel suscipit tortor. Nam ut purus sit amet [link text](http://dev.nodeca.com) nisi tincidunt." >}}
+{{< gallery columns="3 2 2" heights="1.5 0.25 0.5" caption="UIn maximus **dictum turpis**, vel suscipit tortor. Nam ut purus sit amet [link text](http://dev.nodeca.com) nisi tincidunt." >}}
 /images/asset-3.jpeg
 /images/asset-0.jpeg
 /images/asset-1.jpeg
@@ -39,7 +39,7 @@ In molestie nisl at est facilisis, sit amet egestas neque volutpat. Cras ut iacu
 
 Donec blandit ipsum turpis, in ultricies libero ullamcorper eget. Pellentesque blandit aliquam maximus.
 
-{{< gallery columns="2" caption="UIn maximus **dictum turpis**, vel suscipit tortor. Nam ut purus sit amet [link text](http://dev.nodeca.com) nisi tincidunt." >}}
+{{< gallery caption="UIn maximus **dictum turpis**, vel suscipit tortor. Nam ut purus sit amet [link text](http://dev.nodeca.com) nisi tincidunt." >}}
 /images/align-left.jpg
 /images/align-right.jpg
 {{< /gallery >}}

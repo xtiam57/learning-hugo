@@ -1,31 +1,70 @@
 {{ $content := trim .Inner "\n" }}
 {{ $content = split $content "\n" }}
-{{ $columns := .Get "columns" | default 3 }}
+{{ $len := len $content }}
 
-<div class="gallery-container wide">
-  {{ range $index, $src := $content }}
+{{ $columns := .Get "columns" | default "4" }}
+{{ $heights := .Get "heights" | default "1" }}
+{{ $class := .Get "class" | default "wide" }}
+
+{{ $columns_splitted := split $columns " " }}
+{{ $heights_splitted := split $heights " " }}
+
+{{ $BASE_HEIGHT := 1000 }}
+
+<!-- Mult height by 1000 -->
+{{ $aux := slice }}
+{{ range $heights_splitted }}
+  {{ if . }}
+    {{ $h := float . }}
+    {{ $h = mul $BASE_HEIGHT $h }}
+    {{ $h = string $h }}
+    {{ $aux = $aux | append $h }}
+  {{ end }}
+{{ end }}
+{{ $heights_splitted = $aux}}
+
+{{ $DEFAULT_COLUMNS := index $columns_splitted 0 }}
+{{ $DEFAULT_HEIGHTS := index $heights_splitted 0 }}
+
+{{ $row_number := 0 }}
+{{ $counter := 1 }}
+{{ $is_closed := false }}
+
+<div class="gallery-container {{ $class }}">
+  {{ range $i, $src := $content }}
+    {{ $columns := index $columns_splitted $row_number | default $DEFAULT_COLUMNS }}
+    {{ $height := index $heights_splitted $row_number | default $DEFAULT_HEIGHTS }}
+
+    {{ if eq $counter 1 }}
+      <div class="gallery-row">
+      {{ $is_closed = false }}
+    {{ end }}
+
     {{ $image := resources.Get $src }}
-    {{ $thumbnail := $image.Fill "1024x1024 q80 jpg Center" }}
+    {{ $conf := printf "1000x%s q80 jpg Center" $height }}
+    {{ $thumbnail := $image.Fill $conf }}
     {{ $placeholder := $thumbnail.Resize "100x q05" }}
     {{ $placeholder = $placeholder.Filter (images.GaussianBlur 6) }}
 
-    {{ if and (modBool $index $columns) (gt $index 0) }}
+    <div class="gallery-img" style="flex: 1.66667 1 0%">
+      <a href="{{ $image.Permalink }}">
+        <img src="{{ $placeholder.Permalink }}" alt="" data-lazy="{{ $thumbnail.Permalink }}" class="img-lazy" />
+      </a>
     </div>
-    {{ end }}
 
-    {{ if modBool $index $columns }}
-    <div class="gallery-row">
-    {{ end }}
-
-      <div class="gallery-img" style="flex: 1.66667 1 0%">
-        <a href="{{ $image.Permalink }}">
-          <img src="{{ $placeholder.Permalink }}" alt="" data-lazy="{{ $thumbnail.Permalink }}" class="img-lazy" />
-        </a>
+    {{ if or (ge $counter $columns) (ge $counter $len) }}
       </div>
-
-    {{ if eq $index (sub (len $content) 1)  }}
-    </div>
+      {{ $counter = 1 }}
+      {{ $row_number = add $row_number 1 }}
+      {{ $is_closed = true }}
+    {{ else }}
+      {{ $counter = add $counter 1 }}
     {{ end }}
+
+  {{ end }}
+
+  {{ if eq $is_closed false }}
+    </div>
   {{ end }}
 
   {{ with .Get "caption" }}
