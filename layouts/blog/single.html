@@ -31,10 +31,11 @@
   </div>
 </main>
 
-{{ partial "lazyload-script.html" . }}
-{{ partial "article/smooth-scroll.html" . }}
+{{ partial "lazyload-scripts.html" . }}
+{{ partial "article/smooth-scroll-scripts.html" . }}
 
-{{ if .HasShortcode "figure" }}{{ partial "article/zoom.html" . }}{{ end }}
-{{ if .HasShortcode "gallery" }}{{ partial "article/lightbox.html" . }}{{ end }}
+{{ if .HasShortcode "figure" }}{{ partial "article/zoom-scripts.html" . }}{{ end }}
+{{ if .HasShortcode "gallery" }}{{ partial "article/lightbox-scripts.html" . }}{{ end }}
+{{ if .HasShortcode "youtube-lite" }}{{ partial "article/youtube-lite-scripts.html" . }}{{ end }}
 
 {{ end }}

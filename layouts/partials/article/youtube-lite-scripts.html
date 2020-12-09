@@ -1,0 +1,3 @@
+{{ $liteYT := resources.Get "scripts/lite-yt-embed.js" }}
+{{ $liteYT = $liteYT | minify | fingerprint }}
+<script src="{{ $liteYT.Permalink }}"></script>
